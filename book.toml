@@ -1,0 +1,10 @@
+[book]
+title = "Haha"
+authors = ["ioxfl"]
+description = "Haha."
+
+[build]
+create-missing = false
+
+[output.html]
+no-section-label = true
