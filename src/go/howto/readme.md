@@ -4,6 +4,12 @@
 
 * [CodeReviewComments Â· golang/go Wiki](https://github.com/golang/go/wiki/CodeReviewComments)
 
+# How to read code
+
+* Don't follow functions always. make a bird view first.
+
+# LAW
+
 1. package level only have: `const var func`, `expression` MUST put in `func`,
    so can put in `func init`.
 1. always test a slice with `len(s) > N` first, don't test slice with `s[n-1]

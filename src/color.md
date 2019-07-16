@@ -15,11 +15,11 @@
 * [True Colour (16 million colours) support in various terminal applications and terminals](https://gist.github.com/XVilka/8346728)
 * [Swordfish90/cool-retro-term: A good looking terminal emulator which mimics the old cathode display...](https://github.com/Swordfish90/cool-retro-term)
 
-* macOS
+# macOS
 
 Mac's default Terminal doesn't support true color.
 
-* Win
+# Win
 
-putty is just awesome.
+putty is just awesome. It supports true color.
  

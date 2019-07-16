@@ -55,7 +55,10 @@ table ip nat {
 }
 ```
 
+# With iptables
 
+* [shadowsocks-libev/ss-redir.asciidoc at master · shadowsocks/shadowsocks-libev · GitHub](https://github.com/shadowsocks/shadowsocks-libev/blob/master/doc/ss-redir.asciidoc)
+* [china_ip_list/china_ip_list.txt at master · 17mon/china_ip_list · GitHub](https://github.com/17mon/china_ip_list/blob/master/china_ip_list.txt)
 
 
 

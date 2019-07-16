@@ -69,7 +69,6 @@ end
 * [Multi-Machine - Vagrant by HashiCorp](https://www.vagrantup.com/docs/multi-machine/)
 
 ```
-```
 config.vm.box = "ubuntu/disco64"
 config.vm.provision :shell, path: "ss.sh"
 
@@ -83,4 +82,12 @@ config.vm.define "vps" do |vps|
 	vps.vm.network "private_network", ip: "192.168.33.1"
 end
 ```
+
+# How to copy file from a Vagrant machine to local host
+
+* [linux - How to copy file from a Vagrant machine to local host - Stack Overflow](https://stackoverflow.com/a/46203304)
+
+```
+vagrant ssh-config > config.txt
+scp -F config.txt default:/path/to/file .
 ```

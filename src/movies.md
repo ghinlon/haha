@@ -8,6 +8,29 @@
 
 ## July
 
+* ["After Life" Episode #1.2 (TV Episode 2019) - IMDb](https://www.imdb.com/title/tt8664276/?ref_=ttep_ep2)
+
+  Sun Jul 14 21:31:33 CST 2019
+
+* ["After Life" Episode #1.1 (TV Episode 2019) - IMDb](https://www.imdb.com/title/tt8664264/?ref_=ttep_ep1)
+
+  It feels like that my life is just left darkness. So what's the difference if
+  I passed away now, or some more years later soon. That is, what is the
+  meaning of life. I always didn't get it. Also we can way, life is just life,
+  life doen't need a meaning. Should I just enjoy it, do my best ?  
+  But it still make nonsence.  
+  Sun Jul 14 21:02:39 CST 2019
+
+* [Alita: Battle Angel (2019) - IMDb](https://www.imdb.com/title/tt0437086/?ref_=fn_al_tt_2)
+
+  Just a movie. but I like Alita. Very prety.  
+  Sun Jul 14 17:04:35 CST 2019
+
+* [Chimerica - Season 1 - IMDb](https://www.imdb.com/title/tt7948996/episodes?season=1&ref_=tt_eps_sn_1)
+
+  I just don't understand, everything.  
+  Sun Jul 14 00:00:39 CST 2019  
+
 * ["Chimerica" Kodak Ergo Sum (TV Episode 2019) - IMDb](https://www.imdb.com/title/tt8211552/?ref_=ttep_ep1)
 
   Sad.  

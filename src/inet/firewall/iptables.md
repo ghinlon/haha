@@ -272,3 +272,16 @@ iptables -P FORWARD ACCEPT
 iptables -P OUTPUT ACCEPT
 ```
 
+# LOG
+
+* [Linux iptables LOG everything - Jesin's Blog](https://websistent.com/linux-iptables-log-everything/)
+
+```
+iptables -I INPUT 1 -j LOG
+iptables -I FORWARD 1 -j LOG
+iptables -I OUTPUT 1 -j LOG
+
+iptables -t nat -I PREROUTING 1 -j LOG
+iptables -t nat -I POSTROUTING 1 -j LOG
+iptables -t nat -I OUTPUT 1 -j LOG
+```
