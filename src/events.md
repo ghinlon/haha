@@ -2,6 +2,10 @@
 
 # 2019
 
+* [Gas Plant Explosion in Central China Kills at Least 10 - The New York Times](https://www.nytimes.com/2019/07/20/world/asia/china-explosion-yima.html)
+
+  这一次爆炸，己经没有人再问起。就像没有发生过一样。
+
 * [Hong Kong's Protest Explained – Bloomberg](https://www.bloomberg.com/news/videos/2019-06-13/hong-kong-s-protest-explained-video)
 
 * [Trump’s Latest Move Takes Straight Shot at Huawei’s Business - The New York Times](https://www.nytimes.com/2019/05/16/technology/huawei-ban-president-trump.html)  

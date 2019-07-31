@@ -4,11 +4,9 @@
 
 # Links
 
-**The following three great articles**   
-
-* [The Nature Of Channels In Go Go, (Golang) Programming - Blog - Ardan Labs](https://www.ardanlabs.com/blog/2014/02/the-nature-of-channels-in-go.html)
-* [(Now You're) Thinking With Channels](https://blog.mergermarket.it/now-youre-thinking-with-channels/)  
-* [Golang channels tutorial | Alexander Guz's blog](http://guzalexander.com/2013/12/06/golang-channels-tutorial.html)  
+* [The Nature Of Channels In Go Go, (Golang) Programming - Blog - Ardan Labs](https://www.ardanlabs.com/blog/2014/02/the-nature-of-channels-in-go.html)(**Great**)
+* [(Now You're) Thinking With Channels](https://blog.mergermarket.it/now-youre-thinking-with-channels/)(**Great**) 
+* [Golang channels tutorial | Alexander Guz's blog](http://guzalexander.com/2013/12/06/golang-channels-tutorial.html)(**Great**)  
 * [Channel Axioms | Dave Cheney](https://dave.cheney.net/2014/03/19/channel-axioms)  
 * [Curious Channels | Dave Cheney](https://dave.cheney.net/2013/04/30/curious-channels)  
 * [Go Concurrency Patterns: Pipelines and cancellation - The Go Blog](https://blog.golang.org/pipelines)  
@@ -113,14 +111,7 @@ message 3
 */
 ```
 
-# When will Deadlock or panic: 
-
-* 单方
-* nil
-* 发得关
-* 读比发多
-* range但是发曾勿关
-
+# When channel will deadlock
 
 1. Only sender or only receiver will deadlock, **One can not happen without the other.**
 
@@ -153,26 +144,6 @@ message 3
         var c chan int
         <-c
     }
-    ```
-1. A send to a closed channel panics
-
-    ```go
-    // A Fan-in pattern
-    func main() {
-        var c = make(chan int, 100)
-        for i := 0; i < 10; i++ {
-            go func() {
-                for j := 0; j < 10; j++ {
-                    c <- j
-                }
-                close(c)
-            }()
-        }
-        for i := range c {
-            fmt.Println(i)
-        }
-    }
-    // panic: send on closed channel
     ```
 1. Read more than Sent will deadlock 
 
@@ -219,6 +190,30 @@ message 3
         }
     }
     ```
+
+# When a channel will panic
+
+1. A send to a closed channel panics
+
+    ```go
+    // A Fan-in pattern
+    func main() {
+        var c = make(chan int, 100)
+        for i := 0; i < 10; i++ {
+            go func() {
+                for j := 0; j < 10; j++ {
+                    c <- j
+                }
+                close(c)
+            }()
+        }
+        for i := range c {
+            fmt.Println(i)
+        }
+    }
+    // panic: send on closed channel
+    ```
+
 
 # Channel Axioms
 

@@ -49,3 +49,29 @@ WHERE counter_name = 'Log Growths' AND instance_name <> '_Total'
 ```
 
 
+# Is one query only get one metric ?
+
+This is the core work.  
+
+```go
+func (q *Query) Collect(ctx context.Context, conn *sql.DB, ch chan<- Metric) {
+
+	...
+
+	for rows.Next() {
+		row, err := q.scanRow(rows, dest)
+		if err != nil {
+			ch <- NewInvalidMetric(err)
+			continue
+		}
+		for _, mf := range q.metricFamilies {
+			mf.Collect(row, ch)
+		}
+	}
+
+	...
+}
+```
+
+
+

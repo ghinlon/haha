@@ -8,6 +8,36 @@
 
 ## July
 
+* [Django Unchained (2012) - IMDb](https://www.imdb.com/title/tt1853728/?ref_=fn_al_tt_1)
+
+  I want FREEDOM.  
+  Tue Jul 30 22:03:12 CST 2019
+
+* [Good Omens (TV Mini-Series 2019) - IMDb](https://www.imdb.com/title/tt1869454/?ref_=fn_al_tt_1)
+
+  Angel ? Daemon ? Humanity ? Angel + Daemon = Humanity ?  
+  I think being funny is a very important charactor of humanity.  
+  Who create this world ? How it could be just come from nothing ? where does
+  this **NOTHING** come from ? This reality is just so rediculous. What if that
+  everything is just not real ?  
+  Sun Jul 28 20:41:18 CST 2019
+
+* [Aladdin (1992) - IMDb](https://www.imdb.com/title/tt0103639/?ref_=fn_al_tt_2)
+
+  Beautiful story. Beautiful songs.  
+  Wed Jul 24 20:19:32 CST 2019
+
+* [How to Train Your Dragon: The Hidden World (2019) - IMDb](https://www.imdb.com/title/tt2386490/?ref_=fn_al_tt_4)
+
+  Getting better and better.  
+  Mon Jul 22 00:30:48 CST 2019
+
+* [The Lion King (2019) - IMDb](https://www.imdb.com/title/tt6105098/?ref_=fn_al_tt_1)
+
+  Beautiful music, beautiful memories. But, it seams that these alive animals
+  not as alive as those in animation version.  
+  Sun Jul 21 17:57:42 CST 2019
+
 * ["After Life" Episode #1.2 (TV Episode 2019) - IMDb](https://www.imdb.com/title/tt8664276/?ref_=ttep_ep2)
 
   Sun Jul 14 21:31:33 CST 2019
