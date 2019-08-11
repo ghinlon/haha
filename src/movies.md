@@ -6,6 +6,28 @@
 
 # 2019
 
+## August
+
+* [Euphoria (TV Series 2019– ) - IMDb](https://www.imdb.com/title/tt8772296/?ref_=ttep_ep_tt)
+
+  Kid's life are weird.  
+  Sat Aug 10 21:34:43 CST 2019
+
+* [Harlots - Season 1 - IMDb](https://www.imdb.com/title/tt5761478/episodes?season=1&ref_=tt_eps_sn_1)
+
+  It has a tense and rich storyline. Very good drama.  
+  Fri Aug 09 00:02:54 CST 2019
+
+* [Coco (2017) - IMDb](https://www.imdb.com/title/tt2380307/?ref_=fn_al_tt_1)
+
+  Very good movie, very good story line.  
+  Sun Aug 04 23:19:24 CST 2019
+
+* [The Shawshank Redemption (1994) - IMDb](https://www.imdb.com/title/tt0111161/?ref_=fn_al_tt_3)
+
+  Hope is the best thing of all things. I hope I can have hope of my life.  
+  Thu Aug 01 23:08:36 CST 2019
+
 ## July
 
 * [Django Unchained (2012) - IMDb](https://www.imdb.com/title/tt1853728/?ref_=fn_al_tt_1)

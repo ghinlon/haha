@@ -3,7 +3,8 @@
 # Great Articles
 
 * [Less is exponentially more](https://commandcenter.blogspot.com/2012/06/less-is-exponentially-more.html)  
-	`If C++ and Java are about type hierarchies and the taxonomy of types, Go is about composition.`
+	`If C++ and Java are about type hierarchies and the taxonomy of types, Go is about composition.`  
+* [Errors are values - The Go Blog](https://blog.golang.org/errors-are-values)
  
 # Tutorial
 

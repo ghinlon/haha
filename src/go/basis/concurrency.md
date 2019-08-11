@@ -18,11 +18,11 @@
 
 # Concurrency Is Not Parallelism
 
-|Concurrency|Parallelism|
-|:-------------------------------------------|:------------------------------------------|  
-|compositon of **independently** executing things | **simultaneous** execution of multiple things|
-|**dealing** with lots of things at once | **doing** lots of things at once| 
-|about **structure** | about execution|
+| Concurrency                                      | Parallelism                                   |
+|--------------------------------------------------|-----------------------------------------------|
+| compositon of **independently** executing things | **simultaneous** execution of multiple things |
+| **dealing** with lots of things at once          | **doing** lots of things at once              |
+| about **structure**                              | about execution                               |
 
 # A little background about Go
 
@@ -169,3 +169,77 @@ func boring(msg string) <-chan string { // Returns receive-only channel of strin
     return c // Return the channel to the caller.
 }
 ```
+
+## WaitGroup with chDone
+
+use with `go for select cases`
+
+* [goexpect/expect.go at master · google/goexpect · GitHub](https://github.com/google/goexpect/blob/master/expect.go#L1051)
+
+```go
+	chDone := make(chan struct{})
+	var wg sync.WaitGroup
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		for {
+			select {
+			case <-chDone:
+				return
+			case sstr, ok := <-e.snd:
+				if !ok {
+					log.Printf("Send channel closed")
+					return
+				}
+				if _, err := sIn.Write([]byte(sstr)); err != nil || !e.check() {
+					log.Printf("Write failed: %v", err)
+					return
+				}
+			}
+		}
+	}()
+	rdr := func(out io.Reader) {
+		defer wg.Done()
+		buf := make([]byte, bufferSize)
+		for {
+			nr, err := out.Read(buf)
+			if err != nil || !e.check() {
+				if e.teeWriter != nil {
+					e.teeWriter.Close()
+				}
+				if err == io.EOF {
+					if e.verbose {
+						log.Printf("read closing down: %v", err)
+					}
+					return
+				}
+				return
+			}
+			// Tee output to writer
+			if e.teeWriter != nil {
+				e.teeWriter.Write(buf[:nr])
+			}
+			// Add to buffer
+			e.mu.Lock()
+			e.out.Write(buf[:nr])
+			e.mu.Unlock()
+			// Inform Expect (if it's currently running) that there's some new data to look through.
+			select {
+			case e.rcv <- struct{}{}:
+			default:
+			}
+		}
+	}
+	wg.Add(1)
+	go rdr(sOut)
+	if sErr != nil {
+		wg.Add(1)
+		go rdr(sErr)
+	}
+	err := wait()
+	close(chDone)
+	wg.Wait()
+	r <- err
+}
+```
+

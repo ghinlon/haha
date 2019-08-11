@@ -20,15 +20,50 @@ go get github.com/hashicorp/terraform
 # First Steps
 
 * `mkdir foo && touch example.tf`
-* `terraform init`
+* `terraform init`  
+  `Usage: terraform init [options] [DIR]`  
 * `terraform apply`
 * `terraform show`  
 	Terraform also wrote some data into the `terraform.tfstate` file.   
 * `terraform destroy`  
 
-# --plugin-dir
+# Shell Tab-completion
 
-`terraform init --plugin-dir ~/.terraform.d/plugins/darwin_amd64/ client1/`
+```
+terraform -install-autocomplete
+terraform -uninstall-autocomplete
+```
+
+# CLI Configuration File
+
+* [CLI Configuration - Terraform by HashiCorp](https://www.terraform.io/docs/commands/cli-config.html)
+
+`.terraformrc` or `terraform.rc`
+
+The CLI configuration file configures per-user settings for CLI behaviors,
+which apply across all Terraform working directories. 
+
+# Plugins
+
+* [Command: init - Terraform by HashiCorp](https://www.terraform.io/docs/commands/init.html)
+
+For providers distributed by HashiCorp, init will automatically download and
+install plugins if necessary. Plugins can also be manually installed in the
+user plugins directory, located at `~/.terraform.d/plugins`
+
+##  Provider Plugin Cache 
+
+```
+// config in .terraformrc
+
+plugin_cache_dir = "$HOME/.terraform.d/plugin-cache"
+```
+
+This directory must already exist before Terraform will cache plugins;
+Terraform will not create the directory itself.
+
+Still need to do `cp plugin-cache/* plugins/` manually to make `terraform plan`
+work correctly, kind of bug.
 
 # Providers
 
@@ -40,17 +75,7 @@ go get github.com/hashicorp/terraform
 * [Use Terraform to Provision Linode Environments](https://www.linode.com/docs/applications/configuration-management/how-to-build-your-infrastructure-using-terraform-and-linode/)
 * [GitHub - LinodeContent/terraform-provider-linode: A terraform plugin for linode](https://github.com/LinodeContent/terraform-provider-linode)
 
-Install
-
-```
-go get github.com/terraform-providers/terraform-provider-linode
-cp $GOBIN/terraform-provider-linode ~/.terraform.d/plugins
-
-cd $project_dir
-terraform init
-```
-
-api
+## API
 
 * [images](https://api.linode.com/v4/images)
 * [types](https://api.linode.com/v4/linode/types)
@@ -87,18 +112,7 @@ cidrs = [ "10.0.0.0/16", "10.1.0.0/16" ]
 
 ## Maps
 
-# Plugins Dir
-
-`./terraform.d/plugins/linux_amd64/`
-
 # Modules
 
 Think of modules as similar to functions in programming languages.
-
-
-# Download old version provider
-
-* [terraform-providers/terraform-provider-linode: Terraform Linode provider](https://github.com/terraform-providers/terraform-provider-linode)
-
-
 
