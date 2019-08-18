@@ -57,6 +57,8 @@ export PATH=${GOBIN}:/usr/local/go/bin:${PATH}
 
 ## Install
 
+[Releases · neovim/neovim · GitHub](https://github.com/neovim/neovim/releases/)
+
 macOS
 
 ```

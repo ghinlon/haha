@@ -8,6 +8,15 @@
 
 ## August
 
+* ["Fleabag" Episode #1.4 (TV Episode 2016) - IMDb](https://www.imdb.com/title/tt5707984/?ref_=ttep_ep4)
+
+  Sun Aug 18 01:25:57 CST 2019  
+
+* [Gentleman Jack (TV Series 2019– ) - IMDb](https://www.imdb.com/title/tt7211618/?ref_=fn_al_tt_1)
+
+  always like happy ending drama.  
+  Fri Aug 16 22:44:18 CST 2019
+
 * [Euphoria (TV Series 2019– ) - IMDb](https://www.imdb.com/title/tt8772296/?ref_=ttep_ep_tt)
 
   Kid's life are weird.  

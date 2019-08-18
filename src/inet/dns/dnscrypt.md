@@ -5,6 +5,10 @@
 * [DNS over HTTPS - Cloudflare Resolver](https://developers.cloudflare.com/1.1.1.1/dns-over-https/)
 * [Installation · jedisct1/dnscrypt-proxy Wiki](https://github.com/jedisct1/dnscrypt-proxy/wiki/installation)
 
+# Start
+
+sometimes start may need to update servers, so it need to update through
+a socks5 proxy, then it can start without proxy
 
 # Install
 

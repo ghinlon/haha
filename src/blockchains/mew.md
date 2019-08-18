@@ -6,7 +6,8 @@
 
 # Offline
 
-[Releases · MyEtherWallet/MyEtherWallet · GitHub](https://github.com/MyEtherWallet/MyEtherWallet/releases)
+* [Using MEW Offline (Cold Storage) | MyEtherWallet Knowledge Base](https://kb.myetherwallet.com/en/offline/using-mew-offline/)
+* [Releases · MyEtherWallet/MyEtherWallet · GitHub](https://github.com/MyEtherWallet/MyEtherWallet/releases)
 
 Download it, then open the `index.html` file.
 
