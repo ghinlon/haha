@@ -22,13 +22,22 @@ cfgFile: `~/.config/youtube-dl/config`
 
 # Save in ~/Videos
 -o ~/dl/youtube/%(title)s.%(ext)s
-
-# Prefer 1080p or lower resolutions
--f bestvideo[ext=mp4][height<1200]+bestaudio[ext=m4a]/bestvideo[ext=webm][height<1200]+bestaudio[ext=webm]/bestvideo[height<1200]+bestaudio/best[height<1200]/best
 ```
 
 # Usage
 
 ```
 youtube-dl [OPTIONS] URL
+
+-f best 					// best resolution
+-f bestvideo+bestaudio 		// best resolution
 ```
+
+# Downoad Subtitle
+
+* [subtitle-options](https://github.com/ytdl-org/youtube-dl#subtitle-options)
+
+```
+youtube-dl --write-auto-sub --skip-download
+```
+

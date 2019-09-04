@@ -6,7 +6,22 @@
 
 # 2019
 
+# September
+
+* [Harlots - Season 2 - IMDb](https://www.imdb.com/title/tt5761478/episodes?season=2&ref_=tt_eps_sn_2)
+
+  Love the girls. sometimes story line is just nonsense.  
+  Mon Sep 02 22:07:53 CST 2019
+
 ## August
+
+* [Aladdin (2019) - IMDb](https://www.imdb.com/title/tt6139732/?ref_=fn_al_tt_1)
+
+  Sat Aug 31 20:19:38 CST 2019
+
+* [State of the Union (TV Series 2019– ) - IMDb](https://www.imdb.com/title/tt8708280/?ref_=fn_al_tt_1)
+
+  Tue Aug 20 21:26:43 CST 2019
 
 * ["Fleabag" Episode #1.4 (TV Episode 2016) - IMDb](https://www.imdb.com/title/tt5707984/?ref_=ttep_ep4)
 
@@ -79,7 +94,7 @@
   I passed away now, or some more years later soon. That is, what is the
   meaning of life. I always didn't get it. Also we can way, life is just life,
   life doen't need a meaning. Should I just enjoy it, do my best ?  
-  But it still make nonsence.  
+  But it still make nonsense.  
   Sun Jul 14 21:02:39 CST 2019
 
 * [Alita: Battle Angel (2019) - IMDb](https://www.imdb.com/title/tt0437086/?ref_=fn_al_tt_2)

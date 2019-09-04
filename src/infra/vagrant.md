@@ -21,6 +21,7 @@ vagrant destroy -f
 * [Vagrant box ubuntu/disco64 - Vagrant Cloud](https://app.vagrantup.com/ubuntu/boxes/disco64)
 
 ```
+// ubuntu 19
 vagrant init ubuntu/disco64
 vagrant up
 ```
@@ -28,6 +29,7 @@ vagrant up
 * [Vagrant box ubuntu/bionic64 - Vagrant Cloud](https://app.vagrantup.com/ubuntu/boxes/bionic64)
 
 ```
+// ubuntu 18
 vagrant init ubuntu/bionic64
 vagrant up
 ```
