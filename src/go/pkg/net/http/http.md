@@ -12,6 +12,7 @@
 
 # Overview
 
+
 **What is ServeMux?**
 
 ```go
@@ -35,6 +36,9 @@ type ServeMux
 
 **What is a Handler?**
 
+`http.HandleFunc(pattern,f(resw,*req))` is exactly is `http.Handle(pattern,Handler)` a `http.HandlerFunc(f(resw,*req))`
+
+
 ```go
 // A Handler responds to an HTTP request.
 type Handler interface {
@@ -57,6 +61,8 @@ func (mux *ServeMux) HandleFunc(pattern string, handler func(ResponseWriter, *Re
 ```
 
 **It's a little bit tricky**
+
+**the http.HandlerFunc implements http.Handler by having its own ServeHTTP method.**
 
 ```go
 // The HandlerFunc type is an adapter to allow the use of

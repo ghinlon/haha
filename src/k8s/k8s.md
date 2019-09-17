@@ -52,7 +52,11 @@ kubectl create configmap special-config --from-literal=special.how=very --from-l
 
 * [kubectl Cheat Sheet - Kubernetes](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
-bash:
+
+# Install and Set Up kubectl
+
+* [Install and Set Up kubectl - Kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-macos)
+* [Configure Access to Multiple Clusters - Kubernetes](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/)
 
 ```
 source <(kubectl completion bash) # setup autocomplete in bash into the current shell, bash-completion package should be installed first.
@@ -60,12 +64,41 @@ echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permane
 
 alias k=kubectl
 complete -F __start_kubectl k
-```
 
-zsh:
 
-```
 source <(kubectl completion zsh)  # setup autocomplete in zsh into the current shell
 echo "if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi" >> ~/.zshrc # add autocomplete permanently to your zsh shell
 ```
+
+# Install minikube
+
+```
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64 \
+  && chmod +x minikube
+
+sudo mv minikube /usr/local/bin
+
+minikube start
+minikube stop
+minikube delete
+
+minikube dashboard
+// or
+kubectl proxy
+// access the Dashboard over this url
+http://127.0.0.1:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard:/proxy/#!/overview?namespace=default 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -8,6 +8,27 @@
 
 # September
 
+* [Peaky Blinders - Season 3 - IMDb](https://www.imdb.com/title/tt2442560/episodes?season=3&ref_=tt_eps_sn_3)
+
+  Sat Sep 14 23:02:37 CST 2019
+
+* [Peaky Blinders - Season 2 - IMDb](https://www.imdb.com/title/tt2442560/episodes?season=2&ref_=tt_eps_sn_2)
+
+  Very good drama. Good storyline.  
+  Fri Sep 13 19:11:41 CST 2019
+
+* ["Peaky Blinders" Episode #1.5 (TV Episode 2013) - IMDb](https://www.imdb.com/title/tt2461632/?ref_=ttep_ep5)
+
+  Tue Sep 10 00:17:54 CST 2019
+
+* ["Peaky Blinders" Episode #1.2 (TV Episode 2013) - IMDb](https://www.imdb.com/title/tt2471502/?ref_=ttep_ep2)
+
+  Mon Sep 09 00:48:14 CST 2019
+
+* [Harlots - Season 3 - IMDb](https://www.imdb.com/title/tt5761478/episodes?season=3&ref_=tt_eps_sn_3)
+
+  Sat Sep 07 23:16:04 CST 2019
+
 * [Harlots - Season 2 - IMDb](https://www.imdb.com/title/tt5761478/episodes?season=2&ref_=tt_eps_sn_2)
 
   Love the girls. sometimes story line is just nonsense.  

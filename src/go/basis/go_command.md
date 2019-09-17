@@ -16,3 +16,9 @@ go tool objdump [-s symregexp] binary
 go tool objdump binary start end
 ```
 
+# Build
+
+build for raspberry
+
+`env GOOS=linux GOARCH=arm GOARM=7 go build -o guochan.raspberry`
+

@@ -5,6 +5,10 @@
 # Install
 
 ```
+// macOS
+brew install kubernetes-helm
+
+// linux
 curl -L https://git.io/get_helm.sh | bash
 helm init
 

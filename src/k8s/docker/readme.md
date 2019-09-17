@@ -22,8 +22,6 @@ Remember that you will have to log out and back in for this to take effect!
 docker run hello-world
 ```
 
-
-
 test docker installation
 
 ```
@@ -65,3 +63,20 @@ docker run username/repository:tag                   # Run image from a registry
 ```
 docker logs [OPTIONS] CONTAINER
 ```
+
+# save and load image
+
+* [docker save | Docker Documentation](https://docs.docker.com/engine/reference/commandline/save/)
+* [docker load | Docker Documentation](https://docs.docker.com/engine/reference/commandline/load/)
+
+```
+// list
+docker images
+
+// save
+docker save -o busybox.tar busybox
+
+// load
+docker load -i busybox.tar
+```
+

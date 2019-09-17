@@ -50,6 +50,9 @@ boolean: Yes
 
 # Mappings
 
+* Block list items include same indentation as the surrounding block level
+  because `-` is considered as a part of indentation.
+
 ```
 animal: pets
 ```

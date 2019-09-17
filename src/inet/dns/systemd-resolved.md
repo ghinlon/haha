@@ -1,6 +1,6 @@
 # systemd-resolved
 
-# L8nks
+# Links
 
 * [systemd-resolved - ArchWiki](https://wiki.archlinux.org/index.php/Systemd-resolved)
 
