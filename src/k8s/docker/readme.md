@@ -7,6 +7,9 @@
 
 # Install
 
+// centos  
+* [Get Docker Engine - Community for CentOS | Docker Documentation](https://docs.docker.com/install/linux/docker-ce/centos/)
+
 ```
 // Raspberry or Ubuntu 18.04
 curl -sSL https://get.docker.com | sh
@@ -32,6 +35,7 @@ docker run hello-world
 ![Container](img/Container@2x.png)
 
 ![VM](img/VM@2x.png)
+
 
 # Basic Command
 
@@ -78,5 +82,14 @@ docker save -o busybox.tar busybox
 
 // load
 docker load -i busybox.tar
+```
+
+# Docker Compose
+
+* [Releases · docker/compose · GitHub](https://github.com/docker/compose/releases)
+
+```
+curl -L https://github.com/docker/compose/releases/download/1.25.0-rc2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
 ```
 

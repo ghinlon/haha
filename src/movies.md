@@ -8,6 +8,20 @@
 
 # September
 
+* [Spider-Man: Far from Home (2019) - IMDb](https://www.imdb.com/title/tt6320628/?ref_=fn_al_tt_1)
+
+  Sat Sep 21 14:18:28 CST 2019  
+  Spider boy killed some bad guy on his summer vacation. bad script.  
+
+* ["The Capture" Truffle Hog (TV Episode 2019) - IMDb](https://www.imdb.com/title/tt8201452/?ref_=ttep_ep3)
+
+  Sat Sep 21 02:00:19 CST 2019  
+  Good design.  
+
+* [Peaky Blinders - Season 4 - IMDb](https://www.imdb.com/title/tt2442560/episodes?season=4&ref_=tt_eps_sn_4)
+
+  Tue Sep 17 23:12:20 CST 2019
+
 * [Peaky Blinders - Season 3 - IMDb](https://www.imdb.com/title/tt2442560/episodes?season=3&ref_=tt_eps_sn_3)
 
   Sat Sep 14 23:02:37 CST 2019

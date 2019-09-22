@@ -93,3 +93,41 @@ end
 vagrant ssh-config > config.txt
 scp -F config.txt default:/path/to/file .
 ```
+
+# Providers
+
+## VirtualBox
+
+* [VirtualBox Provider - Vagrant by HashiCorp](https://www.vagrantup.com/docs/virtualbox/)
+
+There are some convenience shortcuts for memory and CPU settings:
+
+```
+config.vm.provider "virtualbox" do |v|
+  v.memory = 1024
+  v.cpus = 2
+end
+```
+
+
+# Plugins
+
+## vagrant-disksize
+
+* [GitHub - sprotheroe/vagrant-disksize: Vagrant plugin to resize disks in VirtualBox](https://github.com/sprotheroe/vagrant-disksize)
+
+Installation
+
+```
+vagrant plugin install vagrant-disksize
+```
+
+Usage
+
+```
+Vagrant.configure('2') do |config|
+  config.vm.box = 'ubuntu/xenial64'
+  config.disksize.size = '50GB'
+end
+```
+

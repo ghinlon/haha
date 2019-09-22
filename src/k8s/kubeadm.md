@@ -3,7 +3,7 @@
 # Links
 
 * [Setup a kubernetes cluster with kubeadm | loodse | Katacoda](https://www.katacoda.com/loodse/courses/kubernetes/kubernetes-03-cluster-setup)
-
+* [kubeadm config - Kubernetes](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-config/)
 
 # Steps
 
