@@ -6,7 +6,37 @@
 
 # 2019
 
+# October
+
+* [The Capture - Season 1 - IMDb](https://www.imdb.com/title/tt8201186/episodes?season=1&ref_=tt_eps_sn_1)
+
+  Mon Oct 14 20:41:58 CST 2019  
+  When you watch someone else, don't pretend there's no one watch you.  
+
+* [The Visit (2015) - IMDb](https://www.imdb.com/title/tt3567288/?ref_=fn_al_tt_1)
+
+  Sun Oct 13 18:14:18 CST 2019  
+  An one week trip to grand parents's home, which finally found they are
+  murders. 
+
+* [Mr Inbetween - Season 1 - IMDb](https://www.imdb.com/title/tt7472896/episodes?season=1&ref_=tt_eps_sn_1)
+
+  Sat Oct 05 21:43:29 CST 2019  
+
+* [Killing Eve - Season 2 - IMDb](https://www.imdb.com/title/tt7016936/episodes?season=2&ref_=tt_eps_sn_2)
+
+  Tue Oct 01 14:36:20 CST 2019
+
 # September
+
+* [Killing Eve - Season 1 - IMDb](https://www.imdb.com/title/tt7016936/episodes?season=1&ref_=tt_eps_sn_1)
+
+  Sat Sep 28 20:37:42 CST 2019  
+  Good drama as always.  
+
+* ["Peaky Blinders" The Loop (TV Episode 2019) - IMDb](https://www.imdb.com/title/tt6229670/?ref_=ttep_ep4)
+
+  Tue Sep 24 00:08:44 CST 2019
 
 * [Spider-Man: Far from Home (2019) - IMDb](https://www.imdb.com/title/tt6320628/?ref_=fn_al_tt_1)
 

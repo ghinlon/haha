@@ -2,7 +2,8 @@
 
 # Links
 
-* [Rook Docs: quickstart](https://rook.io/docs/rook/v1.1/quickstart-toc.html)
+* [Rook Docs](https://rook.github.io/docs/rook/v1.1/)
+* [Rook Docs](https://rook.github.io/docs/rook/v1.1/ceph-quickstart.html)
 
 # Install
 

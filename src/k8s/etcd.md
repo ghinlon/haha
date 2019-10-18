@@ -3,6 +3,7 @@
 # Links
 
 * [etcd/Documentation at master · etcd-io/etcd · GitHub](https://github.com/etcd-io/etcd/tree/master/Documentation)
+* [etcd/faq.md at master · etcd-io/etcd · GitHub](https://github.com/etcd-io/etcd/blob/master/Documentation/faq.md)
 
 # Getting Started
 
@@ -41,5 +42,7 @@ Very Straightforward
 * [etcd/runtime-reconf-design.md at master · etcd-io/etcd · GitHub](https://github.com/etcd-io/etcd/blob/master/Documentation/op-guide/runtime-reconf-design.md)
 
 
+# Backing up an etcd cluster
 
+* [Operating etcd clusters for Kubernetes - Kubernetes](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#backing-up-an-etcd-cluster)
 

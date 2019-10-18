@@ -8,6 +8,7 @@
  
 # Tutorial
 
+* [guide/style.md at master · uber-go/guide · GitHub](https://github.com/uber-go/guide/blob/master/style.md)
 * [The actor model in 10 minutes](https://www.brianstorti.com/the-actor-model/)
 * [Ways To Do Things - Peter Bourgon - Release Party #GoSF - YouTube](https://www.youtube.com/watch?v=LHe1Cb_Ud_M&t=15m45s)
 * [Peter Bourgon Â· Go: Best Practices for Production Environments](https://peter.bourgon.org/go-in-production/#formatting-and-style)

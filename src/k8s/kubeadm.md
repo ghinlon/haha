@@ -1,4 +1,4 @@
-# kubeadm
+# kubeadm quickstart
 
 # Links
 
@@ -7,11 +7,113 @@
 
 # Steps
 
+* [Installing kubeadm - Kubernetes](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
+* [Get Docker Engine - Community for CentOS | Docker Documentation](https://docs.docker.com/install/linux/docker-ce/centos/)
+* [Install and Set Up kubectl - Kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+
+## Install CRI
+
+## systemd
+
+## swapoff -a 
+
+and also delete swap in `/etc/fstab`
+
+## Installing kubeadm, kubelet and kubectl
+
+There are some nodes on centos7:
+
+* Setting SELinux in permissive
+
+	```
+	# Set SELinux in permissive mode (effectively disabling it)
+	setenforce 0
+	sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
+	```
+  
+* Some users on RHEL/CentOS 7 have reported issues with traffic being routed
+  incorrectly due to iptables being bypassed. You should ensure
+  net.bridge.bridge-nf-call-iptables is set to 1 in your sysctl config, e.g.
+
+	```
+	cat <<EOF >  /etc/sysctl.d/k8s.conf
+	net.bridge.bridge-nf-call-ip6tables = 1
+	net.bridge.bridge-nf-call-iptables = 1
+	EOF
+	sysctl --system
+	```
+
+* Make sure that the `br_netfilter` module is loaded before this step. This can
+  be done by running `lsmod | grep br_netfilter`. To load it explicitly call
+  `modprobe br_netfilter`.
+
+```
+cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+EOF
+
+yumdownloader --resolve kubelet kubeadm kubectl --disableexcludes=kubernetes
+sudo um localinstall *
+
+systemctl enable --now kubelet
+```
+
+## Config --nodeip
+
+* [kubeadm should make the --node-ip option available · Issue #203 · kubernetes/kubeadm · GitHub](https://github.com/kubernetes/kubeadm/issues/203)
+
+**This Step is important, before come up with this, several days life have been
+taken, due to vagrant's default NAT interface**  
+
+Mon Oct 07 21:01:41 CST 2019
+
+In `/etc/sysconfig/kubelet`:  
+on `ubuntu` use `/etc/default/kubelet`:
+
+```
+KUBELET_EXTRA_ARGS=--node-ip=10.1.1.11
+```
+
+then
+
+```
+systemctl daemon-reload
+systemctl restart kubelet
+```
+
+The kubelet is now restarting every few seconds, as it waits in a crashloop for
+kubeadm to tell it what to do.
+
+## docker load images
+
+```
+// save
+docker save $(docker images --format '{{.Repository}}:{{.Tag}}') -o allinone.tar
+
+// load
+docker load -i allinone.tar
+```
+
 ## On master
 
 ```
 // 1
-kubeadm config images pull
+$ kubeadm config images pull
+// output
+[config/images] Pulled k8s.gcr.io/kube-apiserver:v1.16.0
+[config/images] Pulled k8s.gcr.io/kube-controller-manager:v1.16.0
+[config/images] Pulled k8s.gcr.io/kube-scheduler:v1.16.0
+[config/images] Pulled k8s.gcr.io/kube-proxy:v1.16.0
+[config/images] Pulled k8s.gcr.io/pause:3.1
+[config/images] Pulled k8s.gcr.io/etcd:3.3.15-0
+[config/images] Pulled k8s.gcr.io/coredns:1.6.2
+
 // 2
 master $ kubeadm init --pod-network-cidr=192.168.0.0/16
 // output
@@ -115,12 +217,8 @@ This node has joined the cluster:
 Run 'kubectl get nodes' on the control-plane to see this node join the cluster.
 ```
 
-
 # More about Networking
 
 * [Installing Addons - Kubernetes](https://kubernetes.io/docs/concepts/cluster-administration/addons/)
 * [Cluster Networking - Kubernetes](https://kubernetes.io/docs/concepts/cluster-administration/networking/)
-
-
-
 

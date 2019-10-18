@@ -30,4 +30,7 @@ install
 sudo cloudflared service install
 ```
 
+# Comments
 
+Used a several days. It's not stable.  
+Sat Oct 12 22:34:37 CST 2019

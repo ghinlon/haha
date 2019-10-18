@@ -2,13 +2,15 @@
 
 # Links
 
-# Use dnsmasq instead of systemd-resolved
-
 * [dnsmasq - ArchWiki](https://wiki.archlinux.org/index.php/Dnsmasq)
 * [How to avoid conflicts between dnsmasq and systemd-resolved? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/304050/how-to-avoid-conflicts-between-dnsmasq-and-systemd-resolved)
-* [DNSSEC - ArchWiki](https://wiki.archlinux.org/index.php/DNSSEC#Testing)
 
+#  to disable dnsmasq's DNS server functionality
 
+```
+# To disable dnsmasq's DNS server functionality.
+port=0
+```
 
 # PXE-enabled DHCP
 
@@ -46,12 +48,15 @@ dhcp-match=set:bios,option:client-arch,0
 dhcp-boot=tag:bios,undionly.kpxe
 
 # UEFI
+# If you want to use a separate TFTP server instead of dnsmasq, specify its IP address after the boot-loader path
+# dhcp-boot=tag:efi32,ipxe.efi,192.168.1.101
+# and it seems we always should put tftp server address here when on UEFI
 dhcp-match=set:efi32,option:client-arch,6
-dhcp-boot=tag:efi32,ipxe.efi
+dhcp-boot=tag:efi32,ipxe.efi,192.168.1.100
 dhcp-match=set:efibc,option:client-arch,7
-dhcp-boot=tag:efibc,ipxe.efi
+dhcp-boot=tag:efibc,ipxe.efi,192.168.1.100
 dhcp-match=set:efi64,option:client-arch,9
-dhcp-boot=tag:efi64,ipxe.efi
+dhcp-boot=tag:efi64,ipxe.efi,192.168.1.100
 
 # iPXE - chainload to matchbox ipxe boot script
 dhcp-userclass=set:ipxe,iPXE
@@ -67,6 +72,14 @@ address=/matchbox.example.com/192.168.1.100
 # (optional) disable DNS and specify alternate
 # port=0
 # dhcp-option=6,192.168.1.100
+```
+
+# tftp server address when on UEFI
+
+it seems we always should put tftp server address here when on UEFI
+
+```
+dhcp-boot=tag:efi32,ipxe.efi,192.168.1.101
 ```
 
 # Configurable TFTP

@@ -5,6 +5,10 @@
 * [Getting Started - Vagrant by HashiCorp](https://www.vagrantup.com/intro/getting-started/index.html)
 * [Discover Vagrant Boxes - Vagrant Cloud](https://app.vagrantup.com/boxes/search)
 
+# Install
+
+* [Download - Vagrant by HashiCorp](https://www.vagrantup.com/downloads.html)
+
 # Basis
 
 ```
@@ -82,6 +86,39 @@ end
 
 config.vm.define "vps" do |vps|
 	vps.vm.network "private_network", ip: "192.168.33.1"
+end
+```
+
+This will bring up 4 machine:
+
+```
+% cat Vagrantfile
+IMAGE_NAME = "centos/7"
+M = 2
+N = 2
+
+Vagrant.configure("2") do |config|
+
+    config.vm.provider "virtualbox" do |v|
+        v.memory = 1024
+        v.cpus = 2
+    end
+
+   (1..M).each do |i|
+      config.vm.define "master#{i}" do |master|
+        master.vm.box = IMAGE_NAME
+        master.vm.network "private_network", ip: "10.1.1.#{i+10}"
+        master.vm.hostname = "master#{i}"
+      end
+        end
+
+    (1..N).each do |i|
+      config.vm.define "node#{i}" do |node|
+        node.vm.box = IMAGE_NAME
+        node.vm.network "private_network", ip: "10.1.1.#{i + 12}"
+        node.vm.hostname = "node#{i}"
+      end
+    end
 end
 ```
 
