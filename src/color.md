@@ -8,7 +8,8 @@
 # Vim
 
 * [cocopon/iceberg.vim: Dark blue color scheme for Vim and Neovim](https://github.com/cocopon/iceberg.vim)
-* [Dracula — A dark theme for Vim and 50+ apps](https://draculatheme.com/vim/)
+* [Vim colors | Generate your custom colorscheme](https://vimcolors.org/)
+* [🎨 Flat UI Palette v1 | Flat UI Colors 🎨 280 handpicked colors ready for COPY & PASTE](https://flatuicolors.com/palette/defo)
 
 # Terminal
 

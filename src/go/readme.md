@@ -40,7 +40,7 @@
 * [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!).](http://www.joelonsoftware.com/articles/Unicode.html) 
 * [Establishing and Running Large Scale Internet Based (TCP/IP) Services](http://mars.netanya.ac.il/~unesco/cdrom/booklet/HTML/index.html)
 
-# Install
+# Install Go
 
 [Download Site](https://golang.org/dl/)
 
@@ -52,13 +52,12 @@ export GOBIN=${GOPATH}/bin
 export PATH=${GOBIN}:/usr/local/go/bin:${PATH}
 ```
 
-# Editor
+# Editor: neovim
 
 * [neovim/neovim](https://github.com/neovim/neovim)  
+[Releases · neovim/neovim · GitHub](https://github.com/neovim/neovim/releases/)
 
 ## Install
-
-[Releases · neovim/neovim · GitHub](https://github.com/neovim/neovim/releases/)
 
 macOS
 
@@ -66,6 +65,29 @@ macOS
 tar xzvf nvim-macos.tar.gz
 export PATH=~/nvim-osx64/bin/nvim:$PATH
 nvim -version
+```
+
+## Install python3 and pynvim
+
+```
+// centos7
+yum install python3
+
+// must use --user, or it will warn PermissionError
+// the destination dir is .local/
+python3 -m pip install pynvim --user
+```
+
+## Install vim-plug
+
+```
+// Neovim
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+// then run in nvim
+:PlugInstall
+:GoInstallBinaries
 ```
 
 ## Plugins
@@ -85,18 +107,6 @@ more about completion:
 
 * [Best vim completion manager? : vim](https://www.reddit.com/r/vim/comments/9a8c3m/best_vim_completion_manager/)
 
-## Install
-
-install vim-plug
-
-```
-// Neovim
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-// then
-:PlugInstall
-```
 
 # Misc
 

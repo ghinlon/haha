@@ -6,7 +6,6 @@
 * [Using the initial RAM disk (initrd) — The Linux Kernel documentation](https://www.kernel.org/doc/html/latest/admin-guide/initrd.html)(Good)
 * [Jootamam - Howto create an initramfs image](https://www.jootamam.net/howto-initramfs-image.htm)
 
-
 # Extract and Repack
 
 * Identify compression format of the image  
@@ -58,9 +57,50 @@ xz --option:
    -c, --stdout, --to-stdout
 ```
 
-# run script at boot in initrd
+# Custom initramfs
 
-Just put your script in `/etc/rc.local`
+* [Custom Initramfs - Gentoo Wiki](https://wiki.gentoo.org/wiki/Custom_Initramfs)
 
+minimalistic /init example
 
+```sh
+#!/bin/busybox sh
+
+# Mount the /proc and /sys filesystems.
+mount -t proc none /proc
+mount -t sysfs none /sys
+
+# Do your stuff here.
+echo "This script just mounts and boots the rootfs, nothing else!"
+
+# Mount the root filesystem.
+mount -o ro /dev/sda1 /mnt/root
+
+# Clean up.
+umount /proc
+umount /sys
+
+# Boot the real thing.
+exec switch_root /mnt/root /sbin/init
+```
+
+# Parse cmdline
+
+* [Custom Initramfs/Examples - Gentoo Wiki](https://wiki.gentoo.org/wiki/Custom_Initramfs/Examples)
+
+```
+for x in $(cat /proc/cmdline); do
+	case "${x}" in
+		crypt_root=*)
+			CRYPT_ROOT=${x#*=}
+		;;
+		net_ipv4=*)
+			NET_IPv4=${x#*=}
+		;;
+		net_gw=*)
+			NET_GW=${x#*=}
+		;;
+	esac
+done
+```
 

@@ -20,6 +20,16 @@ vagrant plugin update vagrant-ignition
 
 vagrant destroy -f
 ```
+
+# Archlinux
+
+* [Vagrant box archlinux/archlinux - Vagrant Cloud](https://app.vagrantup.com/archlinux/boxes/archlinux)
+
+```
+vagrant init archlinux/archlinux
+vagrant up
+```
+
 # Ubuntu
 
 * [Vagrant box ubuntu/disco64 - Vagrant Cloud](https://app.vagrantup.com/ubuntu/boxes/disco64)

@@ -21,11 +21,4 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Dracut,_Massachusetts), d
 Usage: /sbin/dracut [OPTION]... [<initramfs> [<kernel-version>]]
 ```
 
-# Netboot using initramfs.img
-
-```
-yum install dracut-netowrk
-
-```
-
 

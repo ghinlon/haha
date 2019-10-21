@@ -8,6 +8,18 @@
 
 # October
 
+* ["Unbelievable" Episode #1.1 (TV Episode 2019) - IMDb](https://www.imdb.com/title/tt8614422/?ref_=ttep_ep1)
+
+  Sun Oct 20 21:14:40 CST 2019  
+  
+  WTF. Why ? why things leads to such stituation.   
+
+* [The Dark Crystal: Age of Resistance (TV Series 2019– ) - IMDb](https://www.imdb.com/title/tt6905542/?ref_=fn_al_tt_2)
+
+  Sat Oct 19 20:41:39 CST 2019  
+  All roles in this drama are ugly and funny. and impressive. and hyperbole.
+  and I like it.
+
 * [The Capture - Season 1 - IMDb](https://www.imdb.com/title/tt8201186/episodes?season=1&ref_=tt_eps_sn_1)
 
   Mon Oct 14 20:41:58 CST 2019  
