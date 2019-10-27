@@ -2,6 +2,25 @@
 
 # Links
 
+* [u-root/u-root](https://github.com/u-root/u-root)
+
+# Howto
+
+```
+go get github.com/u-root/u-root
+
+// arch
+sudo pacman -S qemu
+
+qemu-system-x86_64 \
+	-kernel path/to/kernel \
+	-initrd /tmp/initramfs.linux_amd64.cpio \
+	-append 'console=ttyS0' \
+	--nographic  \
+	-serial mon:stdio 
+```
+
+
 # Issue with loading modules 
 
 * [modprobe fails inside u-root shell · Issue #1214 · u-root/u-root · GitHub](https://github.com/u-root/u-root/issues/1214)

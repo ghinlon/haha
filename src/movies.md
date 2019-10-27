@@ -8,6 +8,30 @@
 
 # October
 
+* [Frozen (2013) - IMDb](https://www.imdb.com/title/tt2294629/?ref_=fn_al_tt_1)
+
+  Sat Oct 26 23:52:06 CST 2019
+
+  It's just perfect.
+
+* [The Boys (TV Series 2019– ) - IMDb](https://www.imdb.com/title/tt1190634/?ref_=fn_al_tt_1)
+
+  Sat Oct 26 18:44:29 CST 2019
+
+  funny and dark.
+
+* [Unbelievable - Season 1 - IMDb](https://www.imdb.com/title/tt7909970/episodes?season=1&ref_=tt_eps_sn_1)
+
+  Thu Oct 24 23:59:49 CST 2019
+
+  But I still feel hopeless.
+
+* ["Unbelievable" Episode #1.3 (TV Episode 2019) - IMDb](https://www.imdb.com/title/tt8614426/?ref_=ttep_ep3)
+
+  Wed Oct 23 00:04:48 CST 2019
+
+  Good Job. They find a match.  
+
 * ["Unbelievable" Episode #1.1 (TV Episode 2019) - IMDb](https://www.imdb.com/title/tt8614422/?ref_=ttep_ep1)
 
   Sun Oct 20 21:14:40 CST 2019  

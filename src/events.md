@@ -2,6 +2,10 @@
 
 # 2019
 
+* [Mystery of 39 Bodies in Truck Leads to More Arrests in U.K. - The New York Times](https://www.nytimes.com/2019/10/25/world/europe/39-bodies-essex-lorry.html)
+
+  Sun Oct 27 00:10:54 CST 2019
+
 * [Gas Plant Explosion in Central China Kills at Least 10 - The New York Times](https://www.nytimes.com/2019/07/20/world/asia/china-explosion-yima.html)
 
   这一次爆炸，己经没有人再问起。就像没有发生过一样。
