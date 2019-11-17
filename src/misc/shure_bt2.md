@@ -7,7 +7,10 @@
 
 # Pair Bluetooth®
 
-**Turn off the earphones.** Press and hold, 7 seconds 
+* Turn off the earphones. Press and hold the center button on the earphone
+  remote until the LED flashes blue and red.
+* From your audio source, select "Shure BT2."
+* When successfully paired, the LED turns blue.
 
 # Using the Remote
 

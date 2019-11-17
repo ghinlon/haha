@@ -6,7 +6,45 @@
 
 # 2019
 
+# November
+
+* [Carnival Row (TV Series 2019– ) - IMDb](https://www.imdb.com/title/tt0489974/?ref_=fn_al_tt_1)
+
+  Sat Nov 16 23:40:47 CST 2019
+  
+  So. it's a love drama ?
+
+* [The Silence of the Lambs (1991) - IMDb](https://www.imdb.com/title/tt0102926/?ref_=fn_al_tt_1)
+
+  Sat Nov 09 00:25:08 CST 2019
+  
+  Old fashioned. 
+
+* [When They See Us (TV Mini-Series 2019) - IMDb](https://www.imdb.com/title/tt7137906/?ref_=fn_al_tt_1)
+
+  Fri Nov 08 22:05:18 CST 2019
+  
+  Life...
+
+* [Defending the Guilty - Season 1 - IMDb](https://www.imdb.com/title/tt8363040/episodes?season=1&ref_=tt_eps_sn_1)
+
+  Mon Nov 04 20:41:47 CST 2019
+
+  Can't get the point.
+
 # October
+
+* [Dolemite Is My Name (2019) - IMDb](https://www.imdb.com/title/tt8526872/?ref_=fn_al_tt_1)
+
+  Tue Oct 29 20:05:35 CST 2019
+
+  it just likely being successful is so easy.
+
+* [The Art of Racing in the Rain (2019) - IMDb](https://www.imdb.com/title/tt1478839/?ref_=fn_al_tt_1)
+
+  Mon Oct 28 22:12:00 CST 2019
+
+  A tough story. a happy ending story. I like it.
 
 * [Frozen (2013) - IMDb](https://www.imdb.com/title/tt2294629/?ref_=fn_al_tt_1)
 

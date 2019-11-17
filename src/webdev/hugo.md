@@ -28,6 +28,10 @@ git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/anan
 echo 'theme = "ananke"' >> config.toml
 ```
 
+# Beautiful Theme
+
+* [Syna | Hugo Themes](https://themes.gohugo.io/syna/)
+
 # Serve
 
 ```

@@ -1,13 +1,10 @@
 # Go
 
-# Great Articles
+# Tutorial
 
 * [Less is exponentially more](https://commandcenter.blogspot.com/2012/06/less-is-exponentially-more.html)  
 	`If C++ and Java are about type hierarchies and the taxonomy of types, Go is about composition.`  
 * [Errors are values - The Go Blog](https://blog.golang.org/errors-are-values)
- 
-# Tutorial
-
 * [guide/style.md at master · uber-go/guide · GitHub](https://github.com/uber-go/guide/blob/master/style.md)
 * [The actor model in 10 minutes](https://www.brianstorti.com/the-actor-model/)
 * [Ways To Do Things - Peter Bourgon - Release Party #GoSF - YouTube](https://www.youtube.com/watch?v=LHe1Cb_Ud_M&t=15m45s)
@@ -42,7 +39,7 @@
 
 # Install Go
 
-[Download Site](https://golang.org/dl/)
+[Download Go](https://golang.org/dl/)
 
 ```
 sudo tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
@@ -52,7 +49,7 @@ export GOBIN=${GOPATH}/bin
 export PATH=${GOBIN}:/usr/local/go/bin:${PATH}
 ```
 
-# Editor: neovim
+# Editor: neovim and vim-go
 
 * [neovim/neovim](https://github.com/neovim/neovim)  
 [Releases · neovim/neovim · GitHub](https://github.com/neovim/neovim/releases/)
@@ -90,18 +87,27 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 :GoInstallBinaries
 ```
 
-## Plugins
+## vim-go
 
 * [fatih/vim-go](https://github.com/fatih/vim-go)  
 * [fatih/vim-go-tutorial: Tutorial for vim-go](https://github.com/fatih/vim-go-tutorial)
-* [ncm2/ncm2: Completion Framework for Neovim](https://github.com/ncm2/ncm2)  
-  Slim, Fast and Hackable Completion Framework for Neovim.**Really** fast.  
-* [mdempsky/gocode: An autocompletion daemon for the Go programming language](https://github.com/mdempsky/gocode)
+* [dotfiles/vimrc at master · fatih/dotfiles · GitHub](https://github.com/fatih/dotfiles/blob/master/vimrc)
+
+* [My neovim setup for Go - By](https://hackernoon.com/my-neovim-setup-for-go-7f7b6e805876)
+
+## Plugins
+
+* [Shougo/deoplete.nvim: Dark powered asynchronous completion framework for neovim/Vim8](https://github.com/Shougo/deoplete.nvim)
+* [dense-analysis/ale](https://github.com/dense-analysis/ale)
 * [sebdah/vim-delve: Neovim / Vim integration for Delve](https://github.com/sebdah/vim-delve)
 
 deprecated
 
 * [zchee/deoplete-go: Asynchronous Go completion for Neovim. deoplete source for Go.](https://github.com/zchee/deoplete-go)  
+* [ncm2/ncm2: Completion Framework for Neovim](https://github.com/ncm2/ncm2)  
+  Slim, Fast and Hackable Completion Framework for Neovim.**Really** fast.  
+  doesn't work for some packages, so I change to use [Shougo/deoplete.nvim](https://github.com/Shougo/deoplete.nvim) now.  
+  Fri Nov 15 20:15:48 CST 2019
 
 more about completion:
 
@@ -120,7 +126,12 @@ xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools
 (1 of 1): xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
 ```
 
-Shooting: 
+Answer:
 
-Install CommandLineTools
+Install CommandLineTools:
+
+```
+xcode-select --install
+```
+
 

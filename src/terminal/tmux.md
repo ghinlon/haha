@@ -77,3 +77,14 @@ prefix + U 		// Update
 # type this in terminal if tmux is already running
 tmux source ~/.tmux.conf
 ```
+
+# reorder tmux window
+
+* [How do I reorder tmux windows? - Super User](https://superuser.com/questions/343572/how-do-i-reorder-tmux-windows)
+
+to let window number 3 and window number 1 swap their positions:
+
+```go
+swap-window -s 3 -t 1
+```
+`

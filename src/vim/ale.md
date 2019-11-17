@@ -2,7 +2,17 @@
 
 # Links
 
-* [GitHub - dense-analysis/ale: Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support](https://github.com/dense-analysis/ale)
+* [GitHub - dense-analysis/ale](https://github.com/dense-analysis/ale)
 
+# golang
+
+must config this, default doesn't use `gopls`:
+
+```
+let g:ale_linters_explicit = 1
+let g:ale_linters = {
+\   'go': ['gopls'],
+\}
+```
 
 
