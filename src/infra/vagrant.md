@@ -9,16 +9,28 @@
 
 * [Download - Vagrant by HashiCorp](https://www.vagrantup.com/downloads.html)
 
+```
+brew cask install vagrant
+```
+
 # Basis
 
 ```
 vagrant up
 vagrant ssh core-01 -- -A
 
-vagrant box update
 vagrant plugin update vagrant-ignition
 
 vagrant destroy -f
+```
+
+# boxes
+
+* [Box Versioning - Vagrant by HashiCorp](https://www.vagrantup.com/docs/boxes/versioning.html)
+
+```
+vagrant box list
+vagrant box update
 ```
 
 # Archlinux

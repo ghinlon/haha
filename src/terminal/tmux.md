@@ -60,8 +60,8 @@ load config: `prefix :source-file .config/tmux/tmux.conf`
 ```
 # remap prefix from 'C-b' to 'C-a'
 unbind C-b
-set-option -g prefix C-Space
-bind-key C-Space send-prefix
+set-option -g prefix C-g
+bind-key C-g send-prefix
 
 # Start window numbering at 1
 set -g base-index 1
@@ -71,8 +71,13 @@ set -g base-index 1
 
 [GitHub - tmux-plugins/tpm: Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
 
+Install
+
 ```
-prefix + U 		// Update
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+prefix + I 		// Install plugin
+prefix + U 		// Update plugin
 
 # type this in terminal if tmux is already running
 tmux source ~/.tmux.conf

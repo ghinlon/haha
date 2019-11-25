@@ -4,6 +4,10 @@
 
 * [systemd-resolved - ArchWiki](https://wiki.archlinux.org/index.php/Systemd-resolved)
 
+# DNSOverTLS
+
+DNS over TLS is disabled by default. To enable it change the `DNSOverTLS=`
+setting in the `[Resolve]` section in `resolved.conf(5)`. 
 
 # Mannually Config
 

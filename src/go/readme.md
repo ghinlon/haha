@@ -49,8 +49,16 @@ export GOBIN=${GOPATH}/bin
 export PATH=${GOBIN}:/usr/local/go/bin:${PATH}
 ```
 
+# Install gotip
+
+```
+go get -u -v golang.org/dl/gotip
+gotip download
+```
+
 # Editor: neovim and vim-go
 
+* [IDEsAndTextEditorPlugins · golang/go Wiki](https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins)
 * [neovim/neovim](https://github.com/neovim/neovim)  
 [Releases · neovim/neovim · GitHub](https://github.com/neovim/neovim/releases/)
 
@@ -70,9 +78,12 @@ nvim -version
 // centos7
 yum install python3
 
+// archlinux
+pacman -S python python-pip gcc tmux zsh rsync neovim go
+
 // must use --user, or it will warn PermissionError
 // the destination dir is .local/
-python3 -m pip install pynvim --user
+pip3 install --user --upgrade pynvim
 ```
 
 ## Install vim-plug

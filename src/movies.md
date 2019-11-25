@@ -8,6 +8,14 @@
 
 # November
 
+* [Frozen II (2019) - IMDb](https://www.imdb.com/title/tt4520988/)
+
+  Sat Nov 23 21:03:41 CST 2019
+  
+  Of cause scence on the screen is beautiful. but I'm not get the point very
+  much.  Seems about nature protect. Not very into this theme. I don't think
+  human can protect the Sun. Or maybe one day human will, who knows.
+
 * [Carnival Row (TV Series 2019– ) - IMDb](https://www.imdb.com/title/tt0489974/?ref_=fn_al_tt_1)
 
   Sat Nov 16 23:40:47 CST 2019

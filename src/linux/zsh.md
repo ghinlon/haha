@@ -28,12 +28,16 @@ cd fonts && ./install.sh
 brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
 ```
+
+# Comparison of Zsh plugin managers
+
+* [Comparison of ZSH frameworks and plugin managers · GitHub](https://gist.github.com/laggardkernel/4a4c4986ccdcaf47b91e8227f9868ded)
+
 # zplugin
 
 ```
-mkdir ~/.zplugin
+mkdir -p ~/.zplugin
 git clone https://github.com/zdharma/zplugin.git ~/.zplugin/bin
-
 zcompile ~/.zplugin/bin/zplugin.zsh
 ```
 

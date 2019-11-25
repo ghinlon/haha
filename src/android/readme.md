@@ -1,5 +1,11 @@
 # Android
 
+# Install android sdk
+
+```
+brew cask install android-sdk
+```
+
 # Project Treble
 
 只是一个让手机更方便更新的项目。
