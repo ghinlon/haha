@@ -3,11 +3,17 @@
 If the program doesn't support socks5，There's two way:
 
 1. Use [provixy](https://www.privoxy.org/) or [polipo](https://www.irif.fr/~jch/software/polipo/) change socks5 to http
+    Now I more like to use [zenhack/socks2http](https://github.com/zenhack/socks2http), It's simple and worked.  
+	Sun Dec 08 18:24:15 CST 2019  
 2. Use [proxychains-ng](https://github.com/rofl0r/proxychains-ng) forward to socks5
 
 # Links
 
 * [proxy - How convert Socks to HTTP in Mac OSX? - Stack Overflow](https://stackoverflow.com/questions/27658665/how-convert-socks-to-http-in-mac-osx)
+
+# socks2http
+
+* [zenhack/socks2http](https://github.com/zenhack/socks2http)
 
 # ssh socks5 proxy
 
@@ -190,10 +196,9 @@ https-proxy=http://localhost:8118
 
 
 ```
+// add
 adb shell settings put global http_proxy <address>:<port>
-
-adb shell settings delete global http_proxy
-adb shell settings delete global global_http_proxy_host
+// delete
 adb shell settings delete global global_http_proxy_port
 ```
 

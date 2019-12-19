@@ -12,11 +12,12 @@ go get github.com/u-root/u-root
 // arch
 sudo pacman -S qemu
 
-qemu-system-x86_64 \
-	-kernel path/to/kernel \
+// test
+qemu-system-x86_64                          \
+	-kernel path/to/kernel                  \
 	-initrd /tmp/initramfs.linux_amd64.cpio \
-	-append 'console=ttyS0' \
-	--nographic  \
+	-append 'console=ttyS0'                 \
+	--nographic                             \
 	-serial mon:stdio 
 ```
 
@@ -28,7 +29,18 @@ qemu-system-x86_64 \
 ```
 cp -RLp /lib/modules/`uname -r` /tmp/modules
 unxz `find -name '*.ko.xz' /tmp/modules`
-./u-root -format=cpio -build=source -files `which depmod` -files `which modprobe` -files /lib/modules/`uname -r` -files /tmp/modules:mytmp -files /usr/bin/vim -files /bin/nano -files /usr/share/terminfo/l/linux -o initramfs-sluinit-files.cpio ./cmds/* ./examples/sluinit
+
+// -format=cpio and -build=source are the default flag values.
+u-root                              \
+-files `which depmod`               \
+-files `which modprobe`             \
+-files /lib/modules/`uname -r`      \
+-files /tmp/modules:mytmp           \
+-files /usr/bin/vim                 \
+-files /bin/nano                    \
+-files /usr/share/terminfo/l/linux  \
+-o initramfs-sluinit-files.cpio     \
+./cmds/* ./examples/sluinit
 ```
 
 # How to add init scripts or extend init process?
@@ -53,8 +65,8 @@ type Servicer interface {
 	Stop() error
 	Reload() error
 	Restart() error
-        Status() state.Value
-        Unit() Unit
+	Status() state.Value
+	Unit() Unit
 }
 ```
 
@@ -69,5 +81,6 @@ Sat Oct 19 22:46:29 CST 2019
 # uinit
 
 * [systemboot](https://github.com/u-root/u-root#systemboot)
+* [uroot - GoDoc](https://godoc.org/github.com/u-root/u-root/pkg/uroot)
 
 

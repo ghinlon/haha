@@ -6,7 +6,27 @@
 
 # 2019
 
+# December
+
+* [The Crown - Season 2 - IMDb](https://www.imdb.com/title/tt4786824/episodes?season=2&ref_=tt_eps_sn_2)
+
+  Sat Dec 07 22:49:03 CST 2019
+  
+  Can I say it's impressive.
+
+* [Parasite (2019) - IMDb](https://www.imdb.com/title/tt6751668/?ref_=fn_al_tt_1)
+
+  Sun Dec 01 19:47:41 CST 2019
+  
+  I'm cold. I may have accepted my fate.
+
 # November
+
+* [The Crown - Season 1 - IMDb](https://www.imdb.com/title/tt4786824/episodes?season=1&ref_=tt_eps_sn_1)
+
+  Thu Nov 28 22:48:16 CST 2019
+  
+  I just don't understand what's the problem with you.
 
 * [Frozen II (2019) - IMDb](https://www.imdb.com/title/tt4520988/)
 

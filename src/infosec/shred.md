@@ -23,4 +23,21 @@ shred <foofile>
 正确的做法是**MUST**文件系统加密
 
 
+# shred a usb disk
 
+* [How to Securely Erase a Disk or Flash Drive with Shred](https://ubuverse.com/securely-erase-a-disk-or-flash-drive-with-shred-2/)
+
+```
+diskutil list
+
+diskutil umount /Volumes/xx
+
+sudo shred -vz -n2 /dev/disk2
+
+       -n, --iterations=N
+              overwrite N times instead of the default (3)
+       -v, --verbose
+              show progress
+       -z, --zero
+              add a final overwrite with zeros to hide shredding
+```

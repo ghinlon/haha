@@ -11,6 +11,28 @@
 * [TWRP Commandline Guide](https://twrp.me/faq/openrecoveryscript.html)
 * [TWRP FAQ](https://twrp.me/FAQ/)
 
+# Overview
+
+Important steps:
+
+* set `http_proxy` post install due to some `Checking info` process.
+
+  Sun Dec 08 18:39:14 CST 2019
+  
+Ref.:
+
+* [wi fi - How to set WIFI proxy via adb shell? - Android Enthusiasts Stack Exchange](https://android.stackexchange.com/questions/98287/how-to-set-wifi-proxy-via-adb-shell)
+* [Undo setting proxy via Settings.Global in Android - Stack Overflow](https://stackoverflow.com/questions/31807559/undo-setting-proxy-via-settings-global-in-android)
+
+
+```
+// add
+adb shell settings put global http_proxy <address>:<port>
+// delete
+adb shell settings delete global global_http_proxy_port
+```
+
+
 # Sun Jul 07 20:54:57 CST 2019
 
 * [/GUIDE//MODDED FIRMWARE//9.0.4//OP3/T/The le… | OnePlus 3T](https://forum.xda-developers.com/oneplus-3t/how-to/guide-cope-9-0-3-5-0-8-firmware-barrier-t3941164)  
@@ -23,7 +45,6 @@ cd ${BACKUPDIR}
 adb pull /storage/emulated/0/DCIM/Camera .
 adb pull /storage/emulated/0/Documents .
 adb pull /storage/emulated/0/Pictures/Twitter .
-adb pull /storage/emulated/0/pool .
 ```
 
 
@@ -38,10 +59,14 @@ adb reboot bootloader
 fastboot oem unlock		if already unlocked, doesn't need do this.
 
 fastboot flash recovery twrp.img
-// then boot into recovery with power button
+```
 
-# or
-# not every phone work this way, op3 is the one.
+**then boot into recovery with power button**
+
+or
+
+```
+not every phone work this way, op3 is the one.
 fastboot boot twrp-3.2.3-1-oneplus3.img
 ```
 
@@ -62,7 +87,7 @@ twrp wipe {cache,dalvik}
 twrp install sdcard/{firmware,rom,gapps,addonsu}.zip
 
 reboot
-// Pray...
+// Then should pray...
 ```
 
 # Post Install
@@ -86,14 +111,12 @@ the default wipe option.
 
 * [F-Droid](https://f-droid.org/en/)
 * [Shelter](https://f-droid.org/en/packages/net.typeblog.shelter/)
-* [WireGuard](https://f-droid.org/en/packages/com.wireguard.android/)
-* [Releases · shadowsocks/shadowsocks-android · GitHub](https://github.com/shadowsocks/shadowsocks-android/releases)
+* [shadowsocks/shadowsocks-android](https://github.com/shadowsocks/shadowsocks-android/releases)
+* [Termux](https://f-droid.org/packages/com.termux/)
 
 ```
 // Doesn't need root shell
-adb install FDroid.apk
-adb install shelter.apk
-adb install ss.apk
+adb install xx.apk
 ```
 
 # TWRP COMMAND

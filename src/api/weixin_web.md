@@ -4,12 +4,11 @@
 
 * [微信网页版接口详解 - 闪客sun - 博客园](https://www.cnblogs.com/flashsun/p/8493306.html)
 * [GitHub - songtianyi/wechat-go: go version wechat web api and message framework for building wechat robot](https://github.com/songtianyi/wechat-go)
-
+* [企业微信API](https://work.weixin.qq.com/api/doc#90002/90151/90854)
+* [workwx - GoDoc](https://godoc.org/github.com/xen0n/go-workwx#example-Workwx)
 
 # Notes
 
-* I don't like the thing `httpClient`, a little bit wired.
-* I want keep it simple, I don't like those `rr*` dependency.
 * plugin should in a sepatate package.and I think it's more elegible that
   a session to register a plugin, than the vice visa.  
   I more like this way to register:  

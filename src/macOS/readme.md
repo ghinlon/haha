@@ -97,3 +97,10 @@ route add default 192.168.0.1<Paste>
 $ route change default -interface $INTF
 $ route change 192.168.0.0/16 -interface $INTF
 ```
+
+# chattr use chflags
+
+```
+sudo chflags uimmutable /etc/resolv.conf
+ls -lO /etc/resolv.conf
+```
