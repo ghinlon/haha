@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>yaml.v2 - Haha</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Haha.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="../../index.html">哈哈</a></li><li class="expanded "><a href="../../brain.html">My Brain</a></li><li class="expanded "><a href="../../meaningless/index.html">Meaninglessness: The point of living</a></li><li class="expanded "><a href="../../bible/index.html">Bible</a></li><li><ol class="section"><li class="expanded "><a href="../../bible/Ecclesiastes_1.1.html">Ecclesiastes 1:1</a></li></ol></li><li class="expanded "><a href="../../infosec/index.html">Information Security</a></li><li><ol class="section"><li class="expanded "><a href="../../infosec/shred.html">shred: Shred File</a></li><li class="expanded "><a href="../../infosec/gpg.html">gpg: The GNU Privacy Guard</a></li><li class="expanded "><a href="../../infosec/pass.html">pass: Password management</a></li></ol></li><li class="expanded "><a href="../../collectedTopics.html">Collected Topics</a></li><li class="expanded "><a href="../../events.html">Events</a></li><li class="expanded "><a href="../../collection.html">Collection</a></li><li class="expanded "><a href="../../en/index.html">English</a></li><li><ol class="section"><li class="expanded "><a href="../../en/examples.html">Examples</a></li><li class="expanded "><a href="../../en/words-in-chain.html">Words in chain</a></li><li class="expanded "><a href="../../en/pronunciation.html">Pronunciation</a></li><li class="expanded "><a href="../../en/synonyms-antonyms.html">Synonyms and Antonyms</a></li><li class="expanded "><a href="../../en/exercise_practise_practice.html">exercise vs practise vs practice</a></li><li class="expanded "><a href="../../en/incidents.vs.accidents.html">incidents vs accidents</a></li></ol></li><li class="expanded "><a href="../../inet/index.html">INET</a></li><li><ol class="section"><li class="expanded "><a href="../../inet/search.html">How to Search</a></li><li class="expanded "><a href="../../inet/must.html">MUST</a></li><li class="expanded "><a href="../../inet/speedtest.html">speedtest-cli</a></li><li class="expanded "><a href="../../inet/veracrypt.html">VeraCrypt: Whole-drive Encryption</a></li><li class="expanded "><a href="../../inet/proxy.html">Proxy Setting</a></li><li class="expanded "><a href="../../inet/wireguard.html">WireGuard: fast, modern, secure VPN tunnel</a></li><li class="expanded "><a href="../../inet/tor/index.html">Tor</a></li><li class="expanded "><a href="../../inet/chisel.html">chisel</a></li><li class="expanded "><a href="../../inet/shadowsocks.html">shadowsocks</a></li><li class="expanded "><a href="../../inet/ss-redir.html">ss-redir</a></li><li class="expanded "><a href="../../inet/redsocks.html">redsocks: transparent TCP-to-proxy redirector</a></li><li class="expanded "><a href="../../inet/zerotier.html">ZeroTier</a></li><li class="expanded "><a href="../../inet/dns/index.html">DNS</a></li><li><ol class="section"><li class="expanded "><a href="../../inet/dns/dnscrypt.html">DNSCrypt</a></li><li class="expanded "><a href="../../inet/dns/doh.html">DoH: DNS over HTTPS</a></li><li class="expanded "><a href="../../inet/dns/unbound.html">DNS: unbound</a></li><li class="expanded "><a href="../../inet/dns/systemd-resolved.html">systemd-resolved</a></li></ol></li><li class="expanded "><a href="../../inet/firewall/index.html">Firewall</a></li><li><ol class="section"><li class="expanded "><a href="../../inet/firewall/iptables.html">iptables</a></li><li class="expanded "><a href="../../inet/firewall/firewalld.html">firewalld</a></li><li class="expanded "><a href="../../inet/firewall/nftables.html">nftables</a></li></ol></li><li class="expanded "><a href="../../inet/network/index.html">NETWORK</a></li><li><ol class="section"><li class="expanded "><a href="../../inet/network/optimization.html">Network Optimization</a></li><li class="expanded "><a href="../../inet/network/tunnels.html">linux virtual interfaces: Tunnels</a></li><li class="expanded "><a href="../../inet/network/virtual-networking.html">linux interfaces for virtual networking</a></li><li class="expanded "><a href="../../inet/network/iproute2/index.html">iproute2</a></li><li><ol class="section"><li class="expanded "><a href="../../inet/network/iproute2/gre.html">GRE tunneling</a></li><li class="expanded "><a href="../../inet/network/iproute2/ip-link-type-bridge.html">ip link type bridge</a></li><li class="expanded "><a href="../../inet/network/iproute2/ip-link-type-vxlan.html">ip link type vxlan</a></li><li class="expanded "><a href="../../inet/network/iproute2/ip-rule.html">ip rule</a></li></ol></li></ol></li><li class="expanded "><a href="../../inet/vps/index.html">VPS</a></li></ol></li><li class="expanded "><a href="../../sync/index.html">Sync</a></li><li><ol class="section"><li class="expanded "><a href="../../sync/rsync.html">rsync</a></li></ol></li><li class="expanded "><a href="../../music/index.html">Music</a></li><li><ol class="section"><li class="expanded "><a href="../../music/choral.html">choral music</a></li><li class="expanded "><a href="../../music/Freedom-Anthony_Hamilton.html">Freedom - Anthony Hamilton</a></li><li class="expanded "><a href="../../music/Ariana-grande-imagine-lyrics.html">Ariana-grande-imagine-lyrics</a></li><li class="expanded "><a href="../../music/wong4.hau6.daai6.dou6.dung1.html">皇后大道东</a></li></ol></li><li class="expanded "><a href="../../movies.html">Movies</a></li><li class="expanded "><a href="../../math/index.html">Math</a></li><li><ol class="section"><li class="expanded "><a href="../../math/euler_totient_function.html">Euler's totient function</a></li></ol></li><li class="expanded "><a href="../../vim/index.html">vim</a></li><li><ol class="section"><li class="expanded "><a href="../../vim/help.html">help</a></li><li class="expanded "><a href="../../vim/plugins.html">Plugins</a></li><li class="expanded "><a href="../../vim/vim-plug.html">vim-plug: Minimalist Vim Plugin Manager</a></li><li class="expanded "><a href="../../vim/table.html">table</a></li><li class="expanded "><a href="../../vim/autopair.html">automatic pair insertion</a></li><li class="expanded "><a href="../../vim/ultisnips.html">Ultisnips</a></li><li class="expanded "><a href="../../vim/fzf.html">fzf</a></li><li class="expanded "><a href="../../vim/ale.html">ale: Asynchronous Lint Engine</a></li></ol></li><li class="expanded "><a href="../../terminal/index.html">Terminal</a></li><li><ol class="section"><li class="expanded "><a href="../../terminal/tmux.html">tmux: a terminal multiplexer</a></li><li class="expanded "><a href="../../terminal/iterm2.html">iTerm2</a></li></ol></li><li class="expanded "><a href="../../font/index.html">Font</a></li><li><ol class="section"><li class="expanded "><a href="../../font/firacode.html">firacode</a></li><li class="expanded "><a href="../../font/sanfranciscomono.html">Getting Apple’s SF Mono Font</a></li><li class="expanded "><a href="../../font/fontconfig.html">fontconfig</a></li><li class="expanded "><a href="../../font/hanyiqihei.html">汉仪旗黑</a></li></ol></li><li class="expanded "><a href="../../color.html">Color</a></li><li class="expanded "><a href="../../go/index.html">Go</a></li><li><ol class="section"><li class="expanded "><a href="../../go/note.html">Note</a></li><li class="expanded "><a href="../../go/algorithm/index.html">Algorithm</a></li><li><ol class="section"><li class="expanded "><a href="../../go/algorithm/Knuth–Morris–Pratt-algorithm.html">Knuth–Morris–Pratt algorithm</a></li><li class="expanded "><a href="../../go/algorithm/read-until-strings-in-stream.html">read until strings in stream</a></li></ol></li><li class="expanded "><a href="../../go/basis/index.html">Basis</a></li><li><ol class="section"><li class="expanded "><a href="../../go/basis/go_command.html">Command go</a></li><li class="expanded "><a href="../../go/basis/encodings.html">Character Sets and Encodings</a></li><li class="expanded "><a href="../../go/basis/struct.html">struct</a></li><li class="expanded "><a href="../../go/basis/closure.html">closure</a></li><li class="expanded "><a href="../../go/basis/interfaces.html">interfaces</a></li><li class="expanded "><a href="../../go/basis/concurrency.html">Concurrency</a></li><li class="expanded "><a href="../../go/basis/channels.html">Channels</a></li><li class="expanded "><a href="../../go/basis/slices.html">slices</a></li><li class="expanded "><a href="../../go/basis/astrings.html">strings</a></li><li class="expanded "><a href="../../go/basis/socket.html">socket</a></li><li class="expanded "><a href="../../go/basis/initfunc.html">init functions in Go</a></li><li class="expanded "><a href="../../go/basis/gc.html">Garbage Collector</a></li><li class="expanded "><a href="../../go/basis/type_variable_value.html">type vs variable vs value</a></li><li class="expanded "><a href="../../go/basis/loop.html">Loop is so complicated</a></li><li class="expanded "><a href="../../go/basis/gomod.html">Modules</a></li><li class="expanded "><a href="../../go/basis/async_vs_sync.html">Asynchronous vs synchronous</a></li><li class="expanded "><a href="../../go/basis/monitor_goroutines.html">Monitor goroutines</a></li><li class="expanded "><a href="../../go/basis/how_to_check_if_a_file_exists.html">How to check if a file exists in Go</a></li><li class="expanded "><a href="../../go/basis/distinguish_ipv4_and_ipv6.html">distinguish ipv4 and ipv6</a></li><li class="expanded "><a href="../../go/basis/gorutine_and_cwd.html">gorutine and CWD</a></li><li class="expanded "><a href="../../go/basis/cs.html">How to WRITE A CS</a></li><li class="expanded "><a href="../../go/basis/exec_Cmd_signal.html">How to signal a exec.Cmd</a></li><li class="expanded "><a href="../../go/basis/pipe_io.ReadWriteCloser.html">Pipe io.ReadWriteCloser</a></li></ol></li><li class="expanded "><a href="../../go/pkg/index.html">Packages</a></li><li><ol class="section"><li class="expanded "><a href="../../go/pkg/io/io.html">io</a></li><li><ol class="section"><li class="expanded "><a href="../../go/pkg/io/ioutil.html">ioutil</a></li></ol></li><li class="expanded "><a href="../../go/pkg/errors.html">errors</a></li><li class="expanded "><a href="../../go/pkg/bufio.html">bufio</a></li><li class="expanded "><a href="../../go/pkg/unicode/unicode.html">unicode</a></li><li><ol class="section"><li class="expanded "><a href="../../go/pkg/unicode/utf8.html">utf8</a></li><li class="expanded "><a href="../../go/pkg/unicode/utf16.html">utf16</a></li></ol></li><li class="expanded "><a href="../../go/pkg/regexp.html">regexp</a></li><li class="expanded "><a href="../../go/pkg/os/os.html">os</a></li><li><ol class="section"><li class="expanded "><a href="../../go/pkg/os/exec.html">exec</a></li><li class="expanded "><a href="../../go/pkg/os/signal.html">signal</a></li></ol></li><li class="expanded "><a href="../../go/pkg/path.html">path</a></li><li class="expanded "><a href="../../go/pkg/sync/sync.html">sync</a></li><li class="expanded "><a href="../../go/pkg/context.html">context</a></li><li class="expanded "><a href="../../go/pkg/log/log.html">log</a></li><li class="expanded "><a href="../../go/pkg/net/net.html">net</a></li><li><ol class="section"><li class="expanded "><a href="../../go/pkg/net/textproto.html">textproto</a></li><li class="expanded "><a href="../../go/pkg/net/smtp.html">smtp</a></li><li class="expanded "><a href="../../go/pkg/net/mail.html">mail</a></li></ol></li><li class="expanded "><a href="../../go/pkg/encoding/encoding.html">encoding</a></li><li><ol class="section"><li class="expanded "><a href="../../go/pkg/encoding/asn1.html">asn1</a></li><li class="expanded "><a href="../../go/pkg/encoding/json.html">json</a></li><li class="expanded "><a href="../../go/pkg/encoding/gob.html">gob</a></li><li class="expanded "><a href="../../go/pkg/encoding/base64.html">base64</a></li><li class="expanded "><a href="../../go/pkg/encoding/hex.html">hex</a></li><li class="expanded "><a href="../../go/pkg/encoding/pem.html">pem</a></li></ol></li><li class="expanded "><a href="../../go/pkg/crypto/crypto.html">crypto</a></li><li><ol class="section"><li class="expanded "><a href="../../go/pkg/crypto/rand.html">rand</a></li><li class="expanded "><a href="../../go/pkg/crypto/sha256.html">sha256</a></li><li class="expanded "><a href="../../go/pkg/crypto/sha512.html">sha512</a></li><li class="expanded "><a href="../../go/pkg/crypto/sha1.html">sha1</a></li><li class="expanded "><a href="../../go/pkg/crypto/md5.html">md5</a></li><li class="expanded "><a href="../../go/pkg/crypto/aes.html">aes</a></li><li class="expanded "><a href="../../go/pkg/crypto/cipher.html">cipher</a></li><li class="expanded "><a href="../../go/pkg/crypto/rsa.html">rsa</a></li><li class="expanded "><a href="../../go/pkg/crypto/x509/x509.html">x509</a></li></ol></li><li class="expanded "><a href="../../go/pkg/internal/index.html">internal</a></li><li><ol class="section"><li class="expanded "><a href="../../go/pkg/internal/poll.html">poll</a></li></ol></li></ol></li><li class="expanded "><a href="../../go/pkgx/index.html">Package x</a></li><li><ol class="section"><li class="expanded "><a href="../../go/pkgx/crypto/index.html">crypto</a></li><li><ol class="section"><li class="expanded "><a href="../../go/pkgx/crypto/ssh.html">ssh</a></li></ol></li><li class="expanded "><a href="../../go/pkgx/text/index.html">text</a></li><li><ol class="section"><li class="expanded "><a href="../../go/pkgx/text/transform.html">transform</a></li><li class="expanded "><a href="../../go/pkgx/text/encoding/encoding.html">encoding</a></li><li class="expanded "><a href="../../go/pkgx/text/unicode/index.html">unicode</a></li><li><ol class="section"><li class="expanded "><a href="../../go/pkgx/text/unicode/norm.html">norm</a></li></ol></li></ol></li></ol></li><li class="expanded "><a href="../../go/pkgy/index.html">Package y</a></li><li><ol class="section"><li class="expanded "><a href="../../go/pkgy/protobuf.html">protobuf</a></li><li class="expanded "><a href="../../go/pkgy/grpc.html">grpc</a></li><li class="expanded "><a href="../../go/pkgy/yaml.v2.html" class="active">yaml.v2</a></li><li class="expanded "><a href="../../go/pkgy/cobra.html">cobra</a></li><li class="expanded "><a href="../../go/pkgy/viper.html">viper</a></li><li class="expanded "><a href="../../go/pkgy/pflag.html">pflag</a></li><li class="expanded "><a href="../../go/pkgy/systemstat.html">systemstat</a></li><li class="expanded "><a href="../../go/pkgy/zap.html">zap</a></li><li class="expanded "><a href="../../go/pkgy/ftp.html">ftp</a></li><li class="expanded "><a href="../../go/pkgy/smtpd.html">smtpd</a></li><li class="expanded "><a href="../../go/pkgy/telnet.html">telnet</a></li><li class="expanded "><a href="../../go/pkgy/netconf.html">netconf</a></li><li class="expanded "><a href="../../go/pkgy/gobot.html">gobot</a></li><li class="expanded "><a href="../../go/pkgy/kcp-go.html">kcp-go</a></li><li class="expanded "><a href="../../go/pkgy/go-libp2p.html">go-libp2p</a></li><li class="expanded "><a href="../../go/pkgy/nff-go/index.html">nff-go</a></li><li><ol class="section"><li class="expanded "><a href="../../go/pkgy/nff-go/flow.html">flow</a></li><li class="expanded "><a href="../../go/pkgy/nff-go/packet.html">packet</a></li></ol></li><li class="expanded "><a href="../../go/pkgy/goexpect.html">goexpect</a></li></ol></li><li class="expanded "><a href="../../go/protocols/index.html">Protocols</a></li><li><ol class="section"><li class="expanded "><a href="../../go/protocols/application_level_protocols.html">Application-Level Protocols</a></li><li class="expanded "><a href="../../go/protocols/ping.html">ICMP:ping</a></li><li class="expanded "><a href="../../go/protocols/socks5.html">socks5</a></li><li class="expanded "><a href="../../go/protocols/shadowsocks.html">shadowsocks</a></li><li class="expanded "><a href="../../go/protocols/smtp.html">SMTP</a></li><li class="expanded "><a href="../../go/protocols/telnet.html">TELNET</a></li><li class="expanded "><a href="../../go/protocols/ftp.html">FTP</a></li><li class="expanded "><a href="../../go/protocols/yaml.html">YAML</a></li><li class="expanded "><a href="../../go/protocols/x509.html">X.509</a></li><li class="expanded "><a href="../../go/protocols/ssh.html">SSH</a></li></ol></li><li class="expanded "><a href="../../go/utils/index.html">Utils</a></li><li><ol class="section"><li class="expanded "><a href="../../go/utils/cfssl.html">cfssl</a></li><li class="expanded "><a href="../../go/utils/meshbird.html">meshbird</a></li><li class="expanded "><a href="../../go/utils/go-shadowsocks2.html">go-shadowsocks2</a></li><li class="expanded "><a href="../../go/utils/markdown-toc.html">sebdah/markdown-toc</a></li><li class="expanded "><a href="../../go/utils/orgalorg.html">reconquest/orgalorg</a></li><li class="expanded "><a href="../../go/utils/u-root.html">u-root</a></li><li class="expanded "><a href="../../go/utils/sweet.html">sweet</a></li><li class="expanded "><a href="../../go/utils/bad/index.html">Bad</a></li><li><ol class="section"><li class="expanded "><a href="../../go/utils/bad/jazigo.html">jazigo</a></li></ol></li></ol></li></ol></li><li class="expanded "><a href="../../webdev/index.html">Web Development</a></li><li><ol class="section"><li class="expanded "><a href="../../webdev/rest.html">REST</a></li><li class="expanded "><a href="../../webdev/organising-database-access.html">Organising Database Access</a></li><li class="expanded "><a href="../../webdev/routers.html">Routers</a></li><li class="expanded "><a href="../../webdev/sessions.html">Sessions</a></li><li class="expanded "><a href="../../webdev/protocol-http.html">Protocol http</a></li><li class="expanded "><a href="../../webdev/protocol-tls.html">Protocol tls</a></li><li class="expanded "><a href="../../webdev/go/pkg/http.html">Package http</a></li><li class="expanded "><a href="../../webdev/go/pkg/url.html">Package url</a></li><li class="expanded "><a href="../../webdev/go/pkg/text-template.html">Package template</a></li><li class="expanded "><a href="../../webdev/go/pkg/tls.html">Package tls</a></li><li class="expanded "><a href="../../webdev/go/pkgy/alice.html">Package alice</a></li><li class="expanded "><a href="../../webdev/webassembly.html">Webassembly</a></li><li class="expanded "><a href="../../webdev/gioui.html">gioui</a></li><li class="expanded "><a href="../../webdev/vugu.html">vugu</a></li><li class="expanded "><a href="../../webdev/vecty.html">vecty</a></li><li class="expanded "><a href="../../webdev/hugo.html">Hugo</a></li><li class="expanded "><a href="../../webdev/bootstrap.html">Bootstrap</a></li></ol></li><li class="expanded "><a href="../../db/index.html">DB</a></li><li><ol class="section"><li class="expanded "><a href="../../db/oracle/oracle.html">Oracle</a></li><li class="expanded "><a href="../../db/go/pkg/sql.html">Package sql</a></li><li class="expanded "><a href="../../db/redis.html">redis: a data structures server</a></li><li class="expanded "><a href="../../db/sqlite.html">SQLite</a></li><li class="expanded "><a href="../../db/mysql.html">MySQL</a></li></ol></li><li class="expanded "><a href="../../IT/index.html">IT</a></li><li><ol class="section"><li class="expanded "><a href="../../IT/dpdk.html">DPDK</a></li><li class="expanded "><a href="../../IT/minio.html">MinIO: OBJECT STORAGE FOR AI</a></li></ol></li><li class="expanded "><a href="../../api/index.html">API</a></li><li><ol class="section"><li class="expanded "><a href="../../api/telegram_bot.html">Telegram Bots</a></li><li class="expanded "><a href="../../api/weixin_web.html">WEIXIN WEB</a></li></ol></li><li class="expanded "><a href="../../devops/index.html">Devops</a></li><li><ol class="section"><li class="expanded "><a href="../../devops/mtail.html">mtail</a></li><li class="expanded "><a href="../../devops/prometheus/index.html">prometheus</a></li><li><ol class="section"><li class="expanded "><a href="../../devops/prometheus/usage.html">Usage</a></li><li class="expanded "><a href="../../devops/prometheus/client_golang/index.html">client_golang</a></li><li><ol class="section"><li class="expanded "><a href="../../devops/prometheus/client_golang/promhttp.html">promhttp</a></li><li class="expanded "><a href="../../devops/prometheus/client_golang/promauto.html">promauto</a></li><li class="expanded "><a href="../../devops/prometheus/client_golang/api.html">api</a></li></ol></li><li class="expanded "><a href="../../devops/prometheus/alertmanager.html">alertmanager</a></li><li class="expanded "><a href="../../devops/prometheus/node_exporter.html">node_exporter</a></li><li class="expanded "><a href="../../devops/prometheus/sql_exporter.html">sql_exporter</a></li><li class="expanded "><a href="../../devops/prometheus/procfs.html">procfs</a></li></ol></li><li class="expanded "><a href="../../devops/grafana.html">grafana</a></li><li class="expanded "><a href="../../devops/messagebird-sachet.html">messagebird/sachet</a></li></ol></li><li class="expanded "><a href="../../git/index.html">Git</a></li><li><ol class="section"><li class="expanded "><a href="../../git/undoing.html">Undoing Commits &amp; Changes</a></li></ol></li><li class="expanded "><a href="../../infra/index.html">Infrastructure</a></li><li><ol class="section"><li class="expanded "><a href="../../infra/vagrant.html">Vagrant: HashiCorp Development Environments Made Easy</a></li><li class="expanded "><a href="../../infra/terraform.html">Terraform: HashiCorp Infrastructure as Code</a></li><li class="expanded "><a href="../../infra/packer.html">Packer</a></li><li class="expanded "><a href="../../infra/ipxe.html">iPXE</a></li><li class="expanded "><a href="../../infra/dnsmasq.html">dnsmasq</a></li><li class="expanded "><a href="../../infra/matchbox.html">matchbox</a></li><li class="expanded "><a href="../../infra/ignition.html">Ignition: machine provisioning utility</a></li><li class="expanded "><a href="../../infra/typhoon.html">Typhoon: a minimal and free Kubernetes distribution</a></li><li class="expanded "><a href="../../infra/travis/index.html">Travis CI</a></li><li><ol class="section"><li class="expanded "><a href="../../infra/travis/gh-pages.html">GitHub Pages Deployment</a></li></ol></li><li class="expanded "><a href="../../infra/ansible.html">Ansible</a></li></ol></li><li class="expanded "><a href="../../k8s/index.html">k8s</a></li><li><ol class="section"><li class="expanded "><a href="../../k8s/client-go.html">Client Go</a></li><li class="expanded "><a href="../../k8s/concepts/index.html">CONCEPTS</a></li><li><ol class="section"><li class="expanded "><a href="../../k8s/concepts/ingress.html">Ingress</a></li></ol></li><li class="expanded "><a href="../../k8s/haproxy.html">HAProxy</a></li><li class="expanded "><a href="../../k8s/docker/index.html">Docker</a></li><li class="expanded "><a href="../../k8s/kubeadm.html">kubeadm quickstart</a></li><li class="expanded "><a href="../../k8s/kubeadm_ha.html">Creating Highly Available clusters with kubeadm</a></li><li class="expanded "><a href="../../k8s/calico.html">Calico: Secure networking for the cloud native era</a></li><li class="expanded "><a href="../../k8s/kubectl.html">kubectl</a></li><li class="expanded "><a href="../../k8s/k8s.html">Kubernetes</a></li><li class="expanded "><a href="../../k8s/etcd.html">etcd: A distributed, reliable key-value store</a></li><li class="expanded "><a href="../../k8s/helm.html">Helm: The package manager for Kubernetes</a></li><li class="expanded "><a href="../../k8s/rook.html">Rook: Cloud-Native Storage for Kubernetes</a></li><li class="expanded "><a href="../../k8s/harbor.html">Harbor</a></li><li class="expanded "><a href="../../k8s/traefik.html">Traefik: The Cloud Native Edge Router</a></li><li class="expanded "><a href="../../k8s/consul.html">Consul: HashiCorp a distributed service mesh</a></li><li class="expanded "><a href="../../k8s/rancher.html">Rancher</a></li><li class="expanded "><a href="../../k8s/coreos/index.html">CoreOS: Container Linux</a></li><li class="expanded "><a href="../../k8s/sig-storage-lib-external-provisioner.html">sig-storage-lib-external-provisioner</a></li><li class="expanded "><a href="../../k8s/nfs-provisioner.html">nfs-provisioner</a></li><li class="expanded "><a href="../../k8s/nfs-client.html">Kubernetes NFS-Client Provisioner</a></li><li class="expanded "><a href="../../k8s/change-default-storage-class.html">Change the default StorageClass</a></li></ol></li><li class="expanded "><a href="../../linux/index.html">Linux</a></li><li><ol class="section"><li class="expanded "><a href="../../linux/newvps.html">NewVPS</a></li><li class="expanded "><a href="../../linux/screen.html">GNU Screen</a></li><li class="expanded "><a href="../../linux/zsh.html">Zsh</a></li><li class="expanded "><a href="../../linux/bash.html">Bash</a></li><li class="expanded "><a href="../../linux/namespace.html">namespace</a></li><li class="expanded "><a href="../../linux/systemd.timer.html">systemd.timer</a></li><li class="expanded "><a href="../../linux/systemd.html">systemd</a></li><li class="expanded "><a href="../../linux/grub2.html">GRUB 2</a></li><li class="expanded "><a href="../../linux/tmpfs.html">RAM disk: tmpfs</a></li><li class="expanded "><a href="../../linux/ubuntu/index.html">Ubuntu</a></li><li><ol class="section"><li class="expanded "><a href="../../linux/ubuntu/ubuntu_lts.html">LTS: Long Term Support</a></li><li class="expanded "><a href="../../linux/ubuntu/apt.html">APT: Advanced Packaging Tool</a></li></ol></li><li class="expanded "><a href="../../linux/archlinux/install.html">Install archlinux</a></li><li class="expanded "><a href="../../linux/udevil.html">automatic mount: udevil</a></li><li class="expanded "><a href="../../linux/videoplayers.html">Video Player</a></li><li class="expanded "><a href="../../linux/de.html">Desktop Environment</a></li><li class="expanded "><a href="../../linux/wm.html">Window Manager</a></li><li class="expanded "><a href="../../linux/bluetooth.html">Bluetooth</a></li><li class="expanded "><a href="../../linux/im.html">Input Method</a></li><li class="expanded "><a href="../../linux/mail.html">Mail Server:postfix/dovecot</a></li><li class="expanded "><a href="../../linux/grep.html">grep</a></li><li class="expanded "><a href="../../linux/sed.html">sed</a></li><li class="expanded "><a href="../../linux/awk.html">awk</a></li><li class="expanded "><a href="../../linux/wifi.html">wifi</a></li><li class="expanded "><a href="../../linux/vsftpd/simple_anonymous_ftp_server.html">vsftpd</a></li><li class="expanded "><a href="../../linux/archlinux/index.html">archlinux</a></li><li><ol class="section"><li class="expanded "><a href="../../linux/archlinux/install.html">Install</a></li></ol></li><li class="expanded "><a href="../../linux/rhel/index.html">rhel</a></li><li><ol class="section"><li class="expanded "><a href="../../linux/rhel/yum.html">YUM</a></li><li class="expanded "><a href="../../linux/rhel/yumdownloader.html">Yumdownloader</a></li><li class="expanded "><a href="../../linux/rhel/network.html">Networking</a></li></ol></li><li class="expanded "><a href="../../linux/cpu_time.html">cpu time</a></li><li class="expanded "><a href="../../linux/context_switch.html">context switch</a></li><li class="expanded "><a href="../../linux/cgroups.html">cgroups</a></li><li class="expanded "><a href="../../linux/ssh/index.html">ssh</a></li><li><ol class="section"><li class="expanded "><a href="../../linux/ssh/ssh_agent.html">ssh-agent</a></li></ol></li><li class="expanded "><a href="../../linux/qemu.html">qemu</a></li><li class="expanded "><a href="../../linux/kvm/index.html">KVM</a></li><li><ol class="section"><li class="expanded "><a href="../../linux/kvm/kvm.html">KVM</a></li><li class="expanded "><a href="../../linux/kvm/admin.html">Administration</a></li></ol></li><li class="expanded "><a href="../../linux/kernel/index.html">kernel</a></li><li><ol class="section"><li class="expanded "><a href="../../linux/kernel/kexec.html">kexec - directly boot into a new kernel</a></li></ol></li><li class="expanded "><a href="../../linux/initramfs.html">initramfs</a></li><li class="expanded "><a href="../../linux/dracut.html">dracut</a></li><li class="expanded "><a href="../../linux/liveos.html">LiveOS image</a></li><li class="expanded "><a href="../../linux/modules.html">modules</a></li><li class="expanded "><a href="../../linux/dhcpd.html">dhcpd</a></li><li class="expanded "><a href="../../linux/nginx.html">nginx</a></li></ol></li><li class="expanded "><a href="../../console/index.html">Console</a></li><li><ol class="section"><li class="expanded "><a href="../../console/cmus.html">cmus: C Music Player</a></li><li class="expanded "><a href="../../console/ffplay.html">ffplay: Media Player</a></li><li class="expanded "><a href="../../console/youtube-dl.html">youtube-dl: Download videos from YouTube</a></li><li class="expanded "><a href="../../console/wkhtmltopdf.html">wkhtmltopdf</a></li><li class="expanded "><a href="../../console/openssl.html">openssl</a></li><li class="expanded "><a href="../../console/pandoc.html">pandoc</a></li></ol></li><li class="expanded "><a href="../../tools/index.html">Tools</a></li><li><ol class="section"><li class="expanded "><a href="../../tools/firefox.html">Firefox</a></li><li class="expanded "><a href="../../tools/ungoogled-chromium.html">Eloston/ungoogled-chromium</a></li><li class="expanded "><a href="../../tools/ascii.html">Four Column ASCII</a></li><li class="expanded "><a href="../../tools/markdown.html">markdown</a></li><li class="expanded "><a href="../../tools/mdbook.html">mdbook</a></li><li class="expanded "><a href="../../tools/zhengma.html">Zhengma</a></li><li class="expanded "><a href="../../tools/virtualbox.html">VirtualBox</a></li><li class="expanded "><a href="../../tools/github.html">Github</a></li><li class="expanded "><a href="../../tools/anki.html">Anki</a></li><li class="expanded "><a href="../../tools/krita.html">krita</a></li><li class="expanded "><a href="../../tools/gimp.html">GIMP - GNU Image Manipulation Program</a></li><li class="expanded "><a href="../../tools/sxiv.html">sxiv: Simple X Image Viewer</a></li><li class="expanded "><a href="../../tools/kodi.html">Kodi: entertainment hub</a></li><li class="expanded "><a href="../../tools/mpv.html">mpv and mplayer: media player</a></li><li class="expanded "><a href="../../tools/photoprism.html">PhotoPrism: Browse your life in pictures</a></li><li class="expanded "><a href="../../tools/transmission.html">Transmission</a></li><li class="expanded "><a href="../../tools/audacity.html">Audacity: audio editor and recorder</a></li></ol></li><li class="expanded "><a href="../../macOS/index.html">macOS</a></li><li><ol class="section"><li class="expanded "><a href="../../macOS/shortcuts.html">Shortcuts</a></li><li class="expanded "><a href="../../macOS/diskutil.html">diskutil</a></li><li class="expanded "><a href="../../macOS/homebrew.html">homebrew</a></li></ol></li><li class="expanded "><a href="../../raspberrypi/index.html">Raspberry Pi</a></li><li><ol class="section"><li class="expanded "><a href="../../raspberrypi/install.html">Install</a></li></ol></li><li class="expanded "><a href="../../android/index.html">Android</a></li><li><ol class="section"><li class="expanded "><a href="../../android/adb.html">adb</a></li><li class="expanded "><a href="../../android/rom.html">ROM</a></li><li class="expanded "><a href="../../android/lineageos.html">Install Lineageos</a></li><li class="expanded "><a href="../../android/termux.html">termux</a></li><li class="expanded "><a href="../../android/scrcpy.html">scrcpy: Display and control your Android device</a></li><li class="expanded "><a href="../../android/magisk.html">Magisk and EdXposed(deprecated)</a></li></ol></li><li class="expanded "><a href="../../network/index.html">Network</a></li><li><ol class="section"><li class="expanded "><a href="../../network/simulators.html">Open-Source Network Simulators</a></li></ol></li><li class="expanded "><a href="../../switch/index.html">switch</a></li><li><ol class="section"><li class="expanded "><a href="../../switch/protocols/index.html">Protocols</a></li><li><ol class="section"><li class="expanded "><a href="../../switch/protocols/stp.html">STP</a></li></ol></li><li class="expanded "><a href="../../switch/S5720_56C_EI.html">S5720-56C-EI</a></li></ol></li><li class="expanded "><a href="../../blockchains/index.html">Blockchains</a></li><li><ol class="section"><li class="expanded "><a href="../../blockchains/mew.html">MyEtherWallet</a></li></ol></li><li class="expanded "><a href="../../misc/index.html">Misc</a></li><li><ol class="section"><li class="expanded "><a href="../../misc/shure_bt2.html">Shure Bluetooth® Earphones</a></li><li class="expanded "><a href="../../misc/images_9_to_3x3.html">把9张图片3X3在一张A4纸上打印</a></li><li class="expanded "><a href="../../misc/hhkb_linux.html">使用xmodmap简易模仿HHKB</a></li><li class="expanded "><a href="../../misc/d7000.html">D7000</a></li><li class="expanded "><a href="../../misc/hp_laserjet_1536dnf_mfp.html">HP LaserJet 1536dnf MFP</a></li><li class="expanded "><a href="../../misc/jav.html">JAV</a></li><li class="expanded "><a href="../../misc/comedy.html">Comedy</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Haha</h1>
+
+                        <div class="right-buttons">
+                            <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#a-hrefhttpsgodocorggopkginyamlv2package-yamla" id="a-hrefhttpsgodocorggopkginyamlv2package-yamla"><a href="https://godoc.org/gopkg.in/yaml.v2">package yaml</a></a></h1>
+<p>import &quot;gopkg.in/yaml.v2&quot;</p>
+<h1><a class="header" href="#links" id="links">Links</a></h1>
+<ul>
+<li><a href="https://github.com/go-yaml/yaml">GitHub - go-yaml/yaml: YAML support for the Go language.</a></li>
+</ul>
+<h1><a class="header" href="#一对编解组函数" id="一对编解组函数">一对编解组函数</a></h1>
+<pre><code class="language-go">func Marshal(in interface{}) (out []byte, err error)
+func Unmarshal(in []byte, out interface{}) (err error)
+func UnmarshalStrict(in []byte, out interface{}) (err error)
+</code></pre>
+<h1><a class="header" href="#一对编解码器" id="一对编解码器">一对编解码器</a></h1>
+<pre><code class="language-go">type Encoder struct {
+    // contains filtered or unexported fields
+}
+func NewEncoder(w io.Writer) *Encoder
+
+func (e *Encoder) Encode(v interface{}) (err error)
+func (e *Encoder) Close() (err error)
+
+type Decoder struct {
+    // contains filtered or unexported fields
+}
+func NewDecoder(r io.Reader) *Decoder
+
+func (dec *Decoder) Decode(v interface{}) (err error)
+func (dec *Decoder) SetStrict(strict bool)
+</code></pre>
+<h1><a class="header" href="#一对编解组接口" id="一对编解组接口">一对编解组接口</a></h1>
+<pre><code class="language-go">type Marshaler interface {
+    MarshalYAML() (interface{}, error)
+}
+
+type Unmarshaler interface {
+    UnmarshalYAML(unmarshal func(interface{}) error) error
+}
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../../go/pkgy/grpc.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../../go/pkgy/cobra.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../../go/pkgy/grpc.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../../go/pkgy/cobra.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

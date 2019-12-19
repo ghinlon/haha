@@ -1,0 +1,1248 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Movies - Haha</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Haha.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="index.html">哈哈</a></li><li class="expanded "><a href="brain.html">My Brain</a></li><li class="expanded "><a href="meaningless/index.html">Meaninglessness: The point of living</a></li><li class="expanded "><a href="bible/index.html">Bible</a></li><li><ol class="section"><li class="expanded "><a href="bible/Ecclesiastes_1.1.html">Ecclesiastes 1:1</a></li></ol></li><li class="expanded "><a href="infosec/index.html">Information Security</a></li><li><ol class="section"><li class="expanded "><a href="infosec/shred.html">shred: Shred File</a></li><li class="expanded "><a href="infosec/gpg.html">gpg: The GNU Privacy Guard</a></li><li class="expanded "><a href="infosec/pass.html">pass: Password management</a></li></ol></li><li class="expanded "><a href="collectedTopics.html">Collected Topics</a></li><li class="expanded "><a href="events.html">Events</a></li><li class="expanded "><a href="collection.html">Collection</a></li><li class="expanded "><a href="en/index.html">English</a></li><li><ol class="section"><li class="expanded "><a href="en/examples.html">Examples</a></li><li class="expanded "><a href="en/words-in-chain.html">Words in chain</a></li><li class="expanded "><a href="en/pronunciation.html">Pronunciation</a></li><li class="expanded "><a href="en/synonyms-antonyms.html">Synonyms and Antonyms</a></li><li class="expanded "><a href="en/exercise_practise_practice.html">exercise vs practise vs practice</a></li><li class="expanded "><a href="en/incidents.vs.accidents.html">incidents vs accidents</a></li></ol></li><li class="expanded "><a href="inet/index.html">INET</a></li><li><ol class="section"><li class="expanded "><a href="inet/search.html">How to Search</a></li><li class="expanded "><a href="inet/must.html">MUST</a></li><li class="expanded "><a href="inet/speedtest.html">speedtest-cli</a></li><li class="expanded "><a href="inet/veracrypt.html">VeraCrypt: Whole-drive Encryption</a></li><li class="expanded "><a href="inet/proxy.html">Proxy Setting</a></li><li class="expanded "><a href="inet/wireguard.html">WireGuard: fast, modern, secure VPN tunnel</a></li><li class="expanded "><a href="inet/tor/index.html">Tor</a></li><li class="expanded "><a href="inet/chisel.html">chisel</a></li><li class="expanded "><a href="inet/shadowsocks.html">shadowsocks</a></li><li class="expanded "><a href="inet/ss-redir.html">ss-redir</a></li><li class="expanded "><a href="inet/redsocks.html">redsocks: transparent TCP-to-proxy redirector</a></li><li class="expanded "><a href="inet/zerotier.html">ZeroTier</a></li><li class="expanded "><a href="inet/dns/index.html">DNS</a></li><li><ol class="section"><li class="expanded "><a href="inet/dns/dnscrypt.html">DNSCrypt</a></li><li class="expanded "><a href="inet/dns/doh.html">DoH: DNS over HTTPS</a></li><li class="expanded "><a href="inet/dns/unbound.html">DNS: unbound</a></li><li class="expanded "><a href="inet/dns/systemd-resolved.html">systemd-resolved</a></li></ol></li><li class="expanded "><a href="inet/firewall/index.html">Firewall</a></li><li><ol class="section"><li class="expanded "><a href="inet/firewall/iptables.html">iptables</a></li><li class="expanded "><a href="inet/firewall/firewalld.html">firewalld</a></li><li class="expanded "><a href="inet/firewall/nftables.html">nftables</a></li></ol></li><li class="expanded "><a href="inet/network/index.html">NETWORK</a></li><li><ol class="section"><li class="expanded "><a href="inet/network/optimization.html">Network Optimization</a></li><li class="expanded "><a href="inet/network/tunnels.html">linux virtual interfaces: Tunnels</a></li><li class="expanded "><a href="inet/network/virtual-networking.html">linux interfaces for virtual networking</a></li><li class="expanded "><a href="inet/network/iproute2/index.html">iproute2</a></li><li><ol class="section"><li class="expanded "><a href="inet/network/iproute2/gre.html">GRE tunneling</a></li><li class="expanded "><a href="inet/network/iproute2/ip-link-type-bridge.html">ip link type bridge</a></li><li class="expanded "><a href="inet/network/iproute2/ip-link-type-vxlan.html">ip link type vxlan</a></li><li class="expanded "><a href="inet/network/iproute2/ip-rule.html">ip rule</a></li></ol></li></ol></li><li class="expanded "><a href="inet/vps/index.html">VPS</a></li></ol></li><li class="expanded "><a href="sync/index.html">Sync</a></li><li><ol class="section"><li class="expanded "><a href="sync/rsync.html">rsync</a></li></ol></li><li class="expanded "><a href="music/index.html">Music</a></li><li><ol class="section"><li class="expanded "><a href="music/choral.html">choral music</a></li><li class="expanded "><a href="music/Freedom-Anthony_Hamilton.html">Freedom - Anthony Hamilton</a></li><li class="expanded "><a href="music/Ariana-grande-imagine-lyrics.html">Ariana-grande-imagine-lyrics</a></li><li class="expanded "><a href="music/wong4.hau6.daai6.dou6.dung1.html">皇后大道东</a></li></ol></li><li class="expanded "><a href="movies.html" class="active">Movies</a></li><li class="expanded "><a href="math/index.html">Math</a></li><li><ol class="section"><li class="expanded "><a href="math/euler_totient_function.html">Euler's totient function</a></li></ol></li><li class="expanded "><a href="vim/index.html">vim</a></li><li><ol class="section"><li class="expanded "><a href="vim/help.html">help</a></li><li class="expanded "><a href="vim/plugins.html">Plugins</a></li><li class="expanded "><a href="vim/vim-plug.html">vim-plug: Minimalist Vim Plugin Manager</a></li><li class="expanded "><a href="vim/table.html">table</a></li><li class="expanded "><a href="vim/autopair.html">automatic pair insertion</a></li><li class="expanded "><a href="vim/ultisnips.html">Ultisnips</a></li><li class="expanded "><a href="vim/fzf.html">fzf</a></li><li class="expanded "><a href="vim/ale.html">ale: Asynchronous Lint Engine</a></li></ol></li><li class="expanded "><a href="terminal/index.html">Terminal</a></li><li><ol class="section"><li class="expanded "><a href="terminal/tmux.html">tmux: a terminal multiplexer</a></li><li class="expanded "><a href="terminal/iterm2.html">iTerm2</a></li></ol></li><li class="expanded "><a href="font/index.html">Font</a></li><li><ol class="section"><li class="expanded "><a href="font/firacode.html">firacode</a></li><li class="expanded "><a href="font/sanfranciscomono.html">Getting Apple’s SF Mono Font</a></li><li class="expanded "><a href="font/fontconfig.html">fontconfig</a></li><li class="expanded "><a href="font/hanyiqihei.html">汉仪旗黑</a></li></ol></li><li class="expanded "><a href="color.html">Color</a></li><li class="expanded "><a href="go/index.html">Go</a></li><li><ol class="section"><li class="expanded "><a href="go/note.html">Note</a></li><li class="expanded "><a href="go/algorithm/index.html">Algorithm</a></li><li><ol class="section"><li class="expanded "><a href="go/algorithm/Knuth–Morris–Pratt-algorithm.html">Knuth–Morris–Pratt algorithm</a></li><li class="expanded "><a href="go/algorithm/read-until-strings-in-stream.html">read until strings in stream</a></li></ol></li><li class="expanded "><a href="go/basis/index.html">Basis</a></li><li><ol class="section"><li class="expanded "><a href="go/basis/go_command.html">Command go</a></li><li class="expanded "><a href="go/basis/encodings.html">Character Sets and Encodings</a></li><li class="expanded "><a href="go/basis/struct.html">struct</a></li><li class="expanded "><a href="go/basis/closure.html">closure</a></li><li class="expanded "><a href="go/basis/interfaces.html">interfaces</a></li><li class="expanded "><a href="go/basis/concurrency.html">Concurrency</a></li><li class="expanded "><a href="go/basis/channels.html">Channels</a></li><li class="expanded "><a href="go/basis/slices.html">slices</a></li><li class="expanded "><a href="go/basis/astrings.html">strings</a></li><li class="expanded "><a href="go/basis/socket.html">socket</a></li><li class="expanded "><a href="go/basis/initfunc.html">init functions in Go</a></li><li class="expanded "><a href="go/basis/gc.html">Garbage Collector</a></li><li class="expanded "><a href="go/basis/type_variable_value.html">type vs variable vs value</a></li><li class="expanded "><a href="go/basis/loop.html">Loop is so complicated</a></li><li class="expanded "><a href="go/basis/gomod.html">Modules</a></li><li class="expanded "><a href="go/basis/async_vs_sync.html">Asynchronous vs synchronous</a></li><li class="expanded "><a href="go/basis/monitor_goroutines.html">Monitor goroutines</a></li><li class="expanded "><a href="go/basis/how_to_check_if_a_file_exists.html">How to check if a file exists in Go</a></li><li class="expanded "><a href="go/basis/distinguish_ipv4_and_ipv6.html">distinguish ipv4 and ipv6</a></li><li class="expanded "><a href="go/basis/gorutine_and_cwd.html">gorutine and CWD</a></li><li class="expanded "><a href="go/basis/cs.html">How to WRITE A CS</a></li><li class="expanded "><a href="go/basis/exec_Cmd_signal.html">How to signal a exec.Cmd</a></li><li class="expanded "><a href="go/basis/pipe_io.ReadWriteCloser.html">Pipe io.ReadWriteCloser</a></li></ol></li><li class="expanded "><a href="go/pkg/index.html">Packages</a></li><li><ol class="section"><li class="expanded "><a href="go/pkg/io/io.html">io</a></li><li><ol class="section"><li class="expanded "><a href="go/pkg/io/ioutil.html">ioutil</a></li></ol></li><li class="expanded "><a href="go/pkg/errors.html">errors</a></li><li class="expanded "><a href="go/pkg/bufio.html">bufio</a></li><li class="expanded "><a href="go/pkg/unicode/unicode.html">unicode</a></li><li><ol class="section"><li class="expanded "><a href="go/pkg/unicode/utf8.html">utf8</a></li><li class="expanded "><a href="go/pkg/unicode/utf16.html">utf16</a></li></ol></li><li class="expanded "><a href="go/pkg/regexp.html">regexp</a></li><li class="expanded "><a href="go/pkg/os/os.html">os</a></li><li><ol class="section"><li class="expanded "><a href="go/pkg/os/exec.html">exec</a></li><li class="expanded "><a href="go/pkg/os/signal.html">signal</a></li></ol></li><li class="expanded "><a href="go/pkg/path.html">path</a></li><li class="expanded "><a href="go/pkg/sync/sync.html">sync</a></li><li class="expanded "><a href="go/pkg/context.html">context</a></li><li class="expanded "><a href="go/pkg/log/log.html">log</a></li><li class="expanded "><a href="go/pkg/net/net.html">net</a></li><li><ol class="section"><li class="expanded "><a href="go/pkg/net/textproto.html">textproto</a></li><li class="expanded "><a href="go/pkg/net/smtp.html">smtp</a></li><li class="expanded "><a href="go/pkg/net/mail.html">mail</a></li></ol></li><li class="expanded "><a href="go/pkg/encoding/encoding.html">encoding</a></li><li><ol class="section"><li class="expanded "><a href="go/pkg/encoding/asn1.html">asn1</a></li><li class="expanded "><a href="go/pkg/encoding/json.html">json</a></li><li class="expanded "><a href="go/pkg/encoding/gob.html">gob</a></li><li class="expanded "><a href="go/pkg/encoding/base64.html">base64</a></li><li class="expanded "><a href="go/pkg/encoding/hex.html">hex</a></li><li class="expanded "><a href="go/pkg/encoding/pem.html">pem</a></li></ol></li><li class="expanded "><a href="go/pkg/crypto/crypto.html">crypto</a></li><li><ol class="section"><li class="expanded "><a href="go/pkg/crypto/rand.html">rand</a></li><li class="expanded "><a href="go/pkg/crypto/sha256.html">sha256</a></li><li class="expanded "><a href="go/pkg/crypto/sha512.html">sha512</a></li><li class="expanded "><a href="go/pkg/crypto/sha1.html">sha1</a></li><li class="expanded "><a href="go/pkg/crypto/md5.html">md5</a></li><li class="expanded "><a href="go/pkg/crypto/aes.html">aes</a></li><li class="expanded "><a href="go/pkg/crypto/cipher.html">cipher</a></li><li class="expanded "><a href="go/pkg/crypto/rsa.html">rsa</a></li><li class="expanded "><a href="go/pkg/crypto/x509/x509.html">x509</a></li></ol></li><li class="expanded "><a href="go/pkg/internal/index.html">internal</a></li><li><ol class="section"><li class="expanded "><a href="go/pkg/internal/poll.html">poll</a></li></ol></li></ol></li><li class="expanded "><a href="go/pkgx/index.html">Package x</a></li><li><ol class="section"><li class="expanded "><a href="go/pkgx/crypto/index.html">crypto</a></li><li><ol class="section"><li class="expanded "><a href="go/pkgx/crypto/ssh.html">ssh</a></li></ol></li><li class="expanded "><a href="go/pkgx/text/index.html">text</a></li><li><ol class="section"><li class="expanded "><a href="go/pkgx/text/transform.html">transform</a></li><li class="expanded "><a href="go/pkgx/text/encoding/encoding.html">encoding</a></li><li class="expanded "><a href="go/pkgx/text/unicode/index.html">unicode</a></li><li><ol class="section"><li class="expanded "><a href="go/pkgx/text/unicode/norm.html">norm</a></li></ol></li></ol></li></ol></li><li class="expanded "><a href="go/pkgy/index.html">Package y</a></li><li><ol class="section"><li class="expanded "><a href="go/pkgy/protobuf.html">protobuf</a></li><li class="expanded "><a href="go/pkgy/grpc.html">grpc</a></li><li class="expanded "><a href="go/pkgy/yaml.v2.html">yaml.v2</a></li><li class="expanded "><a href="go/pkgy/cobra.html">cobra</a></li><li class="expanded "><a href="go/pkgy/viper.html">viper</a></li><li class="expanded "><a href="go/pkgy/pflag.html">pflag</a></li><li class="expanded "><a href="go/pkgy/systemstat.html">systemstat</a></li><li class="expanded "><a href="go/pkgy/zap.html">zap</a></li><li class="expanded "><a href="go/pkgy/ftp.html">ftp</a></li><li class="expanded "><a href="go/pkgy/smtpd.html">smtpd</a></li><li class="expanded "><a href="go/pkgy/telnet.html">telnet</a></li><li class="expanded "><a href="go/pkgy/netconf.html">netconf</a></li><li class="expanded "><a href="go/pkgy/gobot.html">gobot</a></li><li class="expanded "><a href="go/pkgy/kcp-go.html">kcp-go</a></li><li class="expanded "><a href="go/pkgy/go-libp2p.html">go-libp2p</a></li><li class="expanded "><a href="go/pkgy/nff-go/index.html">nff-go</a></li><li><ol class="section"><li class="expanded "><a href="go/pkgy/nff-go/flow.html">flow</a></li><li class="expanded "><a href="go/pkgy/nff-go/packet.html">packet</a></li></ol></li><li class="expanded "><a href="go/pkgy/goexpect.html">goexpect</a></li></ol></li><li class="expanded "><a href="go/protocols/index.html">Protocols</a></li><li><ol class="section"><li class="expanded "><a href="go/protocols/application_level_protocols.html">Application-Level Protocols</a></li><li class="expanded "><a href="go/protocols/ping.html">ICMP:ping</a></li><li class="expanded "><a href="go/protocols/socks5.html">socks5</a></li><li class="expanded "><a href="go/protocols/shadowsocks.html">shadowsocks</a></li><li class="expanded "><a href="go/protocols/smtp.html">SMTP</a></li><li class="expanded "><a href="go/protocols/telnet.html">TELNET</a></li><li class="expanded "><a href="go/protocols/ftp.html">FTP</a></li><li class="expanded "><a href="go/protocols/yaml.html">YAML</a></li><li class="expanded "><a href="go/protocols/x509.html">X.509</a></li><li class="expanded "><a href="go/protocols/ssh.html">SSH</a></li></ol></li><li class="expanded "><a href="go/utils/index.html">Utils</a></li><li><ol class="section"><li class="expanded "><a href="go/utils/cfssl.html">cfssl</a></li><li class="expanded "><a href="go/utils/meshbird.html">meshbird</a></li><li class="expanded "><a href="go/utils/go-shadowsocks2.html">go-shadowsocks2</a></li><li class="expanded "><a href="go/utils/markdown-toc.html">sebdah/markdown-toc</a></li><li class="expanded "><a href="go/utils/orgalorg.html">reconquest/orgalorg</a></li><li class="expanded "><a href="go/utils/u-root.html">u-root</a></li><li class="expanded "><a href="go/utils/sweet.html">sweet</a></li><li class="expanded "><a href="go/utils/bad/index.html">Bad</a></li><li><ol class="section"><li class="expanded "><a href="go/utils/bad/jazigo.html">jazigo</a></li></ol></li></ol></li></ol></li><li class="expanded "><a href="webdev/index.html">Web Development</a></li><li><ol class="section"><li class="expanded "><a href="webdev/rest.html">REST</a></li><li class="expanded "><a href="webdev/organising-database-access.html">Organising Database Access</a></li><li class="expanded "><a href="webdev/routers.html">Routers</a></li><li class="expanded "><a href="webdev/sessions.html">Sessions</a></li><li class="expanded "><a href="webdev/protocol-http.html">Protocol http</a></li><li class="expanded "><a href="webdev/protocol-tls.html">Protocol tls</a></li><li class="expanded "><a href="webdev/go/pkg/http.html">Package http</a></li><li class="expanded "><a href="webdev/go/pkg/url.html">Package url</a></li><li class="expanded "><a href="webdev/go/pkg/text-template.html">Package template</a></li><li class="expanded "><a href="webdev/go/pkg/tls.html">Package tls</a></li><li class="expanded "><a href="webdev/go/pkgy/alice.html">Package alice</a></li><li class="expanded "><a href="webdev/webassembly.html">Webassembly</a></li><li class="expanded "><a href="webdev/gioui.html">gioui</a></li><li class="expanded "><a href="webdev/vugu.html">vugu</a></li><li class="expanded "><a href="webdev/vecty.html">vecty</a></li><li class="expanded "><a href="webdev/hugo.html">Hugo</a></li><li class="expanded "><a href="webdev/bootstrap.html">Bootstrap</a></li></ol></li><li class="expanded "><a href="db/index.html">DB</a></li><li><ol class="section"><li class="expanded "><a href="db/oracle/oracle.html">Oracle</a></li><li class="expanded "><a href="db/go/pkg/sql.html">Package sql</a></li><li class="expanded "><a href="db/redis.html">redis: a data structures server</a></li><li class="expanded "><a href="db/sqlite.html">SQLite</a></li><li class="expanded "><a href="db/mysql.html">MySQL</a></li></ol></li><li class="expanded "><a href="IT/index.html">IT</a></li><li><ol class="section"><li class="expanded "><a href="IT/dpdk.html">DPDK</a></li><li class="expanded "><a href="IT/minio.html">MinIO: OBJECT STORAGE FOR AI</a></li></ol></li><li class="expanded "><a href="api/index.html">API</a></li><li><ol class="section"><li class="expanded "><a href="api/telegram_bot.html">Telegram Bots</a></li><li class="expanded "><a href="api/weixin_web.html">WEIXIN WEB</a></li></ol></li><li class="expanded "><a href="devops/index.html">Devops</a></li><li><ol class="section"><li class="expanded "><a href="devops/mtail.html">mtail</a></li><li class="expanded "><a href="devops/prometheus/index.html">prometheus</a></li><li><ol class="section"><li class="expanded "><a href="devops/prometheus/usage.html">Usage</a></li><li class="expanded "><a href="devops/prometheus/client_golang/index.html">client_golang</a></li><li><ol class="section"><li class="expanded "><a href="devops/prometheus/client_golang/promhttp.html">promhttp</a></li><li class="expanded "><a href="devops/prometheus/client_golang/promauto.html">promauto</a></li><li class="expanded "><a href="devops/prometheus/client_golang/api.html">api</a></li></ol></li><li class="expanded "><a href="devops/prometheus/alertmanager.html">alertmanager</a></li><li class="expanded "><a href="devops/prometheus/node_exporter.html">node_exporter</a></li><li class="expanded "><a href="devops/prometheus/sql_exporter.html">sql_exporter</a></li><li class="expanded "><a href="devops/prometheus/procfs.html">procfs</a></li></ol></li><li class="expanded "><a href="devops/grafana.html">grafana</a></li><li class="expanded "><a href="devops/messagebird-sachet.html">messagebird/sachet</a></li></ol></li><li class="expanded "><a href="git/index.html">Git</a></li><li><ol class="section"><li class="expanded "><a href="git/undoing.html">Undoing Commits &amp; Changes</a></li></ol></li><li class="expanded "><a href="infra/index.html">Infrastructure</a></li><li><ol class="section"><li class="expanded "><a href="infra/vagrant.html">Vagrant: HashiCorp Development Environments Made Easy</a></li><li class="expanded "><a href="infra/terraform.html">Terraform: HashiCorp Infrastructure as Code</a></li><li class="expanded "><a href="infra/packer.html">Packer</a></li><li class="expanded "><a href="infra/ipxe.html">iPXE</a></li><li class="expanded "><a href="infra/dnsmasq.html">dnsmasq</a></li><li class="expanded "><a href="infra/matchbox.html">matchbox</a></li><li class="expanded "><a href="infra/ignition.html">Ignition: machine provisioning utility</a></li><li class="expanded "><a href="infra/typhoon.html">Typhoon: a minimal and free Kubernetes distribution</a></li><li class="expanded "><a href="infra/travis/index.html">Travis CI</a></li><li><ol class="section"><li class="expanded "><a href="infra/travis/gh-pages.html">GitHub Pages Deployment</a></li></ol></li><li class="expanded "><a href="infra/ansible.html">Ansible</a></li></ol></li><li class="expanded "><a href="k8s/index.html">k8s</a></li><li><ol class="section"><li class="expanded "><a href="k8s/client-go.html">Client Go</a></li><li class="expanded "><a href="k8s/concepts/index.html">CONCEPTS</a></li><li><ol class="section"><li class="expanded "><a href="k8s/concepts/ingress.html">Ingress</a></li></ol></li><li class="expanded "><a href="k8s/haproxy.html">HAProxy</a></li><li class="expanded "><a href="k8s/docker/index.html">Docker</a></li><li class="expanded "><a href="k8s/kubeadm.html">kubeadm quickstart</a></li><li class="expanded "><a href="k8s/kubeadm_ha.html">Creating Highly Available clusters with kubeadm</a></li><li class="expanded "><a href="k8s/calico.html">Calico: Secure networking for the cloud native era</a></li><li class="expanded "><a href="k8s/kubectl.html">kubectl</a></li><li class="expanded "><a href="k8s/k8s.html">Kubernetes</a></li><li class="expanded "><a href="k8s/etcd.html">etcd: A distributed, reliable key-value store</a></li><li class="expanded "><a href="k8s/helm.html">Helm: The package manager for Kubernetes</a></li><li class="expanded "><a href="k8s/rook.html">Rook: Cloud-Native Storage for Kubernetes</a></li><li class="expanded "><a href="k8s/harbor.html">Harbor</a></li><li class="expanded "><a href="k8s/traefik.html">Traefik: The Cloud Native Edge Router</a></li><li class="expanded "><a href="k8s/consul.html">Consul: HashiCorp a distributed service mesh</a></li><li class="expanded "><a href="k8s/rancher.html">Rancher</a></li><li class="expanded "><a href="k8s/coreos/index.html">CoreOS: Container Linux</a></li><li class="expanded "><a href="k8s/sig-storage-lib-external-provisioner.html">sig-storage-lib-external-provisioner</a></li><li class="expanded "><a href="k8s/nfs-provisioner.html">nfs-provisioner</a></li><li class="expanded "><a href="k8s/nfs-client.html">Kubernetes NFS-Client Provisioner</a></li><li class="expanded "><a href="k8s/change-default-storage-class.html">Change the default StorageClass</a></li></ol></li><li class="expanded "><a href="linux/index.html">Linux</a></li><li><ol class="section"><li class="expanded "><a href="linux/newvps.html">NewVPS</a></li><li class="expanded "><a href="linux/screen.html">GNU Screen</a></li><li class="expanded "><a href="linux/zsh.html">Zsh</a></li><li class="expanded "><a href="linux/bash.html">Bash</a></li><li class="expanded "><a href="linux/namespace.html">namespace</a></li><li class="expanded "><a href="linux/systemd.timer.html">systemd.timer</a></li><li class="expanded "><a href="linux/systemd.html">systemd</a></li><li class="expanded "><a href="linux/grub2.html">GRUB 2</a></li><li class="expanded "><a href="linux/tmpfs.html">RAM disk: tmpfs</a></li><li class="expanded "><a href="linux/ubuntu/index.html">Ubuntu</a></li><li><ol class="section"><li class="expanded "><a href="linux/ubuntu/ubuntu_lts.html">LTS: Long Term Support</a></li><li class="expanded "><a href="linux/ubuntu/apt.html">APT: Advanced Packaging Tool</a></li></ol></li><li class="expanded "><a href="linux/archlinux/install.html">Install archlinux</a></li><li class="expanded "><a href="linux/udevil.html">automatic mount: udevil</a></li><li class="expanded "><a href="linux/videoplayers.html">Video Player</a></li><li class="expanded "><a href="linux/de.html">Desktop Environment</a></li><li class="expanded "><a href="linux/wm.html">Window Manager</a></li><li class="expanded "><a href="linux/bluetooth.html">Bluetooth</a></li><li class="expanded "><a href="linux/im.html">Input Method</a></li><li class="expanded "><a href="linux/mail.html">Mail Server:postfix/dovecot</a></li><li class="expanded "><a href="linux/grep.html">grep</a></li><li class="expanded "><a href="linux/sed.html">sed</a></li><li class="expanded "><a href="linux/awk.html">awk</a></li><li class="expanded "><a href="linux/wifi.html">wifi</a></li><li class="expanded "><a href="linux/vsftpd/simple_anonymous_ftp_server.html">vsftpd</a></li><li class="expanded "><a href="linux/archlinux/index.html">archlinux</a></li><li><ol class="section"><li class="expanded "><a href="linux/archlinux/install.html">Install</a></li></ol></li><li class="expanded "><a href="linux/rhel/index.html">rhel</a></li><li><ol class="section"><li class="expanded "><a href="linux/rhel/yum.html">YUM</a></li><li class="expanded "><a href="linux/rhel/yumdownloader.html">Yumdownloader</a></li><li class="expanded "><a href="linux/rhel/network.html">Networking</a></li></ol></li><li class="expanded "><a href="linux/cpu_time.html">cpu time</a></li><li class="expanded "><a href="linux/context_switch.html">context switch</a></li><li class="expanded "><a href="linux/cgroups.html">cgroups</a></li><li class="expanded "><a href="linux/ssh/index.html">ssh</a></li><li><ol class="section"><li class="expanded "><a href="linux/ssh/ssh_agent.html">ssh-agent</a></li></ol></li><li class="expanded "><a href="linux/qemu.html">qemu</a></li><li class="expanded "><a href="linux/kvm/index.html">KVM</a></li><li><ol class="section"><li class="expanded "><a href="linux/kvm/kvm.html">KVM</a></li><li class="expanded "><a href="linux/kvm/admin.html">Administration</a></li></ol></li><li class="expanded "><a href="linux/kernel/index.html">kernel</a></li><li><ol class="section"><li class="expanded "><a href="linux/kernel/kexec.html">kexec - directly boot into a new kernel</a></li></ol></li><li class="expanded "><a href="linux/initramfs.html">initramfs</a></li><li class="expanded "><a href="linux/dracut.html">dracut</a></li><li class="expanded "><a href="linux/liveos.html">LiveOS image</a></li><li class="expanded "><a href="linux/modules.html">modules</a></li><li class="expanded "><a href="linux/dhcpd.html">dhcpd</a></li><li class="expanded "><a href="linux/nginx.html">nginx</a></li></ol></li><li class="expanded "><a href="console/index.html">Console</a></li><li><ol class="section"><li class="expanded "><a href="console/cmus.html">cmus: C Music Player</a></li><li class="expanded "><a href="console/ffplay.html">ffplay: Media Player</a></li><li class="expanded "><a href="console/youtube-dl.html">youtube-dl: Download videos from YouTube</a></li><li class="expanded "><a href="console/wkhtmltopdf.html">wkhtmltopdf</a></li><li class="expanded "><a href="console/openssl.html">openssl</a></li><li class="expanded "><a href="console/pandoc.html">pandoc</a></li></ol></li><li class="expanded "><a href="tools/index.html">Tools</a></li><li><ol class="section"><li class="expanded "><a href="tools/firefox.html">Firefox</a></li><li class="expanded "><a href="tools/ungoogled-chromium.html">Eloston/ungoogled-chromium</a></li><li class="expanded "><a href="tools/ascii.html">Four Column ASCII</a></li><li class="expanded "><a href="tools/markdown.html">markdown</a></li><li class="expanded "><a href="tools/mdbook.html">mdbook</a></li><li class="expanded "><a href="tools/zhengma.html">Zhengma</a></li><li class="expanded "><a href="tools/virtualbox.html">VirtualBox</a></li><li class="expanded "><a href="tools/github.html">Github</a></li><li class="expanded "><a href="tools/anki.html">Anki</a></li><li class="expanded "><a href="tools/krita.html">krita</a></li><li class="expanded "><a href="tools/gimp.html">GIMP - GNU Image Manipulation Program</a></li><li class="expanded "><a href="tools/sxiv.html">sxiv: Simple X Image Viewer</a></li><li class="expanded "><a href="tools/kodi.html">Kodi: entertainment hub</a></li><li class="expanded "><a href="tools/mpv.html">mpv and mplayer: media player</a></li><li class="expanded "><a href="tools/photoprism.html">PhotoPrism: Browse your life in pictures</a></li><li class="expanded "><a href="tools/transmission.html">Transmission</a></li><li class="expanded "><a href="tools/audacity.html">Audacity: audio editor and recorder</a></li></ol></li><li class="expanded "><a href="macOS/index.html">macOS</a></li><li><ol class="section"><li class="expanded "><a href="macOS/shortcuts.html">Shortcuts</a></li><li class="expanded "><a href="macOS/diskutil.html">diskutil</a></li><li class="expanded "><a href="macOS/homebrew.html">homebrew</a></li></ol></li><li class="expanded "><a href="raspberrypi/index.html">Raspberry Pi</a></li><li><ol class="section"><li class="expanded "><a href="raspberrypi/install.html">Install</a></li></ol></li><li class="expanded "><a href="android/index.html">Android</a></li><li><ol class="section"><li class="expanded "><a href="android/adb.html">adb</a></li><li class="expanded "><a href="android/rom.html">ROM</a></li><li class="expanded "><a href="android/lineageos.html">Install Lineageos</a></li><li class="expanded "><a href="android/termux.html">termux</a></li><li class="expanded "><a href="android/scrcpy.html">scrcpy: Display and control your Android device</a></li><li class="expanded "><a href="android/magisk.html">Magisk and EdXposed(deprecated)</a></li></ol></li><li class="expanded "><a href="network/index.html">Network</a></li><li><ol class="section"><li class="expanded "><a href="network/simulators.html">Open-Source Network Simulators</a></li></ol></li><li class="expanded "><a href="switch/index.html">switch</a></li><li><ol class="section"><li class="expanded "><a href="switch/protocols/index.html">Protocols</a></li><li><ol class="section"><li class="expanded "><a href="switch/protocols/stp.html">STP</a></li></ol></li><li class="expanded "><a href="switch/S5720_56C_EI.html">S5720-56C-EI</a></li></ol></li><li class="expanded "><a href="blockchains/index.html">Blockchains</a></li><li><ol class="section"><li class="expanded "><a href="blockchains/mew.html">MyEtherWallet</a></li></ol></li><li class="expanded "><a href="misc/index.html">Misc</a></li><li><ol class="section"><li class="expanded "><a href="misc/shure_bt2.html">Shure Bluetooth® Earphones</a></li><li class="expanded "><a href="misc/images_9_to_3x3.html">把9张图片3X3在一张A4纸上打印</a></li><li class="expanded "><a href="misc/hhkb_linux.html">使用xmodmap简易模仿HHKB</a></li><li class="expanded "><a href="misc/d7000.html">D7000</a></li><li class="expanded "><a href="misc/hp_laserjet_1536dnf_mfp.html">HP LaserJet 1536dnf MFP</a></li><li class="expanded "><a href="misc/jav.html">JAV</a></li><li class="expanded "><a href="misc/comedy.html">Comedy</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Haha</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#movies" id="movies">Movies</a></h1>
+<h1><a class="header" href="#links" id="links">Links</a></h1>
+<ul>
+<li><a href="https://www.imdb.com/name/nm0102873/?ref_=tt_ov_dr">Harry Bradbeer - IMDb</a></li>
+</ul>
+<h1><a class="header" href="#2019" id="2019">2019</a></h1>
+<h1><a class="header" href="#december" id="december">December</a></h1>
+<ul>
+<li>
+<p><a href="https://www.imdb.com/title/tt4786824/episodes?season=2&amp;ref_=tt_eps_sn_2">The Crown - Season 2 - IMDb</a></p>
+<p>Sat Dec 07 22:49:03 CST 2019</p>
+<p>Can I say it's impressive.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt6751668/?ref_=fn_al_tt_1">Parasite (2019) - IMDb</a></p>
+<p>Sun Dec 01 19:47:41 CST 2019</p>
+<p>I'm cold. I may have accepted my fate.</p>
+</li>
+</ul>
+<h1><a class="header" href="#november" id="november">November</a></h1>
+<ul>
+<li>
+<p><a href="https://www.imdb.com/title/tt4786824/episodes?season=1&amp;ref_=tt_eps_sn_1">The Crown - Season 1 - IMDb</a></p>
+<p>Thu Nov 28 22:48:16 CST 2019</p>
+<p>I just don't understand what's the problem with you.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt4520988/">Frozen II (2019) - IMDb</a></p>
+<p>Sat Nov 23 21:03:41 CST 2019</p>
+<p>Of cause scence on the screen is beautiful. but I'm not get the point very
+much.  Seems about nature protect. Not very into this theme. I don't think
+human can protect the Sun. Or maybe one day human will, who knows.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0489974/?ref_=fn_al_tt_1">Carnival Row (TV Series 2019– ) - IMDb</a></p>
+<p>Sat Nov 16 23:40:47 CST 2019</p>
+<p>So. it's a love drama ?</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0102926/?ref_=fn_al_tt_1">The Silence of the Lambs (1991) - IMDb</a></p>
+<p>Sat Nov 09 00:25:08 CST 2019</p>
+<p>Old fashioned. </p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt7137906/?ref_=fn_al_tt_1">When They See Us (TV Mini-Series 2019) - IMDb</a></p>
+<p>Fri Nov 08 22:05:18 CST 2019</p>
+<p>Life...</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8363040/episodes?season=1&amp;ref_=tt_eps_sn_1">Defending the Guilty - Season 1 - IMDb</a></p>
+<p>Mon Nov 04 20:41:47 CST 2019</p>
+<p>Can't get the point.</p>
+</li>
+</ul>
+<h1><a class="header" href="#october" id="october">October</a></h1>
+<ul>
+<li>
+<p><a href="https://www.imdb.com/title/tt8526872/?ref_=fn_al_tt_1">Dolemite Is My Name (2019) - IMDb</a></p>
+<p>Tue Oct 29 20:05:35 CST 2019</p>
+<p>it just likely being successful is so easy.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1478839/?ref_=fn_al_tt_1">The Art of Racing in the Rain (2019) - IMDb</a></p>
+<p>Mon Oct 28 22:12:00 CST 2019</p>
+<p>A tough story. a happy ending story. I like it.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt2294629/?ref_=fn_al_tt_1">Frozen (2013) - IMDb</a></p>
+<p>Sat Oct 26 23:52:06 CST 2019</p>
+<p>It's just perfect.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1190634/?ref_=fn_al_tt_1">The Boys (TV Series 2019– ) - IMDb</a></p>
+<p>Sat Oct 26 18:44:29 CST 2019</p>
+<p>funny and dark.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt7909970/episodes?season=1&amp;ref_=tt_eps_sn_1">Unbelievable - Season 1 - IMDb</a></p>
+<p>Thu Oct 24 23:59:49 CST 2019</p>
+<p>But I still feel hopeless.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8614426/?ref_=ttep_ep3">&quot;Unbelievable&quot; Episode #1.3 (TV Episode 2019) - IMDb</a></p>
+<p>Wed Oct 23 00:04:48 CST 2019</p>
+<p>Good Job. They find a match.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8614422/?ref_=ttep_ep1">&quot;Unbelievable&quot; Episode #1.1 (TV Episode 2019) - IMDb</a></p>
+<p>Sun Oct 20 21:14:40 CST 2019</p>
+<p>WTF. Why ? why things leads to such stituation.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt6905542/?ref_=fn_al_tt_2">The Dark Crystal: Age of Resistance (TV Series 2019– ) - IMDb</a></p>
+<p>Sat Oct 19 20:41:39 CST 2019<br />
+All roles in this drama are ugly and funny. and impressive. and hyperbole.
+and I like it.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8201186/episodes?season=1&amp;ref_=tt_eps_sn_1">The Capture - Season 1 - IMDb</a></p>
+<p>Mon Oct 14 20:41:58 CST 2019<br />
+When you watch someone else, don't pretend there's no one watch you.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt3567288/?ref_=fn_al_tt_1">The Visit (2015) - IMDb</a></p>
+<p>Sun Oct 13 18:14:18 CST 2019<br />
+An one week trip to grand parents's home, which finally found they are
+murders. </p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt7472896/episodes?season=1&amp;ref_=tt_eps_sn_1">Mr Inbetween - Season 1 - IMDb</a></p>
+<p>Sat Oct 05 21:43:29 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt7016936/episodes?season=2&amp;ref_=tt_eps_sn_2">Killing Eve - Season 2 - IMDb</a></p>
+<p>Tue Oct 01 14:36:20 CST 2019</p>
+</li>
+</ul>
+<h1><a class="header" href="#september" id="september">September</a></h1>
+<ul>
+<li>
+<p><a href="https://www.imdb.com/title/tt7016936/episodes?season=1&amp;ref_=tt_eps_sn_1">Killing Eve - Season 1 - IMDb</a></p>
+<p>Sat Sep 28 20:37:42 CST 2019<br />
+Good drama as always.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt6229670/?ref_=ttep_ep4">&quot;Peaky Blinders&quot; The Loop (TV Episode 2019) - IMDb</a></p>
+<p>Tue Sep 24 00:08:44 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt6320628/?ref_=fn_al_tt_1">Spider-Man: Far from Home (2019) - IMDb</a></p>
+<p>Sat Sep 21 14:18:28 CST 2019<br />
+Spider boy killed some bad guy on his summer vacation. bad script.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8201452/?ref_=ttep_ep3">&quot;The Capture&quot; Truffle Hog (TV Episode 2019) - IMDb</a></p>
+<p>Sat Sep 21 02:00:19 CST 2019<br />
+Good design.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt2442560/episodes?season=4&amp;ref_=tt_eps_sn_4">Peaky Blinders - Season 4 - IMDb</a></p>
+<p>Tue Sep 17 23:12:20 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt2442560/episodes?season=3&amp;ref_=tt_eps_sn_3">Peaky Blinders - Season 3 - IMDb</a></p>
+<p>Sat Sep 14 23:02:37 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt2442560/episodes?season=2&amp;ref_=tt_eps_sn_2">Peaky Blinders - Season 2 - IMDb</a></p>
+<p>Very good drama. Good storyline.<br />
+Fri Sep 13 19:11:41 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt2461632/?ref_=ttep_ep5">&quot;Peaky Blinders&quot; Episode #1.5 (TV Episode 2013) - IMDb</a></p>
+<p>Tue Sep 10 00:17:54 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt2471502/?ref_=ttep_ep2">&quot;Peaky Blinders&quot; Episode #1.2 (TV Episode 2013) - IMDb</a></p>
+<p>Mon Sep 09 00:48:14 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5761478/episodes?season=3&amp;ref_=tt_eps_sn_3">Harlots - Season 3 - IMDb</a></p>
+<p>Sat Sep 07 23:16:04 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5761478/episodes?season=2&amp;ref_=tt_eps_sn_2">Harlots - Season 2 - IMDb</a></p>
+<p>Love the girls. sometimes story line is just nonsense.<br />
+Mon Sep 02 22:07:53 CST 2019</p>
+</li>
+</ul>
+<h2><a class="header" href="#august" id="august">August</a></h2>
+<ul>
+<li>
+<p><a href="https://www.imdb.com/title/tt6139732/?ref_=fn_al_tt_1">Aladdin (2019) - IMDb</a></p>
+<p>Sat Aug 31 20:19:38 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8708280/?ref_=fn_al_tt_1">State of the Union (TV Series 2019– ) - IMDb</a></p>
+<p>Tue Aug 20 21:26:43 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5707984/?ref_=ttep_ep4">&quot;Fleabag&quot; Episode #1.4 (TV Episode 2016) - IMDb</a></p>
+<p>Sun Aug 18 01:25:57 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt7211618/?ref_=fn_al_tt_1">Gentleman Jack (TV Series 2019– ) - IMDb</a></p>
+<p>always like happy ending drama.<br />
+Fri Aug 16 22:44:18 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8772296/?ref_=ttep_ep_tt">Euphoria (TV Series 2019– ) - IMDb</a></p>
+<p>Kid's life are weird.<br />
+Sat Aug 10 21:34:43 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5761478/episodes?season=1&amp;ref_=tt_eps_sn_1">Harlots - Season 1 - IMDb</a></p>
+<p>It has a tense and rich storyline. Very good drama.<br />
+Fri Aug 09 00:02:54 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt2380307/?ref_=fn_al_tt_1">Coco (2017) - IMDb</a></p>
+<p>Very good movie, very good story line.<br />
+Sun Aug 04 23:19:24 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0111161/?ref_=fn_al_tt_3">The Shawshank Redemption (1994) - IMDb</a></p>
+<p>Hope is the best thing of all things. I hope I can have hope of my life.<br />
+Thu Aug 01 23:08:36 CST 2019</p>
+</li>
+</ul>
+<h2><a class="header" href="#july" id="july">July</a></h2>
+<ul>
+<li>
+<p><a href="https://www.imdb.com/title/tt1853728/?ref_=fn_al_tt_1">Django Unchained (2012) - IMDb</a></p>
+<p>I want FREEDOM.<br />
+Tue Jul 30 22:03:12 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1869454/?ref_=fn_al_tt_1">Good Omens (TV Mini-Series 2019) - IMDb</a></p>
+<p>Angel ? Daemon ? Humanity ? Angel + Daemon = Humanity ?<br />
+I think being funny is a very important charactor of humanity.<br />
+Who create this world ? How it could be just come from nothing ? where does
+this <strong>NOTHING</strong> come from ? This reality is just so rediculous. What if that
+everything is just not real ?<br />
+Sun Jul 28 20:41:18 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0103639/?ref_=fn_al_tt_2">Aladdin (1992) - IMDb</a></p>
+<p>Beautiful story. Beautiful songs.<br />
+Wed Jul 24 20:19:32 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt2386490/?ref_=fn_al_tt_4">How to Train Your Dragon: The Hidden World (2019) - IMDb</a></p>
+<p>Getting better and better.<br />
+Mon Jul 22 00:30:48 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt6105098/?ref_=fn_al_tt_1">The Lion King (2019) - IMDb</a></p>
+<p>Beautiful music, beautiful memories. But, it seams that these alive animals
+not as alive as those in animation version.<br />
+Sun Jul 21 17:57:42 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8664276/?ref_=ttep_ep2">&quot;After Life&quot; Episode #1.2 (TV Episode 2019) - IMDb</a></p>
+<p>Sun Jul 14 21:31:33 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8664264/?ref_=ttep_ep1">&quot;After Life&quot; Episode #1.1 (TV Episode 2019) - IMDb</a></p>
+<p>It feels like that my life is just left darkness. So what's the difference if
+I passed away now, or some more years later soon. That is, what is the
+meaning of life. I always didn't get it. Also we can way, life is just life,
+life doen't need a meaning. Should I just enjoy it, do my best ?<br />
+But it still make nonsense.<br />
+Sun Jul 14 21:02:39 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0437086/?ref_=fn_al_tt_2">Alita: Battle Angel (2019) - IMDb</a></p>
+<p>Just a movie. but I like Alita. Very prety.<br />
+Sun Jul 14 17:04:35 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt7948996/episodes?season=1&amp;ref_=tt_eps_sn_1">Chimerica - Season 1 - IMDb</a></p>
+<p>I just don't understand, everything.<br />
+Sun Jul 14 00:00:39 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8211552/?ref_=ttep_ep1">&quot;Chimerica&quot; Kodak Ergo Sum (TV Episode 2019) - IMDb</a></p>
+<p>Sad.<br />
+Tue Jul 09 22:09:54 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8750256/?ref_=ttep_ep5">&quot;Years and Years&quot; Episode #1.5 (TV Episode 2019) - IMDb</a></p>
+<p>Tue Jul 09 20:32:15 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8750264/?ref_=ttep_ep6">&quot;Years and Years&quot; Episode #1.6 (TV Episode 2019) - IMDb</a></p>
+<p>Tue Jul 09 21:30:11 CST 2019</p>
+</li>
+</ul>
+<h2><a class="header" href="#june" id="june">June</a></h2>
+<ul>
+<li>
+<p><a href="https://www.imdb.com/title/tt5687612/episodes?season=2&amp;ref_=tt_eps_sn_2">Fleabag - Season 2 - IMDb</a> </p>
+<p>Love is painful.<br />
+Sun Jun 30 16:52:47 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8806264/?ref_=ttep_ep2">&quot;Euphoria&quot; Stuntin' Like My Daddy (TV Episode 2019) - IMDb</a></p>
+<p>Thu Jun 27 23:13:06 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt9104566/?ref_=ttep_ep7">&quot;Ramy&quot; Ne Me Quitte Pas (TV Episode 2019) - IMDb</a><br />
+Make me feel sad. make me think of a song, &quot;portati via&quot;. Make me think
+about, Have you found yourself yet ?<br />
+Mon Jun 24 21:23:08 CST 2019</p>
+<ul>
+<li><a href="https://www.imdb.com/title/tt9104568/?ref_=ttep_ep8">&quot;Ramy&quot; Saving Mikaela (TV Episode 2019) - IMDb</a><br />
+Mon Jun 24 21:56:45 CST 2019</li>
+<li><a href="https://www.imdb.com/title/tt9371986/?ref_=ttep_ep9">&quot;Ramy&quot; Dude, Where's My Country? (TV Episode 2019) - IMDb</a><br />
+Mon Jun 24 22:23:42 CST 2019</li>
+<li><a href="https://www.imdb.com/title/tt9371994/?ref_=ttep_ep10">&quot;Ramy&quot; Cairo Cowboy (TV Episode 2019) - IMDb</a><br />
+Mon Jun 24 22:48:12 CST 2019</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt9748850/?ref_=ttep_ep1">&quot;Ramy&quot; Between the Toes (TV Episode 2019) - IMDb</a><br />
+Sun Jun 23 19:42:13 CST 2019</p>
+<ul>
+<li><a href="https://www.imdb.com/title/tt9174974/?ref_=ttep_ep2">&quot;Ramy&quot; Princess Diana (TV Episode 2019) - IMDb</a><br />
+Sun Jun 23 20:04:34 CST 2019</li>
+<li><a href="https://www.imdb.com/title/tt9174972/?ref_=ttep_ep3">&quot;Ramy&quot; A Black Spot on the Heart (TV Episode 2019) - IMDb</a><br />
+Sun Jun 23 22:23:33 CST 2019</li>
+<li><a href="https://www.imdb.com/title/tt9169374/?ref_=ttep_ep4">&quot;Ramy&quot; Strawberries (TV Episode 2019) - IMDb</a><br />
+Sun Jun 23 23:16:26 CST 2019</li>
+<li><a href="https://www.imdb.com/title/tt9082310/?ref_=ttep_ep5">&quot;Ramy&quot; Do the Ramadan (TV Episode 2019) - IMDb</a><br />
+Hahahahah<br />
+Sun Jun 23 23:43:13 CST 2019</li>
+<li><a href="https://www.imdb.com/title/tt9104564/?ref_=ttep_ep6">&quot;Ramy&quot; Refugees (TV Episode 2019) - IMDb</a><br />
+Mon Jun 24 00:18:43 CST 2019</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5908780/?ref_=ttep_ep5">&quot;Fleabag&quot; Episode #1.5 (TV Episode 2016) - IMDb</a></p>
+<p>Sun Jun 23 02:07:30 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8398600/episodes?season=1&amp;ref_=tt_eps_sn_1">After Life - Season 1 - IMDb</a></p>
+<p>What is life.<br />
+Wed Jun 05 23:32:19 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8664264/?ref_=ttep_ep1">&quot;After Life&quot; Episode #1.1 (TV Episode 2019) - IMDb</a></p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8664276/?ref_=ttep_ep2">&quot;After Life&quot; Episode #1.2 (TV Episode 2019) - IMDb</a></p>
+<p>I'm sad too.<br />
+Mon Jun 03 01:30:41 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5908782/?ref_=ttep_ep6">&quot;Fleabag&quot; Episode #1.6 (TV Episode 2016) - IMDb</a></p>
+<p>Best drama ever.<br />
+Mon Jun 03 00:19:27 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5707984/?ref_=ttep_ep4">&quot;Fleabag&quot; Episode #1.4 (TV Episode 2016) - IMDb</a></p>
+<p>I just wanna cry, all the time.<br />
+This little slice always makes me feel moving.<br />
+Sun Jun 02 22:12:42 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt9166672/?ref_=ttep_ep3">&quot;Chernobyl&quot; Open Wide, O Earth (TV Episode 2019) - IMDb</a></p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt9166678/?ref_=ttep_ep4">&quot;Chernobyl&quot; The Happiness of All Mankind (TV Episode 2019) - IMDb</a></p>
+<p>Sat Jun 01 19:01:49 CST 2019</p>
+</li>
+</ul>
+<h2><a class="header" href="#may" id="may">May</a></h2>
+<ul>
+<li>
+<p><a href="https://www.imdb.com/title/tt5687612/episodes?season=1&amp;ref_=tt_eps_sn_1">Fleabag - Season 1 - IMDb</a></p>
+<p>Just want to know after how many times I will feel boring.<br />
+Sun May 26 17:37:24 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8750242/?ref_=ttep_ep1">&quot;Years and Years&quot; Episode #1.1 (TV Episode 2019) - IMDb</a></p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8750250/?ref_=ttep_ep2">&quot;Years and Years&quot; Episode #1.2 (TV Episode 2019) - IMDb</a></p>
+<p>A drama which sells anxiety.<br />
+Fri May 24 00:52:49 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt9679522/?ref_=ttep_ep3">&quot;Fleabag&quot; Episode #2.3 (TV Episode 2019) - IMDb</a></p>
+<p>Does God watch me through a window.<br />
+Wed May 22 01:07:59 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt9679520/?ref_=ttep_ep2">&quot;Fleabag&quot; Episode #2.2 (TV Episode 2019) - IMDb</a></p>
+<p>Arm touch.<br />
+Tue May 21 23:11:51 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt6027920/?ref_=ttep_ep6">&quot;Game of Thrones&quot; The Iron Throne (TV Episode 2019) - IMDb</a></p>
+<p>Oops, time wasted.<br />
+Mon May 20 22:59:23 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0383574/?ref_=fn_al_tt_6">Pirates of the Caribbean: Dead Man's Chest (2006) - IMDb</a></p>
+<p>All those days have gone.<br />
+Sun May 19 22:42:43 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0398286/?ref_=fn_al_tt_1">Tangled (2010) - IMDb</a></p>
+<p>A story about a mother could be the most dangerous person to you.<br />
+Sat May 18 23:51:52 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8162428/?ref_=ttep_ep1">&quot;Chernobyl&quot; 1:23:45 (TV Episode 2019) - IMDb</a></p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8482972/?ref_=ttep_ep2">&quot;Chernobyl&quot; Please Remain Calm (TV Episode 2019) - IMDb</a></p>
+<p>Man made mistakes, Does God ?<br />
+Sat May 18 19:38:41 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5687612/episodes?season=1&amp;ref_=tt_eps_sn_1">Fleabag - Season 1 - IMDb</a></p>
+<p>Yeah, again.<br />
+I wonder when will I die.<br />
+Sat May 18 17:19:06 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5707984/?ref_=ttep_ep4">&quot;Fleabag&quot; Episode #1.4 (TV Episode 2016) - IMDb</a></p>
+<p>I just wanna cry, all the time.<br />
+Mon May 13 00:02:58 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt6733140/?ref_=ttep_ep6">&quot;Fleabag&quot; Episode #2.6 (TV Episode 2019) - IMDb</a></p>
+<p>I love you.<br />
+It'll pass.<br />
+Sat May 11 16:02:32 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt9679524/?ref_=ttep_ep4">&quot;Fleabag&quot; Episode #2.4 (TV Episode 2019) - IMDb</a></p>
+<p>Almost.<br />
+I like the Choral Music.<br />
+Thu May 09 01:11:24 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt9679522/?ref_=ttep_ep3">&quot;Fleabag&quot; Episode #2.3 (TV Episode 2019) - IMDb</a></p>
+<p>They'll last a week.<br />
+Wed May 08 01:48:27 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt6027914/?ref_=ttep_ep4">&quot;Game of Thrones&quot; The Last Of The Starks (TV Episode 2019) - IMDb</a></p>
+<p>So the dragon died on his vacation.<br />
+Tue May 07 23:46:34 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5687612/episodes?season=2&amp;ref_=tt_eps_sn_2">Fleabag - Season 2 - IMDb</a></p>
+<p>Wonderful work. Love it very much.<br />
+Sun May 05 00:31:09 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1130884/?ref_=fn_al_tt_1">Shutter Island (2010) - IMDb</a></p>
+<p>weird.<br />
+Sat May 04 19:41:35 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0361748/?ref_=fn_al_tt_1">Inglourious Basterds (2009) - IMDb</a></p>
+<p>Maybe I'm old enough, that I don't like to see people die. But I think it's
+a good movie, from some film master, though I don't understand it.<br />
+Sat May 04 00:48:36 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5687612/?ref_=fn_al_tt_1">Fleabag (TV Series 2016– ) - IMDb</a></p>
+<p>Still love it.<br />
+Fri May 03 19:40:37 CST 2019</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5707984/?ref_=ttep_ep4">&quot;Fleabag&quot; Episode #1.4 (TV Episode 2016) - IMDb</a></p>
+<p>I just wanna cry, all the time.<br />
+[Fri May 03 18:21:22 CST 2019]</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5687612/episodes?season=1&amp;ref_=tt_eps_sn_1">Fleabag - Season 1 - IMDb</a></p>
+<p>Still like it. Still feel happy to see them.<br />
+[Fri May 03 16:39:46 CST 2019]</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt4227538/?ref_=ttep_ep1">&quot;Westworld&quot; The Original (TV Episode 2016) - IMDb</a></p>
+<p>Are we REAL ?<br />
+[Thu May 02 20:41:46 CST 2019]</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8398600/?ref_=fn_al_tt_1">After Life (TV Series 2019– ) - IMDb</a></p>
+<p>A story about &quot;why didn't I suicide&quot;. and I still don't find the answer.<br />
+[Thu May 02 03:43:21 CST 2019]</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0209144/?ref_=fn_al_tt_1">Memento (2000) - IMDb</a></p>
+<p>weird and complicated. I don't even know what really happened.<br />
+[Wed May  1 22:21:54 CST 2019]</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1987680/?ref_=fn_al_tt_1">The Upside (2017) - IMDb</a></p>
+<p>Simple and good story. fun and impressive.<br />
+[Wed May  1 02:50:43 CST 2019]</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5687612/episodes?season=2&amp;ref_=tt_eps_sn_2">Fleabag - Season 2 - IMDb</a></p>
+<p>hahahahaha<br />
+[Wed May  1 00:13:21 CST 2019]</p>
+</li>
+</ul>
+<h2><a class="header" href="#april" id="april">April</a></h2>
+<ul>
+<li>
+<p><a href="https://www.imdb.com/title/tt6027912/?ref_=ttep_ep3">&quot;Game of Thrones&quot; The Long Night (TV Episode 2019) - IMDb</a></p>
+<p>A boring episode. Life and Death, their fighting is not at the same level,
+we all know it will end by a surprise. And we see it. This feel is just same
+as waiting. And I don't like waiting.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5687612/episodes?season=1&amp;ref_=tt_eps_sn_1">Fleabag - Season 1 - IMDb</a></p>
+<p>I like it. It makes me feel happy.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt4154796/?ref_=nv_sr_1?ref_=nv_sr_1">Avengers: Endgame (2019) - IMDb</a></p>
+<p>It's too long. and boring, and too noisy. I don't like this movie, is just
+because I don't like war. War is, No matter what you do, people die. either
+your people, or their people. you people don't deserve to die, 灭霸's
+soldiers don't deserve too. So why kill all of them ? and, if you can travel
+freely in the so called time space, then time means nothing.  And, the part
+I like in this movie, is the value behind the scenes( I can't distinct this
+word with sense), which about family, about life.<br />
+[Sat Apr 27 21:27:22 CST 2019]</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0944947/episodes?season=4">Game of Thrones - Season 4 - IMDb</a></p>
+<p>A sad season. [Sun Apr 14 20:50:29 CST 2019]</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0110912/?ref_=fn_al_tt_1">Pulp Fiction (1994) - IMDb</a></p>
+<p>Can't understand why the score of this movie is so high.去了解了一下评论，我
+无法认同也无法理解这些人的想法。我要的只是一个精彩或感人的故事，我要的不是什
+么高超的讲故事的方法。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0944947/episodes?season=3">Game of Thrones - Season 3 - IMDb</a></p>
+<p>Not that interesting.<br />
+[Fri Apr  5 21:16:14 CST 2019] </p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1853728/?ref_=fn_al_tt_1">Django Unchained (2012) - IMDb</a></p>
+<p>I love this movie very much. and the soundtrack in the movie is very
+beautiful.<br />
+[Mon Apr  1 20:48:38 CST 2019]</p>
+</li>
+</ul>
+<h2><a class="header" href="#before-april" id="before-april">Before April</a></h2>
+<pre><code>Memento, fight club, the prestige, the visit(这是恐怕电影哈哈), Inception,
+Slevin 
+有很多
+</code></pre>
+<ul>
+<li>
+<p><a href="https://www.imdb.com/title/tt0848228/?ref_=fn_al_tt_1">The Avengers (2012) - IMDb</a></p>
+<p>Of course, They won. Loki wanted to get the energy source, to obtain the
+power for being a king, But heros won't let him take it easy. so they fight.
+then they won, definitely.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt3896198/?ref_=fn_al_tt_2">Guardians of the Galaxy Vol. 2 (2017) - IMDb</a></p>
+<p>Peter's father, the God, wanted Peter to eternity the galaxy with him
+together, but when Peter knows that his father kill his mother, so Perter
+decide to kill his father. Then his friends help him kill his father
+together. Then the God dead.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0383574/?ref_=fn_al_tt_5">Pirates of the Caribbean: Dead Man's Chest (2006) - IMDb</a></p>
+<p>Jack Sparrow wanted to get Davy Jones's chest, but his compass can't work on
+his hand, so he let Will Turner to get the key and Elizabeth Swann to help
+find the chest. Then Jack Sparrow dead.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0944947/episodes?season=2">Game of Thrones - Season 2 - IMDb</a></p>
+<p>This season is not interesting. can't rember what happened.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0266543/?ref_=nv_sr_1">Finding Nemo (2003) - IMDb</a></p>
+<p>Always like simple movies. </p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5013056/">Dunkirk (2017) - IMDb</a></p>
+<p>不是所有的片都适合这种一会儿这里一会儿那里的叙述方式的。什么片都用这种方式来
+讲，就会让人反感。这让人感觉你的故事没什么内容，所有要用这种方式做点迷惑。好
+的故事，都是一口气讲完，整个过程没有尿点的。在我看来，这种讲故事的方式，只适
+合需要制造迷底的场景。这里用，真的是用错了。</p>
+<p>不过，不管他的叙事方式，让我思考的是，Why they war ? </p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0092067/?ref_=fn_al_tt_1">Castle in the Sky (1986) - IMDb</a></p>
+<p>Hayao Miyazaki's work，pure and cute。use the simple key thought, there's
+castle behind the clould. 但这个作品不是上乘的作品，没有强烈的表达出一个主题
+。当然你可以认为不是所有作品都要表达一个主题，那一个作品的目的是什么呢？很多
+人喜欢拿他的作品有许多隐喻来说事，藏着表达自然也是一种手法，但你怎么知道不是
+你自己想多了呢？人盲目了，就变成了信仰。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0944947/episodes?season=1&amp;ref_=tt_eps_sn_1">Game of Thrones - Season 1 - IMDb</a></p>
+<ul>
+<li>Bran see them F-word.</li>
+<li>Stark discover the golden hair.Stark dead.</li>
+</ul>
+<p>几个我喜欢的片断：</p>
+<ul>
+<li>Stark被砍头时无声的时间，表达了一个人在即要死的时候的感觉。</li>
+<li>Then you will see exactly what life is worth... when all the rest has gone.</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0482571/?ref_=fn_al_tt_1">The Prestige (2006) - IMDb</a></p>
+<p>Wow 原来这样 他们都太疯狂了</p>
+<p>电影很好 但对我来说 谜底藏的太久了 我整个过程都很迷惑 觉得好累</p>
+<p>我发现了这个电影的导演也是Christopher Nolan , 还有inception, interstellar也是
+他的作品，他的作品都设计的很复杂，很厉害。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1375666/?ref_=nv_sr_1">Inception (2010) - IMDb</a></p>
+<p>How you really know this world is real ? they share dream, the deep level
+dream, the time concept in dream is composed, the lost gravity, all of these
+designs are awesome. The writer and director Christopher Nolan is awesome.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5463162/?ref_=fn_al_tt_1">Deadpool 2 (2018) - IMDb</a></p>
+<p>救Russell. 没有上一部好看。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt3152624/?ref_=fn_al_tt_1">Trainwreck (2015) - IMDb</a></p>
+<p>我喜欢这个电影。They fall in love, they done, they fall in love again.
+classic drama. Some slice are realy funny.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1431045/?ref_=nv_sr_2">Deadpool (2016) - IMDb</a></p>
+<p>好看的。绝望之后的新生，我也很向往。许多人的向往吧。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt2015381/?ref_=fn_al_tt_1">Guardians of the Galaxy (2014) - IMDb</a></p>
+<p>抢石头大战. 偷球，被抓，越狱。球被夺，组团去抢，大Boss得搞破坏计划。靠个奇迹
+掉丝打败大Boss.比较传统的戏码。好看，但不精彩。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0137523/?ref_=fn_al_tt_1">Fight Club (1999) - IMDb</a></p>
+<p>A Excellent movie. Very different and amazing and a lot of fun.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0468569/?ref_=fn_al_tt_1">The Dark Knight (2008) - IMDb</a></p>
+<p>Batman的本事让我失望，可能是我期待错罢。其声音都让人很烦。反而Joker的本事让我
+感觉厉害的出奇，像是个没什么事他做不到的，简直逆天。垃圾设计。这个片子的主角明显
+是Joker。 放狗，然后在那里手打脚踢也太搞笑了，这TM是超级英雄片吗？</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0993846/?ref_=fn_al_tt_1">The Wolf of Wall Street (2013) - IMDb</a></p>
+<p>Excellent movie.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0816692/?ref_=fn_al_tt_1">Interstellar (2014) - IMDb</a></p>
+<p>人类有限的想像力下，也就只能拍出这样的东西了。但作为一部写Family, Dad and
+Daughter的片，还是很棒的片。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0467406/?ref_=fn_al_tt_1">Juno (2007) - IMDb</a></p>
+<p>年轻人的电影，既美好，于你来讲，又透着伤感。The girl named Juno. A story
+after she pregnant.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt3385524/?ref_=fn_al_tt_2">Stan &amp; Ollie (2018) - IMDb</a></p>
+<p>让我想起了于谦和郭德纲。不知道这两人以后的情况是什么样？</p>
+</li>
+<li>
+<p><a href="https://movie.douban.com/subject/4864908/">影 (豆瓣)</a></p>
+<p>喜欢东方古代味道的人可能会喜欢这个片。但是因为片里处处都透着奴性的味道，人性
+恶的权斗的正面的描写，使我不舒服。而且很没意思的结尾，抱出来就猜到了。而我总
+是猜到他们的算计，让我恶心自己。</p>
+</li>
+<li>
+<p><a href="https://movie.douban.com/subject/26796664/">叶问外传：张天志 (豆瓣)</a></p>
+<p>东方的片子，节奏总是要慢些，即使是这样的传统的武打片。这是典型的霍元甲戏码，
+弱小的Chinese打败强大的Westerner. 9012年还玩这样的东西，很无品，很无意思。</p>
+</li>
+<li>
+<p><a href="https://movie.douban.com/subject/4840388/">新喜剧之王 (豆瓣)</a></p>
+<p>毒鸡汤，太支。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5028340/?ref_=tt_rec_tt">Mary Poppins Returns (2018) - IMDb</a></p>
+<p>这个年代，拿堆动画和人在一起已经不算什么Imagination了. 不过比上一部好。总算能
+看懂你到底想说啥： Never explains anything, Everything is possible.可能它想表
+达的东西是好的，但是作为电影，这部电影真的不是好看的电影。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0058331/?ref_=fn_al_tt_1">Mary Poppins (1964) - IMDb</a></p>
+<p>说实在的，看完了一肚子火，这是什么垃圾啊. 整场都在瞎jb闹,特别是男一那满满小丑
+风，也蹦得让人非常烦躁。这些还能给高评分的 是不是有病。西文区高评分我理解，
+方块字区诚实点不行吗？</p>
+</li>
+<li>
+<p><a href="https://movie.douban.com/subject/3726072/">东邪西毒：终极版 (豆瓣)</a></p>
+<p>她的手很暖，就跟我大嫂的手一样。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0120737/?ref_=nv_sr_1">The Lord of the Rings: The Fellowship of the Ring (2001) - IMDb</a></p>
+<p>Exactly, I don't like it. When they fight, the camera shakes too much.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt7349662/?ref_=fn_al_tt_1">BlacKkKlansman (2018) - IMDb</a></p>
+<p>Black in America is not easy.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0371746/?ref_=nv_sr_1">Iron Man (2008) - IMDb</a></p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1228705/?ref_=tt_rec_tti">Iron Man 2 (2010) - IMDb</a></p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1300854/?ref_=tt_rec_tti">Iron Man 3 (2013) - IMDb</a></p>
+<p>都很好看的。好像都是第二次看。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1646971/?ref_=tt_rec_tt">How to Train Your Dragon 2 (2014) - IMDb</a></p>
+<p>Better than last episode.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0892769/?ref_=fn_al_tt_1">How to Train Your Dragon (2010) - IMDb</a></p>
+<p>Doesn't he transfrom this world too easy ?</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0114369/?ref_=fn_al_tt_1">Se7en (1995) - IMDb</a></p>
+<p>We All Sin</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1979388/?ref_=nv_sr_1">The Good Dinosaur (2015) - IMDb</a></p>
+<p>a movie about go though fear.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0770802/?ref_=nv_sr_1">Samsara (2011) - IMDb</a></p>
+<p>人生的意义是什么。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt3722234/?ref_=fn_al_tt_1">Gosnell: The Trial of America's Biggest Serial Killer (2018) - IMDb</a></p>
+<p>简单的Case of Murder，因为牵扯到abortion的问题，变得这样复杂。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt3750872/?ref_=fn_al_tt_1">The Wife (2017) - IMDb</a></p>
+<p>这份成就是他俩一起达成的，当然他老公是后勤。太多太多事情无法评述是非，这件事
+情同样。作为女性在这个世界，相对于男人其实更难。作为妻子也很难。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0118799/?ref_=nv_sr_1">Life Is Beautiful (1997) - IMDb</a></p>
+<p>一个很浪漫的电影。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0817177/?ref_=nv_sr_1">Flipped (2010) - IMDb</a></p>
+<p>年轻人的故事。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0093389/?ref_=fn_al_tt_1">The Last Emperor (1987) - IMDb</a></p>
+<p>一声叹息。有人说溥仪的一生是传奇的一生，对普通人来说，说传奇是不过份。但对一
+个皇帝来曰，实在是很差的一生，完全不传奇可言。其生不如死的感觉，比我作为一个
+普通人的生不如死的感觉好有一比，未必其更痛苦。革命无罪，造反有理，革命无罪，
+造反有理...那些人，仿佛是一堆机器。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt7401588/?ref_=fn_al_tt_1">Instant Family (2018) - IMDb</a></p>
+<p>我还是比较喜欢这种情感戏的。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt4595882/?ref_=fn_al_tt_1">Can You Ever Forgive Me? (2018) - IMDb</a></p>
+<p>还不知道主题到底是什么。这个片子的背景音乐比较有味道。看了50分钟仍然不知道这
+个片子的主题是什么。看到最后也不知道要说什么。就是一部电影吧。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8075192/?ref_=nv_sr_1">Shoplifters (2018) - IMDb</a></p>
+<p>实在谈不上是几多精彩的电影。乏味，节奏慢，大家喜欢的点不过是因为政治正确？</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8951058/?ref_=fn_al_tt_1">The Panama Papers (2018) - IMDb</a></p>
+<p>英语水平太差，看不太懂。这个文件跟东方的关系非常大，但是东方的人群并不关心。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0120815/?ref_=fn_al_tt_1">Saving Private Ryan (1998) - IMDb</a></p>
+<p>War movies always let you to think about something, about life, about war it
+self.  abot courage, about human or animal.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0454921/?ref_=fn_al_tt_1">The Pursuit of Happyness (2006) - IMDb</a></p>
+<p>这碗鸡汤跟第一次喝的时候一样浓。You gotta a dream... You gotta to protect it.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0075148/?ref_=fn_al_tt_1">Rocky (1976) - IMDb</a></p>
+<p>Very America. </p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1119646/?ref_=nv_sr_1">The Hangover (2009) - IMDb</a></p>
+<p>很早以前看过的。一直印象不错，所以就又看了一遍。算不错的电影，再看喜感就没那
+么足。可能这种电影不适合剧透。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5083738/?ref_=fn_al_tt_1">The Favourite (2018) - IMDb</a></p>
+<p>西方宫斗剧。味道跟东方宫斗剧很相似。人类之恶统都差不多。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt2380307/?ref_=fn_al_tt_1">Coco (2017) - IMDb</a></p>
+<p>A perfect movie about family, and some thinking about life. A concept of the
+final death.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt6966692/?ref_=fn_al_tt_1">Green Book (2018) - IMDb</a></p>
+<p>这个世界为什么这么多的麻烦。似乎麻烦是人活着的基础。电影很好，奇怪曰不出来为
+什么好，但是就是感觉好。可能是自己的境界达不到这个高度。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0109830/?ref_=fn_al_tt_1">Forrest Gump (1994) - IMDb</a></p>
+<p>很棒的电影。电影就像一个说书的，稳稳的讲完他要讲的故事，讲得很有吸引力。故事
+本身感觉都就是平平淡淡的故事，但是故事讲得是真的好。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0097165/?ref_=nv_sr_1">Dead Poets Society (1989) - IMDb</a></p>
+<p>岁月啊。Seize the day! Have you ?</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0268978/?ref_=fn_al_tt_1">A Beautiful Mind (2001) - IMDb</a></p>
+<p>很感人的故事。我希望我是男主。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0120762/?ref_=fn_al_tt_1">Mulan (1998) - IMDb</a></p>
+<p>肯定是因为沾上了China元素，这个片子的创造力都无掉了。Mulan是真是丑，不然哪样
+在军营里混呢。另外，我觉得美化这个题材，对儿童具有毒害作用。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0245429/?ref_=fn_al_tt_1">Spirited Away (2001) - IMDb</a></p>
+<p>大师作品。一些评论在装逼，说作品反应了这个，反应了那个。我觉得这种事情，不是
+一个大师做的事情。真实不过是手段，不是大师真正要表达的东西。大师表达的，就如
+你所点题的，不要迷失自我，与爱。真理一定是简单的。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt2488496/?ref_=nv_sr_5">Star Wars: Episode VII - The Force Awakens (2015) - IMDb</a></p>
+<p>经典的争夺藏宝图的戏码。欣赏不来这种风格的电影。可能是我想像力不够发达。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0398286/?ref_=fn_al_tt_1">Tangled (2010) - IMDb</a></p>
+<p>Definitely a good story. Life can't be without a dream after a new dream, but
+not just only chinese dream.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1049413/?ref_=fn_al_tt_1">Up (2009) - IMDb</a></p>
+<p>开局和结尾有些脱节。开局是一种关于人生的电影。到后面就有么不知道主题是什么了
+，大概是关于保护野生动物的主题。众多Disney的电影当中，这部相对是差的。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0325980/?ref_=nv_sr_2">Pirates of the Caribbean: The Curse of the Black Pearl (2003) - IMDb</a></p>
+<p>Miss Swann是这样美，是我所见过的最美的女人。如果讨论生命的价值，我认为作为
+pirate 其生命的价值高于作为没有作为的普通人的生命。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt4925292/?ref_=fn_al_tt_1">Lady Bird (2017) - IMDb</a></p>
+<p>Being Honest, I can't understand what this movie saying.不过女主很
+impressive.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1661199/?ref_=fn_al_tt_1">Cinderella (2015) - IMDb</a></p>
+<p>王子给公主穿鞋子，经典戏码。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt2771200/?ref_=fn_al_tt_1">Beauty and the Beast (2017) - IMDb</a></p>
+<p>完美的作品。一切的一切都呈现的那么完美。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt2948356/?ref_=nv_sr_1">Zootopia (2016) - IMDb</a></p>
+<p>Judy好励志啊。sloth那里是最精彩的 ，有法瞅一日。这个电影的很多点都太有意
+罢，sloth的flash, Mr Big is a mice and is 教父，剧情的安排都很完美。实在是近
+年的片子里面最好的片子。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5848272/?ref_=fn_al_tt_1">Ralph Breaks the Internet (2018) - IMDb</a></p>
+<p>哈哈哈，真有意思。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1772341/?ref_=fn_al_tt_1">Wreck-It Ralph (2012) - IMDb</a></p>
+<p>很棒的片子。Ralph在自己的世界的不让人欢迎，于是逃离到另外一个世界，一个很有意
+思的游戏世界里面的故事。有一天你会再也看不到这些美好的东西，想到这个真让人难
+过。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt4633694/?ref_=nv_sr_2">Spider-Man: Into the Spider-Verse (2018) - IMDb</a></p>
+<p>这画的啥哦 画面老一秒五切 让人烦躁死了 人物斗 跑路还有画片卡滞感 这感觉是把漫
+画补充了一些张数 直接变成电影了 太高端了 我欣赏不来</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt3521164/?ref_=nv_sr_2">Moana (2016) - IMDb</a></p>
+<p>Moana没有Elsa好看。主题上，我更爱Moana。我爱自由。回想一下，我想不起Frozen的
+主题是什么。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0103639/?ref_=nv_sr_2">Aladdin (1992) - IMDb</a></p>
+<p>我喜欢这样的动画片。有种韩剧的感觉。吊丝逆袭，轻松撩妹，开着飞毯带女神看世界
+，简直就是精神鸦片。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0317705/?ref_=nv_sr_3">The Incredibles (2004) - IMDb</a></p>
+<p>很多年前的片子，现在瞅还是这样好瞅。当然，这种曰法是有问题的。在这种金钱至上
+，文化不被重视的年代，老片更是好瞅是明显要发生的事情。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1790809/?ref_=fn_al_tt_2">Pirates of the Caribbean: Dead Men Tell No Tales (2017) - IMDb</a></p>
+<p>应该是当年出来的时候就瞅过罢，但是已经完全想不起罢。不知道是片的质量就是下降
+了，还是自己变罢，片瞅以无以前有感觉。大爱Elizabeth Swann都已经没出场，舞台交
+给了年轻的一代。瞅电影的，也已经变成了年轻的一代。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt8020896/?ref_=nv_sr_1">An Elephant Sitting Still (2018) - IMDb</a></p>
+<p>整个片的基调跟我很能产生共鸣，片里的人物的状态，我感觉我就是生活在一个这种的
+状态。活着很难受。不知道活着干什么，也不知道为什么不去死。<br />
+几日之后，我头脑里还是经常想起这部片子。想那头一直坐着的大象，有人打它，它就
+是一直在那里坐着。我也想死。人生真的太无趣，太苦，太不像一个人，称为人该有的
+样子，该有的生活。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5095030/?ref_=nv_sr_1">Ant-Man and the Wasp (2018) - IMDb</a></p>
+<p>对大小的表现很好。只不过很多想像力的东西能感觉到无办法超越这个世界的经验。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt9130692/?ref_=fn_al_tt_1">Dynasties (TV Series 2018– ) - IMDb</a></p>
+<p>和<strong>Planet Earth II</strong>无法比的。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt5491994/?ref_=nv_sr_2">Planet Earth II (TV Mini-Series 2016) - IMDb</a></p>
+<p>非常壮观，很美很美很美，观得一瞅的好片。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0234215/?ref_=tt_rec_tt">The Matrix Reloaded (2003) - IMDb</a></p>
+<p>影片流进一种宿命论的东西，无法曰对错，从观影的角度，就变得无什么意思。导演肯
+定是一个武术爱好者了，动不动就武打场面其实都蛮乏味的。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0133093/?ref_=fn_al_tt_1">The Matrix (1999) - IMDb</a></p>
+<p>绝对的非常精彩的电影，虽然有些时候主角光环实在太夸张。我都希望女主fall in love
+with me.</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt2709692/?ref_=fn_al_tt_1">The Grinch (2018) - IMDb</a></p>
+<p>让人反感的开场，水准不高的画，故事性都一般。一个孤独的老人，因为讨厌Christmas,
+偷走全村的Christmas,最终被一个小女孩感化。我不推荐。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt2294629/?ref_=fn_al_tt_1">Frozen (2013) - IMDb</a></p>
+<p>好美啊</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1477834/?ref_=nv_sr_1">Aquaman (2018) - IMDb</a></p>
+<p>好像是又一个私生子成王的故事。电影里出现很多王国，很多地方，所以最大的感受就是
+视觉上面很享受。Amber Heard 很美。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt4701182/?ref_=fn_al_tt_1">Bumblebee (2018) - IMDb</a></p>
+<p>大砍刀，激光炮，没有魔法的科幻片，再酷炫都只能做到机械化的炫目层面。所以，变形
+金钢的设定，注定瞅点只有一末变形而已，就算你注入幽默，情感，天花板在那里。</p>
+</li>
+</ul>
+<h1><a class="header" href="#2018" id="2018">2018</a></h1>
+<ul>
+<li>
+<p><a href="https://www.imdb.com/title/tt9495224/?ref_=nv_sr_2">Black Mirror: Bandersnatch (2018) - IMDb</a></p>
+<p>不浪费时间罢, 事实我是气愤的，被这样的东西浪费时间</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt0051776/?ref_=nv_sr_1">The Inn of the Sixth Happiness (1958) - IMDb</a></p>
+<p>很有功底的电影。很有感染力。讲的是一个英国姑娘在支国羊城，帮助人的故事。按支国
+的语言来曰，是一个活菩萨的故事。老电影的山水景，每每都使我感动。那时候的自然山
+水，现在再都瞅不得罢，不免伤感。有历史的事物，都容易触发人去思考生命跟生命的意
+义。电影里有几个东西是瞅光我还是会有印象的。一个是省长（瞅的是英文字幕，不确定
+不是这个意思）曰的，计划好的人生是死的。另外一个，这时已经忘记罢。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt7040874/?ref_=nv_sr_1">A Simple Favor (2018) - IMDb</a></p>
+<p>不是怎么感兴趣的题材，如果不是女主漂亮，瞅都瞅不光。</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt2388771/">Mowgli: Legend of the Jungle (2018) - IMDb</a></p>
+<p>讲的是一个被狼养大的娃娃，最终成王为森林带来和平的故事, 也算垃圾电影，但是比国
+产电影已经好的不知道到哪里去罢</p>
+</li>
+<li>
+<p><a href="https://movie.douban.com/subject/1293351/">食神 (豆瓣)</a></p>
+<p>怀旧 以前读书的时候真的欢喜周星驰 这时罢 周星驰老罢 我都老罢 </p>
+<p>是一个关于食神 实力反杀的故事 是典型的大圆满结尾的电影： 恶人陷害 奇迹发生 打
+得坏人满地找牙 穿插么搞笑 爱情 观众不要太欢喜 </p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt2277860/">Finding Dory (2016) - IMDb</a></p>
+<p>蛮可爱的动画片 推荐大人瞅的 但是对于这种完全否真实的动画片给儿童瞅 对儿童是好
+啊坏呢</p>
+</li>
+<li>
+<p><a href="https://movie.douban.com/subject/1422283/">高山下的花环 (豆瓣)</a></p>
+<p>好片当然是好片 只不过我这样的肤浅的人看不进去 1个钟头40分钟前我都弗知道瞅么东
+西 都想弗瞅罢 有法曰 从这个时间才会开始正题 都就是曰 铺垫太多时 对我来曰 导演
+想反映个东西 都否是什么深刻的东西 不过还是有法瞅瞅</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt6257174/?ref_=nv_sr_1">The Miseducation of Cameron Post (2018) - IMDb</a></p>
+<p>一个文艺片 片的风格是我喜欢的 讲的是一个要把弯的教直起的故事 女主角很美 文艺片
+有一个共同的特点 东拉西扯 瞅光都弗知道到底曰么东西 不过你还是愿意瞅着瞅光</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt1270797/?ref_=fn_al_tt_1">Venom (2018) - IMDb</a></p>
+<p>垃圾电影。是一部典型的英雄打坏蛋的故事。英雄的出现太假。英雄的渲染失败 故事情
+节设计太单薄 坏人的设计也就是一句是组织头目囤么很多武器 而你瞅得的武器也就是两
+把斧头 很轻松的就被打败罢 整个电影里向都否瞅得有什么情感 不知道要曰么东西 </p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt3104988/?ref_=nv_sr_1">Crazy Rich Asians (2018) - IMDb</a></p>
+<p>王子跟灰姑娘的故事 遇得么小困难 最末尾在一堆 么什么瞅头</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt3606756/?ref_=fn_al_tt_1">Incredibles 2 (2018) - IMDb</a></p>
+<p>Make Superheroes legal again! 非常精彩！比什么碟中碟好看多了</p>
+</li>
+<li>
+<p><a href="https://movie.douban.com/subject/1297880/">芙蓉镇 (豆瓣)</a></p>
+<p>“活下去，像牲口一样的活下去〞</p>
+<p>其实才发生不久的事情，人们却觉得这些很遥远</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt7668870/?ref_=fn_al_tt_1">Searching (2018) - IMDb</a></p>
+<p>很棒的电影 非常独特的方式讲述一个爸爸通过在网络里寻找线索 寻找失踪女儿 并最终
+找到了的故事 情节跌宕起伏 感情也很饱满</p>
+</li>
+<li>
+<p><a href="https://movie.douban.com/subject/26425063/?from=showing">无双</a></p>
+<p>运用了一点反转的手法 讲述了一个轻松做假钞的故事 太多元素杂烩在一起 就是一个消
+磨时间的故事片</p>
+</li>
+<li>
+<p><a href="https://www.imdb.com/title/tt3208026/">Black '47 (2018) - IMDb</a></p>
+<p>他们杀人是审判 凭什么我们杀人是谋杀</p>
+<p>讲述一个走到哪里 杀到哪里的故事</p>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="music/wong4.hau6.daai6.dou6.dung1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="math/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="music/wong4.hau6.daai6.dou6.dung1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="math/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

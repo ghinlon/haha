@@ -1,0 +1,1000 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>net - Haha</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Haha.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="../../../index.html">哈哈</a></li><li class="expanded "><a href="../../../brain.html">My Brain</a></li><li class="expanded "><a href="../../../meaningless/index.html">Meaninglessness: The point of living</a></li><li class="expanded "><a href="../../../bible/index.html">Bible</a></li><li><ol class="section"><li class="expanded "><a href="../../../bible/Ecclesiastes_1.1.html">Ecclesiastes 1:1</a></li></ol></li><li class="expanded "><a href="../../../infosec/index.html">Information Security</a></li><li><ol class="section"><li class="expanded "><a href="../../../infosec/shred.html">shred: Shred File</a></li><li class="expanded "><a href="../../../infosec/gpg.html">gpg: The GNU Privacy Guard</a></li><li class="expanded "><a href="../../../infosec/pass.html">pass: Password management</a></li></ol></li><li class="expanded "><a href="../../../collectedTopics.html">Collected Topics</a></li><li class="expanded "><a href="../../../events.html">Events</a></li><li class="expanded "><a href="../../../collection.html">Collection</a></li><li class="expanded "><a href="../../../en/index.html">English</a></li><li><ol class="section"><li class="expanded "><a href="../../../en/examples.html">Examples</a></li><li class="expanded "><a href="../../../en/words-in-chain.html">Words in chain</a></li><li class="expanded "><a href="../../../en/pronunciation.html">Pronunciation</a></li><li class="expanded "><a href="../../../en/synonyms-antonyms.html">Synonyms and Antonyms</a></li><li class="expanded "><a href="../../../en/exercise_practise_practice.html">exercise vs practise vs practice</a></li><li class="expanded "><a href="../../../en/incidents.vs.accidents.html">incidents vs accidents</a></li></ol></li><li class="expanded "><a href="../../../inet/index.html">INET</a></li><li><ol class="section"><li class="expanded "><a href="../../../inet/search.html">How to Search</a></li><li class="expanded "><a href="../../../inet/must.html">MUST</a></li><li class="expanded "><a href="../../../inet/speedtest.html">speedtest-cli</a></li><li class="expanded "><a href="../../../inet/veracrypt.html">VeraCrypt: Whole-drive Encryption</a></li><li class="expanded "><a href="../../../inet/proxy.html">Proxy Setting</a></li><li class="expanded "><a href="../../../inet/wireguard.html">WireGuard: fast, modern, secure VPN tunnel</a></li><li class="expanded "><a href="../../../inet/tor/index.html">Tor</a></li><li class="expanded "><a href="../../../inet/chisel.html">chisel</a></li><li class="expanded "><a href="../../../inet/shadowsocks.html">shadowsocks</a></li><li class="expanded "><a href="../../../inet/ss-redir.html">ss-redir</a></li><li class="expanded "><a href="../../../inet/redsocks.html">redsocks: transparent TCP-to-proxy redirector</a></li><li class="expanded "><a href="../../../inet/zerotier.html">ZeroTier</a></li><li class="expanded "><a href="../../../inet/dns/index.html">DNS</a></li><li><ol class="section"><li class="expanded "><a href="../../../inet/dns/dnscrypt.html">DNSCrypt</a></li><li class="expanded "><a href="../../../inet/dns/doh.html">DoH: DNS over HTTPS</a></li><li class="expanded "><a href="../../../inet/dns/unbound.html">DNS: unbound</a></li><li class="expanded "><a href="../../../inet/dns/systemd-resolved.html">systemd-resolved</a></li></ol></li><li class="expanded "><a href="../../../inet/firewall/index.html">Firewall</a></li><li><ol class="section"><li class="expanded "><a href="../../../inet/firewall/iptables.html">iptables</a></li><li class="expanded "><a href="../../../inet/firewall/firewalld.html">firewalld</a></li><li class="expanded "><a href="../../../inet/firewall/nftables.html">nftables</a></li></ol></li><li class="expanded "><a href="../../../inet/network/index.html">NETWORK</a></li><li><ol class="section"><li class="expanded "><a href="../../../inet/network/optimization.html">Network Optimization</a></li><li class="expanded "><a href="../../../inet/network/tunnels.html">linux virtual interfaces: Tunnels</a></li><li class="expanded "><a href="../../../inet/network/virtual-networking.html">linux interfaces for virtual networking</a></li><li class="expanded "><a href="../../../inet/network/iproute2/index.html">iproute2</a></li><li><ol class="section"><li class="expanded "><a href="../../../inet/network/iproute2/gre.html">GRE tunneling</a></li><li class="expanded "><a href="../../../inet/network/iproute2/ip-link-type-bridge.html">ip link type bridge</a></li><li class="expanded "><a href="../../../inet/network/iproute2/ip-link-type-vxlan.html">ip link type vxlan</a></li><li class="expanded "><a href="../../../inet/network/iproute2/ip-rule.html">ip rule</a></li></ol></li></ol></li><li class="expanded "><a href="../../../inet/vps/index.html">VPS</a></li></ol></li><li class="expanded "><a href="../../../sync/index.html">Sync</a></li><li><ol class="section"><li class="expanded "><a href="../../../sync/rsync.html">rsync</a></li></ol></li><li class="expanded "><a href="../../../music/index.html">Music</a></li><li><ol class="section"><li class="expanded "><a href="../../../music/choral.html">choral music</a></li><li class="expanded "><a href="../../../music/Freedom-Anthony_Hamilton.html">Freedom - Anthony Hamilton</a></li><li class="expanded "><a href="../../../music/Ariana-grande-imagine-lyrics.html">Ariana-grande-imagine-lyrics</a></li><li class="expanded "><a href="../../../music/wong4.hau6.daai6.dou6.dung1.html">皇后大道东</a></li></ol></li><li class="expanded "><a href="../../../movies.html">Movies</a></li><li class="expanded "><a href="../../../math/index.html">Math</a></li><li><ol class="section"><li class="expanded "><a href="../../../math/euler_totient_function.html">Euler's totient function</a></li></ol></li><li class="expanded "><a href="../../../vim/index.html">vim</a></li><li><ol class="section"><li class="expanded "><a href="../../../vim/help.html">help</a></li><li class="expanded "><a href="../../../vim/plugins.html">Plugins</a></li><li class="expanded "><a href="../../../vim/vim-plug.html">vim-plug: Minimalist Vim Plugin Manager</a></li><li class="expanded "><a href="../../../vim/table.html">table</a></li><li class="expanded "><a href="../../../vim/autopair.html">automatic pair insertion</a></li><li class="expanded "><a href="../../../vim/ultisnips.html">Ultisnips</a></li><li class="expanded "><a href="../../../vim/fzf.html">fzf</a></li><li class="expanded "><a href="../../../vim/ale.html">ale: Asynchronous Lint Engine</a></li></ol></li><li class="expanded "><a href="../../../terminal/index.html">Terminal</a></li><li><ol class="section"><li class="expanded "><a href="../../../terminal/tmux.html">tmux: a terminal multiplexer</a></li><li class="expanded "><a href="../../../terminal/iterm2.html">iTerm2</a></li></ol></li><li class="expanded "><a href="../../../font/index.html">Font</a></li><li><ol class="section"><li class="expanded "><a href="../../../font/firacode.html">firacode</a></li><li class="expanded "><a href="../../../font/sanfranciscomono.html">Getting Apple’s SF Mono Font</a></li><li class="expanded "><a href="../../../font/fontconfig.html">fontconfig</a></li><li class="expanded "><a href="../../../font/hanyiqihei.html">汉仪旗黑</a></li></ol></li><li class="expanded "><a href="../../../color.html">Color</a></li><li class="expanded "><a href="../../../go/index.html">Go</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/note.html">Note</a></li><li class="expanded "><a href="../../../go/algorithm/index.html">Algorithm</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/algorithm/Knuth–Morris–Pratt-algorithm.html">Knuth–Morris–Pratt algorithm</a></li><li class="expanded "><a href="../../../go/algorithm/read-until-strings-in-stream.html">read until strings in stream</a></li></ol></li><li class="expanded "><a href="../../../go/basis/index.html">Basis</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/basis/go_command.html">Command go</a></li><li class="expanded "><a href="../../../go/basis/encodings.html">Character Sets and Encodings</a></li><li class="expanded "><a href="../../../go/basis/struct.html">struct</a></li><li class="expanded "><a href="../../../go/basis/closure.html">closure</a></li><li class="expanded "><a href="../../../go/basis/interfaces.html">interfaces</a></li><li class="expanded "><a href="../../../go/basis/concurrency.html">Concurrency</a></li><li class="expanded "><a href="../../../go/basis/channels.html">Channels</a></li><li class="expanded "><a href="../../../go/basis/slices.html">slices</a></li><li class="expanded "><a href="../../../go/basis/astrings.html">strings</a></li><li class="expanded "><a href="../../../go/basis/socket.html">socket</a></li><li class="expanded "><a href="../../../go/basis/initfunc.html">init functions in Go</a></li><li class="expanded "><a href="../../../go/basis/gc.html">Garbage Collector</a></li><li class="expanded "><a href="../../../go/basis/type_variable_value.html">type vs variable vs value</a></li><li class="expanded "><a href="../../../go/basis/loop.html">Loop is so complicated</a></li><li class="expanded "><a href="../../../go/basis/gomod.html">Modules</a></li><li class="expanded "><a href="../../../go/basis/async_vs_sync.html">Asynchronous vs synchronous</a></li><li class="expanded "><a href="../../../go/basis/monitor_goroutines.html">Monitor goroutines</a></li><li class="expanded "><a href="../../../go/basis/how_to_check_if_a_file_exists.html">How to check if a file exists in Go</a></li><li class="expanded "><a href="../../../go/basis/distinguish_ipv4_and_ipv6.html">distinguish ipv4 and ipv6</a></li><li class="expanded "><a href="../../../go/basis/gorutine_and_cwd.html">gorutine and CWD</a></li><li class="expanded "><a href="../../../go/basis/cs.html">How to WRITE A CS</a></li><li class="expanded "><a href="../../../go/basis/exec_Cmd_signal.html">How to signal a exec.Cmd</a></li><li class="expanded "><a href="../../../go/basis/pipe_io.ReadWriteCloser.html">Pipe io.ReadWriteCloser</a></li></ol></li><li class="expanded "><a href="../../../go/pkg/index.html">Packages</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/pkg/io/io.html">io</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/pkg/io/ioutil.html">ioutil</a></li></ol></li><li class="expanded "><a href="../../../go/pkg/errors.html">errors</a></li><li class="expanded "><a href="../../../go/pkg/bufio.html">bufio</a></li><li class="expanded "><a href="../../../go/pkg/unicode/unicode.html">unicode</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/pkg/unicode/utf8.html">utf8</a></li><li class="expanded "><a href="../../../go/pkg/unicode/utf16.html">utf16</a></li></ol></li><li class="expanded "><a href="../../../go/pkg/regexp.html">regexp</a></li><li class="expanded "><a href="../../../go/pkg/os/os.html">os</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/pkg/os/exec.html">exec</a></li><li class="expanded "><a href="../../../go/pkg/os/signal.html">signal</a></li></ol></li><li class="expanded "><a href="../../../go/pkg/path.html">path</a></li><li class="expanded "><a href="../../../go/pkg/sync/sync.html">sync</a></li><li class="expanded "><a href="../../../go/pkg/context.html">context</a></li><li class="expanded "><a href="../../../go/pkg/log/log.html">log</a></li><li class="expanded "><a href="../../../go/pkg/net/net.html" class="active">net</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/pkg/net/textproto.html">textproto</a></li><li class="expanded "><a href="../../../go/pkg/net/smtp.html">smtp</a></li><li class="expanded "><a href="../../../go/pkg/net/mail.html">mail</a></li></ol></li><li class="expanded "><a href="../../../go/pkg/encoding/encoding.html">encoding</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/pkg/encoding/asn1.html">asn1</a></li><li class="expanded "><a href="../../../go/pkg/encoding/json.html">json</a></li><li class="expanded "><a href="../../../go/pkg/encoding/gob.html">gob</a></li><li class="expanded "><a href="../../../go/pkg/encoding/base64.html">base64</a></li><li class="expanded "><a href="../../../go/pkg/encoding/hex.html">hex</a></li><li class="expanded "><a href="../../../go/pkg/encoding/pem.html">pem</a></li></ol></li><li class="expanded "><a href="../../../go/pkg/crypto/crypto.html">crypto</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/pkg/crypto/rand.html">rand</a></li><li class="expanded "><a href="../../../go/pkg/crypto/sha256.html">sha256</a></li><li class="expanded "><a href="../../../go/pkg/crypto/sha512.html">sha512</a></li><li class="expanded "><a href="../../../go/pkg/crypto/sha1.html">sha1</a></li><li class="expanded "><a href="../../../go/pkg/crypto/md5.html">md5</a></li><li class="expanded "><a href="../../../go/pkg/crypto/aes.html">aes</a></li><li class="expanded "><a href="../../../go/pkg/crypto/cipher.html">cipher</a></li><li class="expanded "><a href="../../../go/pkg/crypto/rsa.html">rsa</a></li><li class="expanded "><a href="../../../go/pkg/crypto/x509/x509.html">x509</a></li></ol></li><li class="expanded "><a href="../../../go/pkg/internal/index.html">internal</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/pkg/internal/poll.html">poll</a></li></ol></li></ol></li><li class="expanded "><a href="../../../go/pkgx/index.html">Package x</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/pkgx/crypto/index.html">crypto</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/pkgx/crypto/ssh.html">ssh</a></li></ol></li><li class="expanded "><a href="../../../go/pkgx/text/index.html">text</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/pkgx/text/transform.html">transform</a></li><li class="expanded "><a href="../../../go/pkgx/text/encoding/encoding.html">encoding</a></li><li class="expanded "><a href="../../../go/pkgx/text/unicode/index.html">unicode</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/pkgx/text/unicode/norm.html">norm</a></li></ol></li></ol></li></ol></li><li class="expanded "><a href="../../../go/pkgy/index.html">Package y</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/pkgy/protobuf.html">protobuf</a></li><li class="expanded "><a href="../../../go/pkgy/grpc.html">grpc</a></li><li class="expanded "><a href="../../../go/pkgy/yaml.v2.html">yaml.v2</a></li><li class="expanded "><a href="../../../go/pkgy/cobra.html">cobra</a></li><li class="expanded "><a href="../../../go/pkgy/viper.html">viper</a></li><li class="expanded "><a href="../../../go/pkgy/pflag.html">pflag</a></li><li class="expanded "><a href="../../../go/pkgy/systemstat.html">systemstat</a></li><li class="expanded "><a href="../../../go/pkgy/zap.html">zap</a></li><li class="expanded "><a href="../../../go/pkgy/ftp.html">ftp</a></li><li class="expanded "><a href="../../../go/pkgy/smtpd.html">smtpd</a></li><li class="expanded "><a href="../../../go/pkgy/telnet.html">telnet</a></li><li class="expanded "><a href="../../../go/pkgy/netconf.html">netconf</a></li><li class="expanded "><a href="../../../go/pkgy/gobot.html">gobot</a></li><li class="expanded "><a href="../../../go/pkgy/kcp-go.html">kcp-go</a></li><li class="expanded "><a href="../../../go/pkgy/go-libp2p.html">go-libp2p</a></li><li class="expanded "><a href="../../../go/pkgy/nff-go/index.html">nff-go</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/pkgy/nff-go/flow.html">flow</a></li><li class="expanded "><a href="../../../go/pkgy/nff-go/packet.html">packet</a></li></ol></li><li class="expanded "><a href="../../../go/pkgy/goexpect.html">goexpect</a></li></ol></li><li class="expanded "><a href="../../../go/protocols/index.html">Protocols</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/protocols/application_level_protocols.html">Application-Level Protocols</a></li><li class="expanded "><a href="../../../go/protocols/ping.html">ICMP:ping</a></li><li class="expanded "><a href="../../../go/protocols/socks5.html">socks5</a></li><li class="expanded "><a href="../../../go/protocols/shadowsocks.html">shadowsocks</a></li><li class="expanded "><a href="../../../go/protocols/smtp.html">SMTP</a></li><li class="expanded "><a href="../../../go/protocols/telnet.html">TELNET</a></li><li class="expanded "><a href="../../../go/protocols/ftp.html">FTP</a></li><li class="expanded "><a href="../../../go/protocols/yaml.html">YAML</a></li><li class="expanded "><a href="../../../go/protocols/x509.html">X.509</a></li><li class="expanded "><a href="../../../go/protocols/ssh.html">SSH</a></li></ol></li><li class="expanded "><a href="../../../go/utils/index.html">Utils</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/utils/cfssl.html">cfssl</a></li><li class="expanded "><a href="../../../go/utils/meshbird.html">meshbird</a></li><li class="expanded "><a href="../../../go/utils/go-shadowsocks2.html">go-shadowsocks2</a></li><li class="expanded "><a href="../../../go/utils/markdown-toc.html">sebdah/markdown-toc</a></li><li class="expanded "><a href="../../../go/utils/orgalorg.html">reconquest/orgalorg</a></li><li class="expanded "><a href="../../../go/utils/u-root.html">u-root</a></li><li class="expanded "><a href="../../../go/utils/sweet.html">sweet</a></li><li class="expanded "><a href="../../../go/utils/bad/index.html">Bad</a></li><li><ol class="section"><li class="expanded "><a href="../../../go/utils/bad/jazigo.html">jazigo</a></li></ol></li></ol></li></ol></li><li class="expanded "><a href="../../../webdev/index.html">Web Development</a></li><li><ol class="section"><li class="expanded "><a href="../../../webdev/rest.html">REST</a></li><li class="expanded "><a href="../../../webdev/organising-database-access.html">Organising Database Access</a></li><li class="expanded "><a href="../../../webdev/routers.html">Routers</a></li><li class="expanded "><a href="../../../webdev/sessions.html">Sessions</a></li><li class="expanded "><a href="../../../webdev/protocol-http.html">Protocol http</a></li><li class="expanded "><a href="../../../webdev/protocol-tls.html">Protocol tls</a></li><li class="expanded "><a href="../../../webdev/go/pkg/http.html">Package http</a></li><li class="expanded "><a href="../../../webdev/go/pkg/url.html">Package url</a></li><li class="expanded "><a href="../../../webdev/go/pkg/text-template.html">Package template</a></li><li class="expanded "><a href="../../../webdev/go/pkg/tls.html">Package tls</a></li><li class="expanded "><a href="../../../webdev/go/pkgy/alice.html">Package alice</a></li><li class="expanded "><a href="../../../webdev/webassembly.html">Webassembly</a></li><li class="expanded "><a href="../../../webdev/gioui.html">gioui</a></li><li class="expanded "><a href="../../../webdev/vugu.html">vugu</a></li><li class="expanded "><a href="../../../webdev/vecty.html">vecty</a></li><li class="expanded "><a href="../../../webdev/hugo.html">Hugo</a></li><li class="expanded "><a href="../../../webdev/bootstrap.html">Bootstrap</a></li></ol></li><li class="expanded "><a href="../../../db/index.html">DB</a></li><li><ol class="section"><li class="expanded "><a href="../../../db/oracle/oracle.html">Oracle</a></li><li class="expanded "><a href="../../../db/go/pkg/sql.html">Package sql</a></li><li class="expanded "><a href="../../../db/redis.html">redis: a data structures server</a></li><li class="expanded "><a href="../../../db/sqlite.html">SQLite</a></li><li class="expanded "><a href="../../../db/mysql.html">MySQL</a></li></ol></li><li class="expanded "><a href="../../../IT/index.html">IT</a></li><li><ol class="section"><li class="expanded "><a href="../../../IT/dpdk.html">DPDK</a></li><li class="expanded "><a href="../../../IT/minio.html">MinIO: OBJECT STORAGE FOR AI</a></li></ol></li><li class="expanded "><a href="../../../api/index.html">API</a></li><li><ol class="section"><li class="expanded "><a href="../../../api/telegram_bot.html">Telegram Bots</a></li><li class="expanded "><a href="../../../api/weixin_web.html">WEIXIN WEB</a></li></ol></li><li class="expanded "><a href="../../../devops/index.html">Devops</a></li><li><ol class="section"><li class="expanded "><a href="../../../devops/mtail.html">mtail</a></li><li class="expanded "><a href="../../../devops/prometheus/index.html">prometheus</a></li><li><ol class="section"><li class="expanded "><a href="../../../devops/prometheus/usage.html">Usage</a></li><li class="expanded "><a href="../../../devops/prometheus/client_golang/index.html">client_golang</a></li><li><ol class="section"><li class="expanded "><a href="../../../devops/prometheus/client_golang/promhttp.html">promhttp</a></li><li class="expanded "><a href="../../../devops/prometheus/client_golang/promauto.html">promauto</a></li><li class="expanded "><a href="../../../devops/prometheus/client_golang/api.html">api</a></li></ol></li><li class="expanded "><a href="../../../devops/prometheus/alertmanager.html">alertmanager</a></li><li class="expanded "><a href="../../../devops/prometheus/node_exporter.html">node_exporter</a></li><li class="expanded "><a href="../../../devops/prometheus/sql_exporter.html">sql_exporter</a></li><li class="expanded "><a href="../../../devops/prometheus/procfs.html">procfs</a></li></ol></li><li class="expanded "><a href="../../../devops/grafana.html">grafana</a></li><li class="expanded "><a href="../../../devops/messagebird-sachet.html">messagebird/sachet</a></li></ol></li><li class="expanded "><a href="../../../git/index.html">Git</a></li><li><ol class="section"><li class="expanded "><a href="../../../git/undoing.html">Undoing Commits &amp; Changes</a></li></ol></li><li class="expanded "><a href="../../../infra/index.html">Infrastructure</a></li><li><ol class="section"><li class="expanded "><a href="../../../infra/vagrant.html">Vagrant: HashiCorp Development Environments Made Easy</a></li><li class="expanded "><a href="../../../infra/terraform.html">Terraform: HashiCorp Infrastructure as Code</a></li><li class="expanded "><a href="../../../infra/packer.html">Packer</a></li><li class="expanded "><a href="../../../infra/ipxe.html">iPXE</a></li><li class="expanded "><a href="../../../infra/dnsmasq.html">dnsmasq</a></li><li class="expanded "><a href="../../../infra/matchbox.html">matchbox</a></li><li class="expanded "><a href="../../../infra/ignition.html">Ignition: machine provisioning utility</a></li><li class="expanded "><a href="../../../infra/typhoon.html">Typhoon: a minimal and free Kubernetes distribution</a></li><li class="expanded "><a href="../../../infra/travis/index.html">Travis CI</a></li><li><ol class="section"><li class="expanded "><a href="../../../infra/travis/gh-pages.html">GitHub Pages Deployment</a></li></ol></li><li class="expanded "><a href="../../../infra/ansible.html">Ansible</a></li></ol></li><li class="expanded "><a href="../../../k8s/index.html">k8s</a></li><li><ol class="section"><li class="expanded "><a href="../../../k8s/client-go.html">Client Go</a></li><li class="expanded "><a href="../../../k8s/concepts/index.html">CONCEPTS</a></li><li><ol class="section"><li class="expanded "><a href="../../../k8s/concepts/ingress.html">Ingress</a></li></ol></li><li class="expanded "><a href="../../../k8s/haproxy.html">HAProxy</a></li><li class="expanded "><a href="../../../k8s/docker/index.html">Docker</a></li><li class="expanded "><a href="../../../k8s/kubeadm.html">kubeadm quickstart</a></li><li class="expanded "><a href="../../../k8s/kubeadm_ha.html">Creating Highly Available clusters with kubeadm</a></li><li class="expanded "><a href="../../../k8s/calico.html">Calico: Secure networking for the cloud native era</a></li><li class="expanded "><a href="../../../k8s/kubectl.html">kubectl</a></li><li class="expanded "><a href="../../../k8s/k8s.html">Kubernetes</a></li><li class="expanded "><a href="../../../k8s/etcd.html">etcd: A distributed, reliable key-value store</a></li><li class="expanded "><a href="../../../k8s/helm.html">Helm: The package manager for Kubernetes</a></li><li class="expanded "><a href="../../../k8s/rook.html">Rook: Cloud-Native Storage for Kubernetes</a></li><li class="expanded "><a href="../../../k8s/harbor.html">Harbor</a></li><li class="expanded "><a href="../../../k8s/traefik.html">Traefik: The Cloud Native Edge Router</a></li><li class="expanded "><a href="../../../k8s/consul.html">Consul: HashiCorp a distributed service mesh</a></li><li class="expanded "><a href="../../../k8s/rancher.html">Rancher</a></li><li class="expanded "><a href="../../../k8s/coreos/index.html">CoreOS: Container Linux</a></li><li class="expanded "><a href="../../../k8s/sig-storage-lib-external-provisioner.html">sig-storage-lib-external-provisioner</a></li><li class="expanded "><a href="../../../k8s/nfs-provisioner.html">nfs-provisioner</a></li><li class="expanded "><a href="../../../k8s/nfs-client.html">Kubernetes NFS-Client Provisioner</a></li><li class="expanded "><a href="../../../k8s/change-default-storage-class.html">Change the default StorageClass</a></li></ol></li><li class="expanded "><a href="../../../linux/index.html">Linux</a></li><li><ol class="section"><li class="expanded "><a href="../../../linux/newvps.html">NewVPS</a></li><li class="expanded "><a href="../../../linux/screen.html">GNU Screen</a></li><li class="expanded "><a href="../../../linux/zsh.html">Zsh</a></li><li class="expanded "><a href="../../../linux/bash.html">Bash</a></li><li class="expanded "><a href="../../../linux/namespace.html">namespace</a></li><li class="expanded "><a href="../../../linux/systemd.timer.html">systemd.timer</a></li><li class="expanded "><a href="../../../linux/systemd.html">systemd</a></li><li class="expanded "><a href="../../../linux/grub2.html">GRUB 2</a></li><li class="expanded "><a href="../../../linux/tmpfs.html">RAM disk: tmpfs</a></li><li class="expanded "><a href="../../../linux/ubuntu/index.html">Ubuntu</a></li><li><ol class="section"><li class="expanded "><a href="../../../linux/ubuntu/ubuntu_lts.html">LTS: Long Term Support</a></li><li class="expanded "><a href="../../../linux/ubuntu/apt.html">APT: Advanced Packaging Tool</a></li></ol></li><li class="expanded "><a href="../../../linux/archlinux/install.html">Install archlinux</a></li><li class="expanded "><a href="../../../linux/udevil.html">automatic mount: udevil</a></li><li class="expanded "><a href="../../../linux/videoplayers.html">Video Player</a></li><li class="expanded "><a href="../../../linux/de.html">Desktop Environment</a></li><li class="expanded "><a href="../../../linux/wm.html">Window Manager</a></li><li class="expanded "><a href="../../../linux/bluetooth.html">Bluetooth</a></li><li class="expanded "><a href="../../../linux/im.html">Input Method</a></li><li class="expanded "><a href="../../../linux/mail.html">Mail Server:postfix/dovecot</a></li><li class="expanded "><a href="../../../linux/grep.html">grep</a></li><li class="expanded "><a href="../../../linux/sed.html">sed</a></li><li class="expanded "><a href="../../../linux/awk.html">awk</a></li><li class="expanded "><a href="../../../linux/wifi.html">wifi</a></li><li class="expanded "><a href="../../../linux/vsftpd/simple_anonymous_ftp_server.html">vsftpd</a></li><li class="expanded "><a href="../../../linux/archlinux/index.html">archlinux</a></li><li><ol class="section"><li class="expanded "><a href="../../../linux/archlinux/install.html">Install</a></li></ol></li><li class="expanded "><a href="../../../linux/rhel/index.html">rhel</a></li><li><ol class="section"><li class="expanded "><a href="../../../linux/rhel/yum.html">YUM</a></li><li class="expanded "><a href="../../../linux/rhel/yumdownloader.html">Yumdownloader</a></li><li class="expanded "><a href="../../../linux/rhel/network.html">Networking</a></li></ol></li><li class="expanded "><a href="../../../linux/cpu_time.html">cpu time</a></li><li class="expanded "><a href="../../../linux/context_switch.html">context switch</a></li><li class="expanded "><a href="../../../linux/cgroups.html">cgroups</a></li><li class="expanded "><a href="../../../linux/ssh/index.html">ssh</a></li><li><ol class="section"><li class="expanded "><a href="../../../linux/ssh/ssh_agent.html">ssh-agent</a></li></ol></li><li class="expanded "><a href="../../../linux/qemu.html">qemu</a></li><li class="expanded "><a href="../../../linux/kvm/index.html">KVM</a></li><li><ol class="section"><li class="expanded "><a href="../../../linux/kvm/kvm.html">KVM</a></li><li class="expanded "><a href="../../../linux/kvm/admin.html">Administration</a></li></ol></li><li class="expanded "><a href="../../../linux/kernel/index.html">kernel</a></li><li><ol class="section"><li class="expanded "><a href="../../../linux/kernel/kexec.html">kexec - directly boot into a new kernel</a></li></ol></li><li class="expanded "><a href="../../../linux/initramfs.html">initramfs</a></li><li class="expanded "><a href="../../../linux/dracut.html">dracut</a></li><li class="expanded "><a href="../../../linux/liveos.html">LiveOS image</a></li><li class="expanded "><a href="../../../linux/modules.html">modules</a></li><li class="expanded "><a href="../../../linux/dhcpd.html">dhcpd</a></li><li class="expanded "><a href="../../../linux/nginx.html">nginx</a></li></ol></li><li class="expanded "><a href="../../../console/index.html">Console</a></li><li><ol class="section"><li class="expanded "><a href="../../../console/cmus.html">cmus: C Music Player</a></li><li class="expanded "><a href="../../../console/ffplay.html">ffplay: Media Player</a></li><li class="expanded "><a href="../../../console/youtube-dl.html">youtube-dl: Download videos from YouTube</a></li><li class="expanded "><a href="../../../console/wkhtmltopdf.html">wkhtmltopdf</a></li><li class="expanded "><a href="../../../console/openssl.html">openssl</a></li><li class="expanded "><a href="../../../console/pandoc.html">pandoc</a></li></ol></li><li class="expanded "><a href="../../../tools/index.html">Tools</a></li><li><ol class="section"><li class="expanded "><a href="../../../tools/firefox.html">Firefox</a></li><li class="expanded "><a href="../../../tools/ungoogled-chromium.html">Eloston/ungoogled-chromium</a></li><li class="expanded "><a href="../../../tools/ascii.html">Four Column ASCII</a></li><li class="expanded "><a href="../../../tools/markdown.html">markdown</a></li><li class="expanded "><a href="../../../tools/mdbook.html">mdbook</a></li><li class="expanded "><a href="../../../tools/zhengma.html">Zhengma</a></li><li class="expanded "><a href="../../../tools/virtualbox.html">VirtualBox</a></li><li class="expanded "><a href="../../../tools/github.html">Github</a></li><li class="expanded "><a href="../../../tools/anki.html">Anki</a></li><li class="expanded "><a href="../../../tools/krita.html">krita</a></li><li class="expanded "><a href="../../../tools/gimp.html">GIMP - GNU Image Manipulation Program</a></li><li class="expanded "><a href="../../../tools/sxiv.html">sxiv: Simple X Image Viewer</a></li><li class="expanded "><a href="../../../tools/kodi.html">Kodi: entertainment hub</a></li><li class="expanded "><a href="../../../tools/mpv.html">mpv and mplayer: media player</a></li><li class="expanded "><a href="../../../tools/photoprism.html">PhotoPrism: Browse your life in pictures</a></li><li class="expanded "><a href="../../../tools/transmission.html">Transmission</a></li><li class="expanded "><a href="../../../tools/audacity.html">Audacity: audio editor and recorder</a></li></ol></li><li class="expanded "><a href="../../../macOS/index.html">macOS</a></li><li><ol class="section"><li class="expanded "><a href="../../../macOS/shortcuts.html">Shortcuts</a></li><li class="expanded "><a href="../../../macOS/diskutil.html">diskutil</a></li><li class="expanded "><a href="../../../macOS/homebrew.html">homebrew</a></li></ol></li><li class="expanded "><a href="../../../raspberrypi/index.html">Raspberry Pi</a></li><li><ol class="section"><li class="expanded "><a href="../../../raspberrypi/install.html">Install</a></li></ol></li><li class="expanded "><a href="../../../android/index.html">Android</a></li><li><ol class="section"><li class="expanded "><a href="../../../android/adb.html">adb</a></li><li class="expanded "><a href="../../../android/rom.html">ROM</a></li><li class="expanded "><a href="../../../android/lineageos.html">Install Lineageos</a></li><li class="expanded "><a href="../../../android/termux.html">termux</a></li><li class="expanded "><a href="../../../android/scrcpy.html">scrcpy: Display and control your Android device</a></li><li class="expanded "><a href="../../../android/magisk.html">Magisk and EdXposed(deprecated)</a></li></ol></li><li class="expanded "><a href="../../../network/index.html">Network</a></li><li><ol class="section"><li class="expanded "><a href="../../../network/simulators.html">Open-Source Network Simulators</a></li></ol></li><li class="expanded "><a href="../../../switch/index.html">switch</a></li><li><ol class="section"><li class="expanded "><a href="../../../switch/protocols/index.html">Protocols</a></li><li><ol class="section"><li class="expanded "><a href="../../../switch/protocols/stp.html">STP</a></li></ol></li><li class="expanded "><a href="../../../switch/S5720_56C_EI.html">S5720-56C-EI</a></li></ol></li><li class="expanded "><a href="../../../blockchains/index.html">Blockchains</a></li><li><ol class="section"><li class="expanded "><a href="../../../blockchains/mew.html">MyEtherWallet</a></li></ol></li><li class="expanded "><a href="../../../misc/index.html">Misc</a></li><li><ol class="section"><li class="expanded "><a href="../../../misc/shure_bt2.html">Shure Bluetooth® Earphones</a></li><li class="expanded "><a href="../../../misc/images_9_to_3x3.html">把9张图片3X3在一张A4纸上打印</a></li><li class="expanded "><a href="../../../misc/hhkb_linux.html">使用xmodmap简易模仿HHKB</a></li><li class="expanded "><a href="../../../misc/d7000.html">D7000</a></li><li class="expanded "><a href="../../../misc/hp_laserjet_1536dnf_mfp.html">HP LaserJet 1536dnf MFP</a></li><li class="expanded "><a href="../../../misc/jav.html">JAV</a></li><li class="expanded "><a href="../../../misc/comedy.html">Comedy</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Haha</h1>
+
+                        <div class="right-buttons">
+                            <a href="../../../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#a-hrefhttpsgolangorgpkgnetpackage-neta" id="a-hrefhttpsgolangorgpkgnetpackage-neta"><a href="https://golang.org/pkg/net/">Package net</a></a></h1>
+<!-- ToC start -->
+<h1><a class="header" href="#table-of-contents" id="table-of-contents">Table of Contents</a></h1>
+<ol>
+<li><a href="#links">Links</a></li>
+<li><a href="#package-files">Package files</a></li>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#5%E4%B8%AA%E5%9F%BA%E7%A1%80%E7%BD%91%E7%BB%9C%E6%8E%A5%E5%8F%A3:-conn-listener-packetconn-addr-error">5个基础网络接口: Conn, Listener, PacketConn, Addr, Error</a>
+<ol>
+<li><a href="#conn%E6%8E%A5%E5%8F%A3">Conn接口</a></li>
+<li><a href="#listener%E6%8E%A5%E5%8F%A3">Listener接口</a></li>
+<li><a href="#packetconn%E6%8E%A5%E5%8F%A3">PacketConn接口</a></li>
+<li><a href="#addr%E6%8E%A5%E5%8F%A3">Addr接口</a></li>
+<li><a href="#%E5%85%B3%E4%BA%8E%E7%BD%91%E7%BB%9C%E7%B1%BB%E5%9E%8B">关于网络类型</a></li>
+<li><a href="#error%E6%8E%A5%E5%8F%A3">Error接口</a></li>
+</ol>
+</li>
+<li><a href="#4%E4%B8%AA%E5%9F%BA%E7%A1%80%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84:-interface-hardwareaddr-ip-ipmask">4个基础网络结构: Interface, HardwareAddr, IP, IPMask</a>
+<ol>
+<li><a href="#interface%E7%BB%93%E6%9E%84">Interface结构</a></li>
+<li><a href="#hardwareaddr%E7%BB%93%E6%9E%84">HardwareAddr结构</a></li>
+<li><a href="#ip%E7%BB%93%E6%9E%84">IP结构</a></li>
+<li><a href="#ipmask%E7%BB%93%E6%9E%84">IPMask结构</a></li>
+</ol>
+</li>
+<li><a href="#tcp%E5%8D%8F%E8%AE%AE%E9%87%8C3%E4%B8%AA%E7%BB%93%E6%9E%84%EF%BC%9Atcpaddr-tcpconn-tcplistener">TCP协议里3个结构：TCPAddr, TCPConn, TCPListener</a>
+<ol>
+<li><a href="#tcpaddr%E7%BB%93%E6%9E%84">TCPAddr结构</a></li>
+<li><a href="#tcpconn%E7%BB%93%E6%9E%84">TCPConn结构</a></li>
+<li><a href="#tcplistener%E7%BB%93%E6%9E%84">TCPListener结构</a></li>
+</ol>
+</li>
+<li><a href="#udp%E5%8D%8F%E8%AE%AE%E9%87%8C2%E4%B8%AA%E7%BB%93%E6%9E%84%EF%BC%9Audpaddr-udpconn">UDP协议里2个结构：UDPAddr, UDPConn</a>
+<ol>
+<li><a href="#udpaddr%E7%BB%93%E6%9E%84">UDPAddr结构</a></li>
+<li><a href="#udpconn%E7%BB%93%E6%9E%84">UDPConn结构</a></li>
+</ol>
+</li>
+<li><a href="#%E5%BC%95%E5%87%BAconn-packetconn-listener%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%B0%8F%E6%80%BB%E7%BB%93">引出Conn, PacketConn, Listener接口的小总结</a>
+<ol>
+<li><a href="#%E9%87%8D%E5%86%99%E5%89%8D%E5%A4%B4%E7%9A%84%E4%BE%8B%E5%AD%90">重写前头的例子</a></li>
+</ol>
+</li>
+<li><a href="#ip%E5%8D%8F%E8%AE%AE%E9%87%8C3%E4%B8%AA%E7%BB%93%E6%9E%84%EF%BC%9Aipnet-ipaddr-ipconn">IP协议里3个结构：IPNet, IPAddr, IPConn</a>
+<ol>
+<li><a href="#ipnet%E7%BB%93%E6%9E%84">IPNet结构</a></li>
+<li><a href="#ipaddr%E7%BB%93%E6%9E%84">IPAddr结构</a></li>
+<li><a href="#ipconn%E7%BB%93%E6%9E%84">IPConn结构</a></li>
+</ol>
+</li>
+<li><a href="#unix%E5%8D%8F%E8%AE%AE%E9%87%8C3%E4%B8%AA%E7%BB%93%E6%9E%84%EF%BC%9Aunixaddr-unixconn-unixlistener">Unix协议里3个结构：UnixAddr, UnixConn, UnixListener</a>
+<ol>
+<li><a href="#unixaddr%E7%BB%93%E6%9E%84">UnixAddr结构</a></li>
+<li><a href="#unixconn%E7%BB%93%E6%9E%84">UnixConn结构</a></li>
+<li><a href="#unixlistener%E7%BB%93%E6%9E%84">UnixListener结构</a></li>
+</ol>
+</li>
+<li><a href="#dialer%E7%BB%93%E6%9E%84">Dialer结构</a></li>
+<li><a href="#listenconfig%E7%BB%93%E6%9E%84">ListenConfig结构</a></li>
+<li><a href="#dns%E7%9A%843%E4%B8%AA%E8%AE%B0%E5%BD%95%E7%BB%93%E6%9E%84%EF%BC%9Asrv-mx-ns">DNS的3个记录结构：SRV, MX, NS</a></li>
+<li><a href="#resolver%E7%BB%93%E6%9E%84">Resolver结构</a></li>
+<li><a href="#dns%E7%9A%849%E4%B8%AA%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0">DNS的9个查找函数</a></li>
+<li><a href="#6%E7%A7%8D%E7%BD%91%E7%BB%9C%E9%94%99%E8%AF%AF%E7%BB%93%E6%9E%84">6种网络错误结构</a></li>
+<li><a href="#buffers%E7%BB%93%E6%9E%84">Buffers结构</a></li>
+<li><a href="#2%E4%B8%AA%E6%8B%86%E5%90%88%E4%B8%BB%E6%9C%BA%E7%AB%AF%E5%8F%A3%E7%9A%84%E5%87%BD%E6%95%B0">2个拆合主机端口的函数</a></li>
+</ol>
+<!-- ToC end -->
+<h1><a class="header" href="#links" id="links">Links</a></h1>
+<ul>
+<li><a href="https://ipfs.io/ipfs/QmfYeDhGH9bZzihBUDEQbCbTc5k5FZKURMUoUvfmc27BwL/socket/index.html">Socket-level Programming | Network Programming with Go (golang)</a></li>
+<li><a href="http://www.minaandrawos.com/2016/05/14/udp-vs-tcp-in-golang/">Implementing UDP vs TCP in Golang - Mina Andrawos</a></li>
+<li><a href="https://stackoverflow.com/questions/1099672/when-is-it-appropriate-to-use-udp-instead-of-tcp/1099734#1099734">networking - When is it appropriate to use UDP instead of TCP? - Stack Overflow</a></li>
+<li><a href="https://www.darkcoding.net/uncategorized/raw-sockets-in-go-ip-layer/">Graham King » Raw sockets in Go: IP layer</a></li>
+<li><a href="https://github.com/grahamking/latency/blob/master/tcp.go">TCP header </a></li>
+</ul>
+<h1><a class="header" href="#package-files" id="package-files">Package files</a></h1>
+<ul>
+<li>
+<p>定义接口和錯誤类型</p>
+<p><a href="https://golang.org/src/net/net.go">net.go</a> </p>
+</li>
+<li>
+<p>基础类型</p>
+<p><a href="https://golang.org/src/net/interface.go">interface.go</a> <a href="https://golang.org/src/net/mac.go">mac.go</a> <a href="https://golang.org/src/net/ip.go">ip.go</a>  <a href="https://golang.org/src/net/dial.go">dial.go</a> <a href="https://golang.org/src/net/lookup.go">lookup.go</a> </p>
+</li>
+<li>
+<p>实现Conn, PacketConn, Listener </p>
+<p><a href="https://golang.org/src/net/iprawsock.go">iprawsock.go</a> <a href="https://golang.org/src/net/tcpsock.go">tcpsock.go</a>  <a href="https://golang.org/src/net/udpsock.go">udpsock.go</a> <a href="https://golang.org/src/net/unixsock.go">unixsock.go </a> </p>
+</li>
+</ul>
+<h1><a class="header" href="#overview" id="overview">Overview</a></h1>
+<p><a href="https://golang.org/pkg/net/#pkg-overview">Overview</a></p>
+<h1><a class="header" href="#5个基础网络接口-conn-listener-packetconn-addr-error" id="5个基础网络接口-conn-listener-packetconn-addr-error">5个基础网络接口: Conn, Listener, PacketConn, Addr, Error</a></h1>
+<h2><a class="header" href="#conn接口" id="conn接口">Conn接口</a></h2>
+<p>Conn接口是这个包的核心</p>
+<p>Conn接口包含8个函数，实现了Conn接口也就实现了&quot;读写关&quot;接口</p>
+<p>这8个函数返回Conn接口: Dial, DialTimeout, FileConn, Pipe, *Dialer.Dial, *Dialer.DialContext, *TCPListener.Accept, *UnixListener.Accept</p>
+<p>包内有一个conn类型实现了Conn接口, 还实现了2个设置缓存函数和1个File函数</p>
+<pre><code class="language-go">type Conn interface {
+        Read(b []byte) (n int, err error)
+        Write(b []byte) (n int, err error)
+        Close() error
+
+        LocalAddr() Addr
+        RemoteAddr() Addr
+
+        // A deadline is an absolute time after which I/O operations
+        // fail with a timeout (see type Error) instead of
+        // blocking.
+        SetDeadline(t time.Time) error
+        SetReadDeadline(t time.Time) error
+        SetWriteDeadline(t time.Time) error
+}
+
+func Dial(network, address string) (Conn, error)
+func DialTimeout(network, address string, timeout time.Duration) (Conn, error)
+func FileConn(f *os.File) (c Conn, err error)
+
+func Pipe() (Conn, Conn)
+
+func (d *Dialer) Dial(network, address string) (Conn, error)
+func (d *Dialer) DialContext(ctx context.Context, network, address string) (Conn, error)
+
+func (l *TCPListener) Accept() (Conn, error)
+func (l *UnixListener) Accept() (Conn, error)
+
+type conn struct {
+    fd *netFD
+}
+
+func (c *conn) SetReadBuffer(bytes int) error
+func (c *conn) SetWriteBuffer(bytes int) error
+// On Unix systems this will cause the SetDeadline methods to stop working.
+func (c *conn) File() (f *os.File, err error)
+</code></pre>
+<h2><a class="header" href="#listener接口" id="listener接口">Listener接口</a></h2>
+<pre><code class="language-go">type Listener interface {
+    // Accept waits for and returns the next connection to the listener.
+    Accept() (Conn, error)
+    // Close closes the listener.
+    // Any blocked Accept operations will be unblocked and return errors.
+    Close() error
+    // Addr returns the listener's network address.
+    Addr() Addr
+}
+
+func Listen(network, address string) (Listener, error)
+func FileListener(f *os.File) (ln Listener, err error)
+
+func (lc *ListenConfig) Listen(ctx context.Context, network, address string) (Listener, error)
+</code></pre>
+<h2><a class="header" href="#packetconn接口" id="packetconn接口">PacketConn接口</a></h2>
+<p>包含7个函数,区别于Conn接口, 其中的读写接口换成了另一种读写函数,没有了RemoteAddr函数</p>
+<pre><code class="language-go">type PacketConn interface {
+    // ReadFrom reads a packet from the connection,
+    // copying the payload into b. It returns the number of
+    // bytes copied into b and the return address that
+    // was on the packet.
+    ReadFrom(b []byte) (n int, addr Addr, err error)
+    // WriteTo writes a packet with payload b to addr.
+    WriteTo(b []byte, addr Addr) (n int, err error)
+    Close() error
+
+    LocalAddr() Addr
+
+    SetDeadline(t time.Time) error
+    SetReadDeadline(t time.Time) error
+    SetWriteDeadline(t time.Time) error
+}
+
+func ListenPacket(network, address string) (PacketConn, error)
+func FilePacketConn(f *os.File) (c PacketConn, err error)
+
+func (lc *ListenConfig) ListenPacket(ctx context.Context, network, address string) (PacketConn, error)
+</code></pre>
+<h2><a class="header" href="#addr接口" id="addr接口">Addr接口</a></h2>
+<pre><code class="language-go">// Addr represents a network end point address.
+//
+// The two methods Network and String conventionally return strings
+// that can be passed as the arguments to Dial, but the exact form
+// and meaning of the strings is up to the implementation.
+type Addr interface {
+    Network() string // name of the network (for example, &quot;tcp&quot;, &quot;udp&quot;)
+    String() string  // string form of address (for example, &quot;192.0.2.1:25&quot;, &quot;[2001:db8::1]:80&quot;)
+}
+
+func (ifi *Interface) Addrs() ([]Addr, error)
+func (ifi *Interface) MulticastAddrs() ([]Addr, error)
+func InterfaceAddrs() ([]Addr, error)
+
+func (n *IPNet) Network() string
+func (n *IPNet) String() string
+
+func (a *IPAddr) Network() string
+func (a *IPAddr) String() string
+
+func (c *IPConn) LocalAddr() Addr
+func (c *IPConn) RemoteAddr() Addr
+func (c *IPConn) ReadFrom(b []byte) (int, Addr, error)
+func (c *IPConn) WriteTo(b []byte, addr Addr) (int, error)
+
+func (a *TCPAddr) Network() string
+func (a *TCPAddr) String() string
+
+func (c *TCPConn) LocalAddr() Addr
+func (c *TCPConn) RemoteAddr() Addr
+
+func (l *TCPListener) Addr() Addr
+
+func (a *UDPAddr) Network() string
+func (a *UDPAddr) String() string
+
+func (c *UDPConn) LocalAddr() Addr
+func (c *UDPConn) RemoteAddr() Addr
+func (c *UDPConn) ReadFrom(b []byte) (int, Addr, error)
+func (c *UDPConn) WriteTo(b []byte, addr Addr) (int, error)
+
+func (a *UnixAddr) Network() string
+func (a *UnixAddr) String() string
+
+func (c *UnixConn) LocalAddr() Addr
+func (c *UnixConn) RemoteAddr() Addr
+func (c *UnixConn) ReadFrom(b []byte) (int, Addr, error)
+func (c *UnixConn) WriteTo(b []byte, addr Addr) (int, error)
+
+func (l *UnixListener) Addr() Addr
+</code></pre>
+<h2><a class="header" href="#关于网络类型" id="关于网络类型">关于网络类型</a></h2>
+<pre><code class="language-go">func Dial(network, address string) (Conn, error)
+func DialTimeout(network, address string, timeout time.Duration) (Conn, error)
+func (d *Dialer) Dial(network, address string) (Conn, error)
+func (d *Dialer) DialContext(ctx context.Context, network, address string) (Conn, error)
+
+
+func (lc *ListenConfig) Listen(ctx context.Context, network, address string) (Listener, error)
+func (lc *ListenConfig) ListenPacket(ctx context.Context, network, address string) (PacketConn, error)
+
+func Listen(network, address string) (Listener, error)
+func ListenPacket(network, address string) (PacketConn, error)
+
+func ResolveIPAddr(network, address string) (*IPAddr, error)
+func DialIP(network string, laddr, raddr *IPAddr) (*IPConn, error)
+func ListenIP(network string, laddr *IPAddr) (*IPConn, error)
+
+func ResolveTCPAddr(network, address string) (*TCPAddr, error)
+func DialTCP(network string, laddr, raddr *TCPAddr) (*TCPConn, error)
+func ListenTCP(network string, laddr *TCPAddr) (*TCPListener, error)
+
+func ResolveUDPAddr(network, address string) (*UDPAddr, error)
+func DialUDP(network string, laddr, raddr *UDPAddr) (*UDPConn, error)
+func ListenUDP(network string, laddr *UDPAddr) (*UDPConn, error)
+func ListenMulticastUDP(network string, ifi *Interface, gaddr *UDPAddr) (*UDPConn, error)
+
+func ResolveUnixAddr(network, address string) (*UnixAddr, error)
+func DialUnix(network string, laddr, raddr *UnixAddr) (*UnixConn, error)
+func ListenUnixgram(network string, laddr *UnixAddr) (*UnixConn, error)
+func ListenUnix(network string, laddr *UnixAddr) (*UnixListener, error)
+
+func LookupPort(network, service string) (port int, err error)
+func (r *Resolver) LookupPort(ctx context.Context, network, service string) (port int, err error)
+</code></pre>
+<p>Known networks are:</p>
+<ul>
+<li>&quot;tcp&quot;, &quot;tcp4&quot; (IPv4-only), &quot;tcp6&quot; (IPv6-only) </li>
+<li>&quot;udp&quot;, &quot;udp4&quot; (IPv4-only), &quot;udp6&quot; (IPv6-only)</li>
+<li>&quot;ip&quot;, &quot;ip4&quot; (IPv4-only), &quot;ip6&quot; (IPv6-only)</li>
+<li>&quot;unix&quot;, &quot;unixgram&quot; and &quot;unixpacket&quot;. </li>
+</ul>
+<p>对于IP协议,参数network是要带上协议名,或协议号的.例:</p>
+<pre><code>Dial(&quot;ip4:1&quot;, &quot;192.0.2.1&quot;)
+Dial(&quot;ip6:ipv6-icmp&quot;, &quot;2001:db8::1&quot;)
+Dial(&quot;ip6:58&quot;, &quot;fe80::1%lo0&quot;)
+</code></pre>
+<p>Resovle用正确的网络名生成各协议地址结构</p>
+<p>IPNet, IPAddr, TCPAddr, UDPAddr, UnixAddr 5种地址结构都实现了Addr接口,可以通过Addr接口得到网络类型</p>
+<h2><a class="header" href="#error接口" id="error接口">Error接口</a></h2>
+<pre><code class="language-go">// An Error represents a network error.
+type Error interface {
+    error
+    Timeout() bool   // Is the error a timeout?
+    Temporary() bool // Is the error temporary?
+}
+</code></pre>
+<h1><a class="header" href="#4个基础网络结构-interface-hardwareaddr-ip-ipmask" id="4个基础网络结构-interface-hardwareaddr-ip-ipmask">4个基础网络结构: Interface, HardwareAddr, IP, IPMask</a></h1>
+<p>HardwareAddr, IP, IPMask all are []byte</p>
+<h2><a class="header" href="#interface结构" id="interface结构">Interface结构</a></h2>
+<pre><code class="language-go">type Interface struct {
+    Index        int          // positive integer that starts at one, zero is never used
+    MTU          int          // maximum transmission unit
+    Name         string       // e.g., &quot;en0&quot;, &quot;lo0&quot;, &quot;eth0.100&quot;
+    HardwareAddr HardwareAddr // IEEE MAC-48, EUI-48 and EUI-64 form
+    Flags        Flags        // e.g., FlagUp, FlagLoopback, FlagMulticast
+}
+
+func (ifi *Interface) Addrs() ([]Addr, error) 
+func (ifi *Interface) MulticastAddrs() ([]Addr, error)
+
+func InterfaceByIndex(index int) (*Interface, error) 
+func InterfaceByName(name string) (*Interface, error) 
+func Interfaces() ([]Interface, error)
+func InterfaceAddrs() ([]Addr, error)
+
+type Flags uint
+func (f Flags) String() string 
+</code></pre>
+<h2><a class="header" href="#hardwareaddr结构" id="hardwareaddr结构">HardwareAddr结构</a></h2>
+<pre><code class="language-go">type HardwareAddr []byte
+
+func (a HardwareAddr) String() string
+func ParseMAC(s string) (hw HardwareAddr, err error)
+</code></pre>
+<h2><a class="header" href="#ip结构" id="ip结构">IP结构</a></h2>
+<p>这些函数返回IP结构:</p>
+<p>ParseIP, ParseCIDR, IPv4, LookupIP, IP.To4, IP.To16, ip.Mask</p>
+<pre><code class="language-go">type IP []byte
+
+func ParseIP(s string) IP 
+func ParseCIDR(s string) (IP, *IPNet, error) 
+func IPv4(a, b, c, d byte) IP
+func LookupIP(host string) ([]IP, error)
+
+func (ip IP) Equal(x IP) bool
+func (ip IP) IsUnspecified() bool {
+    return ip.Equal(IPv4zero) || ip.Equal(IPv6unspecified)
+}
+func (ip IP) IsLoopback() bool 
+
+func (ip IP) IsMulticast() bool
+func (ip IP) IsInterfaceLocalMulticast() bool
+func (ip IP) IsLinkLocalMulticast() bool 
+func (ip IP) IsLinkLocalUnicast() bool 
+func (ip IP) IsGlobalUnicast() bool 
+
+func (ip IP) To4() IP 
+func (ip IP) To16() IP 
+
+func (ip IP) DefaultMask() IPMask
+func (ip IP) Mask(mask IPMask) IP
+
+func (ip IP) String() string 
+func (ip IP) MarshalText() ([]byte, error)
+func (ip *IP) UnmarshalText(text []byte) error 
+</code></pre>
+<h2><a class="header" href="#ipmask结构" id="ipmask结构">IPMask结构</a></h2>
+<pre><code class="language-go">// An IP mask is an IP address.
+type IPMask []byte
+
+func IPv4Mask(a, b, c, d byte) IPMask
+func CIDRMask(ones, bits int) IPMask 
+
+func (m IPMask) Size() (ones, bits int) 
+func (m IPMask) String() string
+
+func (ip IP) DefaultMask() IPMask
+</code></pre>
+<h1><a class="header" href="#tcp协议里3个结构tcpaddr-tcpconn-tcplistener" id="tcp协议里3个结构tcpaddr-tcpconn-tcplistener">TCP协议里3个结构：TCPAddr, TCPConn, TCPListener</a></h1>
+<h2><a class="header" href="#tcpaddr结构" id="tcpaddr结构">TCPAddr结构</a></h2>
+<p>TCPAddr结构实现了Addr接口</p>
+<pre><code class="language-go">type TCPAddr struct {
+    IP   IP
+    Port int
+    Zone string // IPv6 scoped addressing zone
+}
+
+func (a *TCPAddr) Network() string { return &quot;tcp&quot; }
+func (a *TCPAddr) String() string
+
+func ResolveTCPAddr(network, address string) (*TCPAddr, error)
+</code></pre>
+<h2><a class="header" href="#tcpconn结构" id="tcpconn结构">TCPConn结构</a></h2>
+<p>TCPConn is an implementation of the Conn interface for TCP network connections.</p>
+<p>TCPConn内部就是一个conn结构，所以自然它实现了Conn接口</p>
+<pre><code class="language-go">type TCPConn struct {
+    conn
+}
+
+func (c *TCPConn) ReadFrom(r io.Reader) (int64, error)
+
+// SyscallConn returns a raw network connection.
+// This implements the syscall.Conn interface.
+func (c *TCPConn) SyscallConn() (syscall.RawConn, error)
+
+func (c *TCPConn) CloseRead() error
+func (c *TCPConn) CloseWrite() error 
+
+// 也是conn结构实现的
+func (c *TCPConn) File() (f *os.File, err error)
+
+func (c *TCPConn) SetKeepAlive(keepalive bool) error 
+func (c *TCPConn) SetKeepAlivePeriod(d time.Duration) error
+func (c *TCPConn) SetLinger(sec int) error
+func (c *TCPConn) SetNoDelay(noDelay bool) error
+
+// DialTCP acts like Dial for TCP networks.
+//
+// The network must be a TCP network name; see func Dial for details.
+//
+// If laddr is nil, a local address is automatically chosen.
+// If the IP field of raddr is nil or an unspecified IP address, the
+// local system is assumed.// DialTCP acts like Dial for TCP networks.
+//
+// The network must be a TCP network name; see func Dial for details.
+//
+// If laddr is nil, a local address is automatically chosen.
+// If the IP field of raddr is nil or an unspecified IP address, the
+// local system is assumed.
+func DialTCP(network string, laddr, raddr *TCPAddr) (*TCPConn, error) 
+func (l *TCPListener) AcceptTCP() (*TCPConn, error)
+</code></pre>
+<p>客户端的基本流程就是Dial建立连接，再么写，再么读。</p>
+<p><a href="https://github.com/iofxl/gogogo/blob/master/tcpc.go">tcpc.go</a></p>
+<h2><a class="header" href="#tcplistener结构" id="tcplistener结构">TCPListener结构</a></h2>
+<p>实现Listener接口</p>
+<pre><code class="language-go">type TCPListener struct {
+    fd *netFD
+}
+
+// Accept implements the Accept method in the Listener interface; it
+// waits for the next call and returns a generic Conn.
+func (l *TCPListener) Accept() (Conn, error)
+func (l *TCPListener) Close() error
+func (l *TCPListener) Addr() Addr { return l.fd.laddr }
+
+// AcceptTCP accepts the next incoming call and returns the new
+// connection.
+func (l *TCPListener) AcceptTCP() (*TCPConn, error)
+func (l *TCPListener) File() (f *os.File, err error)
+func (l *TCPListener) SetDeadline(t time.Time) error
+func (l *TCPListener) SyscallConn() (syscall.RawConn, error) 
+
+func ListenTCP(network string, laddr *TCPAddr) (*TCPListener, error)
+</code></pre>
+<p><a href="https://github.com/iofxl/practisego/blob/master/daytimes.go">Daytime Server</a></p>
+<p><a href="https://github.com/iofxl/practisego/blob/master/echos.go">Echo Server</a></p>
+<p>困扰我的是，怎样知道把客户端发过来的东西读光罢呢？: 不需要知道读光否读光的，使一个固定长的字节串 只要读的过程否碰的错误 一直读一直写转就可以罢</p>
+<h1><a class="header" href="#udp协议里2个结构udpaddr-udpconn" id="udp协议里2个结构udpaddr-udpconn">UDP协议里2个结构：UDPAddr, UDPConn</a></h1>
+<h2><a class="header" href="#udpaddr结构" id="udpaddr结构">UDPAddr结构</a></h2>
+<p>UDPAddr结构实现了地址接口</p>
+<pre><code class="language-go">type UDPAddr struct {
+    IP   IP
+    Port int
+    Zone string // IPv6 scoped addressing zone
+}
+
+func (a *UDPAddr) Network() string { return &quot;udp&quot; }
+func (a *UDPAddr) String() string
+
+func ResolveUDPAddr(network, address string) (*UDPAddr, error)
+</code></pre>
+<h2><a class="header" href="#udpconn结构" id="udpconn结构">UDPConn结构</a></h2>
+<p>IPConn, TCPConn, UDPConn, UnixConn 本质上都一样, 结构内部都是一模一样的一个conn结构.只是实现的差别</p>
+<p>除了conn结构实现的,UDPConn结构自己实现了包连接接口,系统调用.连接接口,还有另外4个读写函数</p>
+<p>UDPConn实现的4个读写函数: 读从UDP, 写到UDP, 读消息UDP, 写消息UDP. 和IPConn结构如出一辙</p>
+<pre><code class="language-go">type UDPConn struct {
+    conn
+}
+
+func (c *UDPConn) ReadFrom(b []byte) (int, Addr, error) 
+func (c *UDPConn) WriteTo(b []byte, addr Addr) (int, error)
+
+func (c *UDPConn) SyscallConn() (syscall.RawConn, error) 
+
+func (c *UDPConn) ReadFromUDP(b []byte) (int, *UDPAddr, error) 
+func (c *UDPConn) WriteToUDP(b []byte, addr *UDPAddr) (int, error)
+
+func (c *UDPConn) ReadMsgUDP(b, oob []byte) (n, oobn, flags int, addr *UDPAddr, err error) 
+func (c *UDPConn) WriteMsgUDP(b, oob []byte, addr *UDPAddr) (n, oobn int, err error) 
+
+func DialUDP(network string, laddr, raddr *UDPAddr) (*UDPConn, error)
+func ListenUDP(network string, laddr *UDPAddr) (*UDPConn, error)
+func ListenMulticastUDP(network string, ifi *Interface, gaddr *UDPAddr) (*UDPConn, error)
+
+</code></pre>
+<p>UDP协议里的核心的函数是这几个：</p>
+<pre><code class="language-go">func ResolveUDPAddr(network, address string) (*UDPAddr, error)
+func DialUDP(network string, laddr, raddr *UDPAddr) (*UDPConn, error)
+func ListenUDP(network string, laddr *UDPAddr) (*UDPConn, error)
+func (c *UDPConn) ReadFromUDP(b []byte) (int, *UDPAddr, error)
+func (c *UDPConn) WriteToUDP(b []byte, addr *UDPAddr) (int, error)
+</code></pre>
+<p><a href="https://github.com/iofxl/practisego/blob/master/daytimesudp.go">Daytime Server UDP</a></p>
+<p><a href="https://github.com/iofxl/practisego/blob/master/udpc.go">DialUDP</a></p>
+<h1><a class="header" href="#引出conn-packetconn-listener接口的小总结" id="引出conn-packetconn-listener接口的小总结">引出Conn, PacketConn, Listener接口的小总结</a></h1>
+<p>对比以瞅，Dial函数就是简化原来各个协议里的:</p>
+<ul>
+<li>先通过<code>network,address</code>去<code>ResolveTCPAddr</code>,再通过<code>DialTCP</code>返回<code>*TCPConn</code></li>
+<li>先通过<code>network,address</code>去<code>ResolveUDPAddr</code>,再通过<code>DialUDP</code>返回<code>*UDPConn</code></li>
+</ul>
+<p>而直接通过<code>network, address</code>去<code>Dial</code>, 返回<code>Conn</code>接口</p>
+<p><code>Listen</code>之于<code>ListenTCP</code>, <code>ListenPacket</code>之于<code>ListenUDP</code>, 统都一回事，<code>*TCPListener</code>结构实现<code>Listener</code>接口，<code>*UDPConn</code>结构实现<code>PacketConn</code>接口</p>
+<p>一种是抽象的，一种是具体的。</p>
+<p><strong>这种学习方式是由具体到抽象的步骤，我认为就是应该这样学，而不应该倒过来。</strong></p>
+<pre><code class="language-go">func ResolveTCPAddr(network, address string) (*TCPAddr, error)
+func DialTCP(network string, laddr, raddr *TCPAddr) (*TCPConn, error)
+
+func ResolveUDPAddr(network, address string) (*UDPAddr, error)
+func DialUDP(network string, laddr, raddr *UDPAddr) (*UDPConn, error)
+
+func Dial(network, address string) (Conn, error)
+
+func Listen(network, address string) (Listener, error)
+func ListenTCP(network string, laddr *TCPAddr) (*TCPListener, error)
+
+func ListenPacket(network, address string) (PacketConn, error)
+func ListenUDP(network string, laddr *UDPAddr) (*UDPConn, error)
+</code></pre>
+<h2><a class="header" href="#重写前头的例子" id="重写前头的例子">重写前头的例子</a></h2>
+<p><a href="https://github.com/iofxl/practisego/blob/master/tcpcInterface.go">TCP Client with Dial</a></p>
+<p><a href="https://github.com/iofxl/practisego/blob/master/daytimes.with.listen.go">Daytime Server Support both TCP and UDP</a></p>
+<p><a href="https://github.com/iofxl/practisego/blob/master/echos.use.Listen.go">Echo Server Support both TCP and UDP</a></p>
+<p><a href="https://github.com/iofxl/practisego/blob/master/ping.go">Ping</a></p>
+<h1><a class="header" href="#ip协议里3个结构ipnet-ipaddr-ipconn" id="ip协议里3个结构ipnet-ipaddr-ipconn">IP协议里3个结构：IPNet, IPAddr, IPConn</a></h1>
+<p>IPNet, IPAddr 都实现了Addr 地址接口</p>
+<h2><a class="header" href="#ipnet结构" id="ipnet结构">IPNet结构</a></h2>
+<pre><code class="language-go">type IPNet struct {
+    IP   IP     // network number
+    Mask IPMask // network mask
+}
+
+func (n *IPNet) Network() string { return &quot;ip+net&quot; }
+func (n *IPNet) String() string 
+
+func (n *IPNet) Contains(ip IP) bool 
+</code></pre>
+<h2><a class="header" href="#ipaddr结构" id="ipaddr结构">IPAddr结构</a></h2>
+<pre><code class="language-go">type IPAddr struct {
+    IP   IP
+    Zone string // IPv6 scoped addressing zone
+}
+
+func (a *IPAddr) Network() string { return &quot;ip&quot; }
+func (a *IPAddr) String() string 
+
+func ResolveIPAddr(network, address string) (*IPAddr, error) 
+</code></pre>
+<h2><a class="header" href="#ipconn结构" id="ipconn结构">IPConn结构</a></h2>
+<p>IPConn 类型实现了3个接口: Conn, PacketConn, syscall.Conn</p>
+<pre><code class="language-go">// IPConn is the implementation of the Conn and PacketConn interfaces
+// for IP network connections.
+type IPConn struct {
+    conn
+}
+
+type conn struct {
+    fd *netFD
+}
+
+
+// ReadFromIP acts like ReadFrom but returns an IPAddr.
+func (c *IPConn) ReadFromIP(b []byte) (int, *IPAddr, error) 
+func (c *IPConn) WriteToIP(b []byte, addr *IPAddr) (int, error)
+
+func (c *IPConn) ReadFrom(b []byte) (int, Addr, error)
+func (c *IPConn) WriteTo(b []byte, addr Addr) (int, error) 
+
+func (c *IPConn) ReadMsgIP(b, oob []byte) (n, oobn, flags int, addr *IPAddr, err error) 
+func (c *IPConn) WriteMsgIP(b, oob []byte, addr *IPAddr) (n, oobn int, err error) 
+
+func (c *IPConn) SyscallConn() (syscall.RawConn, error) 
+
+//net.go内的conn类型实现了Conn接口, 还实现了另外2个缓存设置函数及1个File函数
+func (c *conn) SetReadBuffer(bytes int) error
+func (c *conn) SetWriteBuffer(bytes int) error
+// On Unix systems this will cause the SetDeadline methods to stop working.
+func (c *conn) File() (f *os.File, err error)
+
+func DialIP(network string, laddr, raddr *IPAddr) (*IPConn, error)
+func ListenIP(network string, laddr *IPAddr) (*IPConn, error) 
+</code></pre>
+<h1><a class="header" href="#unix协议里3个结构unixaddr-unixconn-unixlistener" id="unix协议里3个结构unixaddr-unixconn-unixlistener">Unix协议里3个结构：UnixAddr, UnixConn, UnixListener</a></h1>
+<h2><a class="header" href="#unixaddr结构" id="unixaddr结构">UnixAddr结构</a></h2>
+<p>UnixAddr实现了Addr接口</p>
+<pre><code class="language-go">type UnixAddr struct {
+    Name string
+    Net  string
+}
+
+func (a *UnixAddr) Network() string 
+func (a *UnixAddr) String() string 
+
+func ResolveUnixAddr(network, address string) (*UnixAddr, error) 
+</code></pre>
+<h2><a class="header" href="#unixconn结构" id="unixconn结构">UnixConn结构</a></h2>
+<p>IPConn, TCPConn, UDPConn, UnixConn 本质上都一样, 结构内部都是一模一样的一个conn类型.只是实现的差别</p>
+<p>UnixConn自己实现了包连接接口, 系统调用.连接接口,还有6个读写关闭相关函数</p>
+<p>UnixConn类型实现的6个函数: 关闭读, 关闭写, 读从Unix, 写到Unix, 读消息Unix, 写消息Unix</p>
+<p>两个返回UnixConn类型的函数: 拔号Unix, 监听Unixgram(一定要是Unixgram)</p>
+<pre><code class="language-go">type UnixConn struct {
+    conn
+}
+
+
+func (c *UnixConn) ReadFrom(b []byte) (int, Addr, error) 
+func (c *UnixConn) WriteTo(b []byte, addr Addr) (int, error) 
+
+func (c *UnixConn) SyscallConn() (syscall.RawConn, error) 
+
+func (c *UnixConn) CloseRead() error
+func (c *UnixConn) CloseWrite() error
+
+func (c *UnixConn) ReadFromUnix(b []byte) (int, *UnixAddr, error)
+func (c *UnixConn) WriteToUnix(b []byte, addr *UnixAddr) (int, error)
+
+func (c *UnixConn) ReadMsgUnix(b, oob []byte) (n, oobn, flags int, addr *UnixAddr, err error)
+func (c *UnixConn) WriteMsgUnix(b, oob []byte, addr *UnixAddr) (n, oobn int, err error)
+
+func DialUnix(network string, laddr, raddr *UnixAddr) (*UnixConn, error)
+func ListenUnixgram(network string, laddr *UnixAddr) (*UnixConn, error) 
+</code></pre>
+<h2><a class="header" href="#unixlistener结构" id="unixlistener结构">UnixListener结构</a></h2>
+<pre><code class="language-go">type UnixListener struct {
+    fd         *netFD
+    path       string
+    unlink     bool
+    unlinkOnce sync.Once
+}
+
+
+func (l *UnixListener) Accept() (Conn, error) 
+func (l *UnixListener) Close() error
+func (l *UnixListener) Addr() Addr { return l.fd.laddr }
+
+func (l *UnixListener) SyscallConn() (syscall.RawConn, error) 
+
+func (l *UnixListener) AcceptUnix() (*UnixConn, error)
+func (l *UnixListener) File() (f *os.File, err error) 
+func (l *UnixListener) SetDeadline(t time.Time) error
+func (l *UnixListener) SetUnlinkOnClose(unlink bool)
+
+func ListenUnix(network string, laddr *UnixAddr) (*UnixListener, error)
+</code></pre>
+<h1><a class="header" href="#dialer结构" id="dialer结构">Dialer结构</a></h1>
+<p>A Dialer contains options for connecting to an address.</p>
+<p>The zero value for each field is equivalent to dialing without that option. Dialing with the zero value of Dialer is therefore equivalent to just calling the Dial function. </p>
+<pre><code class="language-go">type Dialer struct {
+    // The default is no timeout.
+    // 会影响超时的东西, 操作系统设置的超时
+    // Timeout, Deadline誰短誰有效吧
+    Timeout time.Duration
+    Deadline time.Time
+    LocalAddr Addr
+    // 没説这个默认值是什么
+    DualStack bool
+    FallbackDelay time.Duration
+    // 默认值?
+    KeepAlive time.Duration
+    Resolver *Resolver
+}
+
+func Dial(network, address string) (Conn, error) {
+    var d Dialer
+    return d.Dial(network, address)
+}
+func DialTimeout(network, address string, timeout time.Duration) (Conn, error) {
+    d := Dialer{Timeout: timeout}
+    return d.Dial(network, address)
+}
+
+func (d *Dialer) Dial(network, address string) (Conn, error) {
+    return d.DialContext(context.Background(), network, address)
+}
+func (d *Dialer) DialContext(ctx context.Context, network, address string) (Conn, error)
+</code></pre>
+<h1><a class="header" href="#listenconfig结构" id="listenconfig结构">ListenConfig结构</a></h1>
+<p>ListenConfig contains options for listening to an address. </p>
+<pre><code class="language-go">type ListenConfig struct {
+// If Control is not nil, it is called after creating the network
+// connection but before binding it to the operating system.
+//
+// Network and address parameters passed to Control method are not
+// necessarily the ones passed to Listen. For example, passing &quot;tcp&quot; to
+// Listen will cause the Control function to be called with &quot;tcp4&quot; or &quot;tcp6&quot;.
+Control func(network, address string, c syscall.RawConn) error
+}
+
+func (lc *ListenConfig) Listen(ctx context.Context, network, address string) (Listener, error)
+func (lc *ListenConfig) ListenPacket(ctx context.Context, network, address string) (PacketConn, error)
+</code></pre>
+<h1><a class="header" href="#dns的3个记录结构srv-mx-ns" id="dns的3个记录结构srv-mx-ns">DNS的3个记录结构：SRV, MX, NS</a></h1>
+<pre><code class="language-go">// An SRV represents a single DNS SRV record.
+type SRV struct {
+    Target   string
+    Port     uint16
+    Priority uint16
+    Weight   uint16
+}
+
+type MX struct {
+    Host string
+    Pref uint16
+}
+
+type NS struct {
+    Host string
+}
+</code></pre>
+<h1><a class="header" href="#resolver结构" id="resolver结构">Resolver结构</a></h1>
+<p>是对 Dial() 的封装</p>
+<h1><a class="header" href="#dns的9个查找函数" id="dns的9个查找函数">DNS的9个查找函数</a></h1>
+<p>LookupAddr(r.LookupAddr)是反向查询, LookupIP(r.LookupIPAddr)不是</p>
+<p><strong>LookupIP(r.LookupIPAddr)</strong> 和 LookupHost(r.LookupHost)是相同功能的.只不过返回类型不一样.前者返回相应的类型,后者返回字符串的切片.</p>
+<pre><code class="language-go">var DefaultResolver = &amp;Resolver{}
+
+type Resolver struct {
+    PreferGo bool
+    StrictErrors bool
+    Dial func(ctx context.Context, network, address string) (Conn, error)
+}
+
+func LookupHost(host string) (addrs []string, err error) {
+    return DefaultResolver.LookupHost(context.Background(), host)
+}
+func (r *Resolver) LookupHost(ctx context.Context, host string) (addrs []string, err error)
+
+func LookupIP(host string) ([]IP, error) {
+    addrs, err := DefaultResolver.LookupIPAddr(context.Background(), host)
+    ...
+}
+func (r *Resolver) LookupIPAddr(ctx context.Context, host string) ([]IPAddr, error) 
+
+func LookupPort(network, service string) (port int, err error)
+func (r *Resolver) LookupPort(ctx context.Context, network, service string) (port int, err error) 
+
+func LookupCNAME(host string) (cname string, err error) 
+func (r *Resolver) LookupCNAME(ctx context.Context, host string) (cname string, err error)
+
+func LookupSRV(service, proto, name string) (cname string, addrs []*SRV, err error) 
+func (r *Resolver) LookupSRV(ctx context.Context, service, proto, name string) (cname string, addrs []*SRV, err error) 
+
+func LookupMX(name string) ([]*MX, error) 
+func (r *Resolver) LookupMX(ctx context.Context, name string) ([]*MX, error) 
+
+func LookupNS(name string) ([]*NS, error)
+func (r *Resolver) LookupNS(ctx context.Context, name string) ([]*NS, error) 
+
+func LookupTXT(name string) ([]string, error) 
+func (r *Resolver) LookupTXT(ctx context.Context, name string) ([]string, error)
+
+func LookupAddr(addr string) (names []string, err error)
+func (r *Resolver) LookupAddr(ctx context.Context, addr string) (names []string, err error)
+</code></pre>
+<h1><a class="header" href="#6种网络错误结构" id="6种网络错误结构">6种网络错误结构</a></h1>
+<pre><code class="language-go">type ParseError struct {
+    Type string
+    Text string
+}
+
+type OpError struct {
+    Op string
+    Net string
+    Source Addr
+    Addr Addr
+    Err error
+}
+
+type AddrError struct {
+    Err  string
+    Addr string
+}
+
+type UnknownNetworkError string
+
+type InvalidAddrError string
+
+type DNSError struct {
+    Err         string // description of the error
+    Name        string // name looked for
+    Server      string // server used
+    IsTimeout   bool   // if true, timed out; not all timeouts set this
+    IsTemporary bool   // if true, error is temporary; not all errors set this
+}
+</code></pre>
+<h1><a class="header" href="#buffers结构" id="buffers结构">Buffers结构</a></h1>
+<pre><code class="language-go">type Buffers [][]byte
+func (v *Buffers) Read(p []byte) (n int, err error)
+func (v *Buffers) WriteTo(w io.Writer) (n int64, err error)
+</code></pre>
+<h1><a class="header" href="#2个拆合主机端口的函数" id="2个拆合主机端口的函数">2个拆合主机端口的函数</a></h1>
+<pre><code class="language-go">func SplitHostPort(hostport string) (host, port string, err error)
+func JoinHostPort(host, port string) string 
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../../../go/pkg/log/log.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../../../go/pkg/net/textproto.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../../../go/pkg/log/log.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../../../go/pkg/net/textproto.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
